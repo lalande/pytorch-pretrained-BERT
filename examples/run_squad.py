@@ -893,8 +893,9 @@ def main():
             num_train_optimization_steps = num_train_optimization_steps // torch.distributed.get_world_size()
 
     # Prepare model
+    print(PYTORCH_PRETRAINED_BERT_CACHE)
     model = BertForQuestionAnswering.from_pretrained(args.bert_model,
-                cache_dir=os.path.join(PYTORCH_PRETRAINED_BERT_CACHE, 'distributed_{}'.format(args.local_rank)))
+                cache_dir=os.path.join(str(PYTORCH_PRETRAINED_BERT_CACHE), 'distributed_{}'.format(args.local_rank)))
 
     if args.fp16:
         model.half()
