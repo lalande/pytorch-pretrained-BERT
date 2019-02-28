@@ -1,0 +1,5 @@
+***** Running training *****
+  Num orig examples = 130319
+  Num split examples = 131944
+  Batch size = 32
+  Num steps = 8144
