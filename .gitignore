@@ -1,5 +1,8 @@
 # Initially taken from Github's Python gitignore file
 
+# Wing IDE
+*.wp*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -55,7 +58,7 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
+#*.log
 local_settings.py
 db.sqlite3
 
@@ -123,3 +126,4 @@ tensorflow_code
 
 # Models
 models
+*.bin

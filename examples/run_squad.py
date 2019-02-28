@@ -26,6 +26,7 @@ import os
 import random
 import sys
 from io import open
+import datetime
 
 import numpy as np
 import torch
@@ -775,6 +776,7 @@ def main():
                         help="The output directory where the model checkpoints and predictions will be written.")
 
     ## Other parameters
+    parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")
     parser.add_argument("--train_file", default=None, type=str, help="SQuAD json for training. E.g., train-v1.1.json")
     parser.add_argument("--predict_file", default=None, type=str,
                         help="SQuAD json for predictions. E.g., dev-v1.1.json or test-v1.1.json")
@@ -875,11 +877,19 @@ def main():
             raise ValueError(
                 "If `do_predict` is True, then `predict_file` must be specified.")
 
-    if os.path.exists(args.output_dir) and os.listdir(args.output_dir) and args.do_train:
-        raise ValueError("Output directory () already exists and is not empty.")
+    # KML No longer necessary since addition of args.time_stamp to file naming convention
+    # if os.path.exists(args.output_dir) and os.listdir(args.output_dir) and args.do_train:
+    #    raise ValueError("Output directory () already exists and is not empty.")
+    
+    # KML create args.time_stamp for output file naming convention
+    if not args.time_stamp:
+        args.time_stamp = datetime.datetime.today().strftime("%y%m%d-%H_%M-")
     if not os.path.exists(args.output_dir):
         os.makedirs(args.output_dir)
-
+    # KML save runtime logs to disk
+    output_log_file = os.path.join(args.output_dir, args.time_stamp + "log.log")
+    logger.addHandler(logging.FileHandler(output_log_file))
+    
     tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
 
     train_examples = None
@@ -1012,9 +1022,9 @@ def main():
     if args.do_train:
         # Save a trained model and the associated configuration
         model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-        output_model_file = os.path.join(args.output_dir, WEIGHTS_NAME)
+        output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
         torch.save(model_to_save.state_dict(), output_model_file)
-        output_config_file = os.path.join(args.output_dir, CONFIG_NAME)
+        output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)
         with open(output_config_file, 'w') as f:
             f.write(model_to_save.config.to_json_string())
 
@@ -1071,9 +1081,9 @@ def main():
                 all_results.append(RawResult(unique_id=unique_id,
                                              start_logits=start_logits,
                                              end_logits=end_logits))
-        output_prediction_file = os.path.join(args.output_dir, "predictions.json")
-        output_nbest_file = os.path.join(args.output_dir, "nbest_predictions.json")
-        output_null_log_odds_file = os.path.join(args.output_dir, "null_odds.json")
+        output_prediction_file = os.path.join(args.output_dir, args.time_stamp + "predictions.json")
+        output_nbest_file = os.path.join(args.output_dir, args.time_stamp + "nbest_predictions.json")
+        output_null_log_odds_file = os.path.join(args.output_dir, args.time_stamp + "null_odds.json")
         write_predictions(eval_examples, eval_features, all_results,
                           args.n_best_size, args.max_answer_length,
                           args.do_lower_case, output_prediction_file,
