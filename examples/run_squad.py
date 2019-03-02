@@ -27,6 +27,7 @@ import random
 import sys
 from io import open
 import datetime
+import csv
 
 import numpy as np
 import torch
@@ -46,6 +47,8 @@ if sys.version_info[0] == 2:
     import cPickle as pickle
 else:
     import pickle
+
+TINY_DATA_SIZE = 24  # number of examples for debug
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
@@ -123,7 +126,7 @@ class InputFeatures(object):
         self.is_impossible = is_impossible
 
 
-def read_squad_examples(input_file, is_training, version_2_with_negative):
+def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_data=False):
     """Read a SQuAD json file into a list of SquadExample."""
     with open(input_file, "r", encoding='utf-8') as reader:
         input_data = json.load(reader)["data"]
@@ -135,6 +138,8 @@ def read_squad_examples(input_file, is_training, version_2_with_negative):
 
     examples = []
     for entry in input_data:
+        if tiny_data and len(examples) > TINY_DATA_SIZE:
+            break
         for paragraph in entry["paragraphs"]:
             paragraph_text = paragraph["context"]
             doc_tokens = []
@@ -198,6 +203,8 @@ def read_squad_examples(input_file, is_training, version_2_with_negative):
                     end_position=end_position,
                     is_impossible=is_impossible)
                 examples.append(example)
+                if tiny_data and len(examples) == TINY_DATA_SIZE:
+                    return examples
     return examples
 
 
@@ -625,6 +632,17 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
 
     with open(output_prediction_file, "w") as writer:
         writer.write(json.dumps(all_predictions, indent=4) + "\n")
+        
+    # KML write prediction file in CSV format required by DFP Leaderboard p18 .pdf v2
+    # fix output_prediction_file
+    output_submission_file = output_prediction_file.split('.json')[0] + '_submission.csv' 
+    logger.info("Writing predictions submission in DFP Leaderboard compliant format to: %s" % (output_submission_file))
+    with open(output_submission_file, 'w') as csv_fh:
+        csv_writer = csv.writer(csv_fh, delimiter=',')
+        csv_writer.writerow(['Id', 'Predicted'])
+        for uuid in sorted(all_predictions):
+            csv_writer.writerow([uuid, all_predictions[uuid]])
+    
 
     with open(output_nbest_file, "w") as writer:
         writer.write(json.dumps(all_nbest_json, indent=4) + "\n")
@@ -776,7 +794,8 @@ def main():
                         help="The output directory where the model checkpoints and predictions will be written.")
 
     ## Other parameters
-    parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")
+    parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")  # KML
+    parser.add_argument("--tiny_data", action='store_true', help="Whether to use just 100 train/dev examples to debug code")  # KML
     parser.add_argument("--train_file", default=None, type=str, help="SQuAD json for training. E.g., train-v1.1.json")
     parser.add_argument("--predict_file", default=None, type=str,
                         help="SQuAD json for predictions. E.g., dev-v1.1.json or test-v1.1.json")
@@ -841,6 +860,19 @@ def main():
                         help="If null_score - best_non_null is greater than the threshold predict null.")
     args = parser.parse_args()
 
+    # KML No longer necessary since addition of args.time_stamp to file naming convention
+    # if os.path.exists(args.output_dir) and os.listdir(args.output_dir) and args.do_train:
+    #    raise ValueError("Output directory () already exists and is not empty.")
+    
+    # KML create args.time_stamp for output file naming convention
+    if not args.time_stamp:
+        args.time_stamp = datetime.datetime.today().strftime("%y%m%d-%H_%M-")
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+    # KML save runtime logs to disk
+    output_log_file = os.path.join(args.output_dir, args.time_stamp + "log.log")
+    logger.addHandler(logging.FileHandler(output_log_file))
+
     if args.local_rank == -1 or args.no_cuda:
         device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
         n_gpu = torch.cuda.device_count()
@@ -876,19 +908,6 @@ def main():
         if not args.predict_file:
             raise ValueError(
                 "If `do_predict` is True, then `predict_file` must be specified.")
-
-    # KML No longer necessary since addition of args.time_stamp to file naming convention
-    # if os.path.exists(args.output_dir) and os.listdir(args.output_dir) and args.do_train:
-    #    raise ValueError("Output directory () already exists and is not empty.")
-    
-    # KML create args.time_stamp for output file naming convention
-    if not args.time_stamp:
-        args.time_stamp = datetime.datetime.today().strftime("%y%m%d-%H_%M-")
-    if not os.path.exists(args.output_dir):
-        os.makedirs(args.output_dir)
-    # KML save runtime logs to disk
-    output_log_file = os.path.join(args.output_dir, args.time_stamp + "log.log")
-    logger.addHandler(logging.FileHandler(output_log_file))
     
     tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
 
@@ -896,7 +915,8 @@ def main():
     num_train_optimization_steps = None
     if args.do_train:
         train_examples = read_squad_examples(
-            input_file=args.train_file, is_training=True, version_2_with_negative=args.version_2_with_negative)
+            input_file=args.train_file, is_training=True, version_2_with_negative=args.version_2_with_negative,
+            tiny_data=args.tiny_data)
         num_train_optimization_steps = int(
             len(train_examples) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
         if args.local_rank != -1:
@@ -960,8 +980,11 @@ def main():
             list(filter(None, args.bert_model.split('/'))).pop(), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length))
         train_features = None
         try:
-            with open(cached_train_features_file, "rb") as reader:
-                train_features = pickle.load(reader)
+            if args.tiny_data:
+                raise Exception()
+            else:                
+                with open(cached_train_features_file, "rb") as reader:
+                    train_features = pickle.load(reader)
         except:
             train_features = convert_examples_to_features(
                 examples=train_examples,
@@ -970,10 +993,11 @@ def main():
                 doc_stride=args.doc_stride,
                 max_query_length=args.max_query_length,
                 is_training=True)
-            if args.local_rank == -1 or torch.distributed.get_rank() == 0:
+            if not args.tiny_data and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
                 logger.info("  Saving train features into cached file %s", cached_train_features_file)
                 with open(cached_train_features_file, "wb") as writer:
                     pickle.dump(train_features, writer)
+
         logger.info("***** Running training *****")
         logger.info("  Num orig examples = %d", len(train_examples))
         logger.info("  Num split examples = %d", len(train_features))
@@ -1033,13 +1057,22 @@ def main():
         model = BertForQuestionAnswering(config)
         model.load_state_dict(torch.load(output_model_file))
     else:
-        model = BertForQuestionAnswering.from_pretrained(args.bert_model)
+        try:
+            # Load a previously saved tuned model specified by --time_stamp
+            output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
+            output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
+            config = BertConfig(output_config_file)
+            model = BertForQuestionAnswering(config)
+            model.load_state_dict(torch.load(output_model_file))
+        except:
+            model = BertForQuestionAnswering.from_pretrained(args.bert_model)
 
     model.to(device)
 
     if args.do_predict and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
         eval_examples = read_squad_examples(
-            input_file=args.predict_file, is_training=False, version_2_with_negative=args.version_2_with_negative)
+            input_file=args.predict_file, is_training=False, version_2_with_negative=args.version_2_with_negative, 
+            tiny_data=args.tiny_data)
         eval_features = convert_examples_to_features(
             examples=eval_examples,
             tokenizer=tokenizer,
