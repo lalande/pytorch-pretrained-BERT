@@ -136,6 +136,7 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
             return True
         return False
 
+    num_impossible = 0
     examples = []
     for entry in input_data:
         if tiny_data and len(examples) > TINY_DATA_SIZE:
@@ -193,6 +194,7 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
                         start_position = -1
                         end_position = -1
                         orig_answer_text = ""
+                        num_impossible += 1
 
                 example = SquadExample(
                     qas_id=qas_id,
@@ -205,6 +207,10 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
                 examples.append(example)
                 if tiny_data and len(examples) == TINY_DATA_SIZE:
                     return examples
+
+    logger.info("***** Read Squad Examples *****")
+    logger.info("  Num Squad examples = %d", len(examples))
+    logger.info("  Num Squad examples with No Answer = %d", num_impossible)
     return examples
 
 
@@ -327,7 +333,7 @@ def convert_examples_to_features(examples, tokenizer, max_seq_length,
             if is_training and example.is_impossible:
                 start_position = 0
                 end_position = 0
-            if example_index < 20:
+            if example_index < TINY_DATA_SIZE:
                 logger.info("*** Example ***")
                 logger.info("unique_id: %s" % (unique_id))
                 logger.info("example_index: %s" % (example_index))
@@ -981,7 +987,7 @@ def main():
         train_features = None
         try:
             if args.tiny_data:
-                raise Exception()
+                raise Exception('Ignoring cached features file because --tiny_data flag is set')
             else:                
                 with open(cached_train_features_file, "rb") as reader:
                     train_features = pickle.load(reader)
