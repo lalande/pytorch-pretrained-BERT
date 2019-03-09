@@ -265,3 +265,4 @@ Processing example: 6000
 Writing predictions to: output/190304-02_46-predictions.json
 Writing nbest to: output/190304-02_46-nbest_predictions.json
 Writing predictions submission in DFP Leaderboard compliant format to: output/190304-02_46-predictions_submission.csv
+device: cpu n_gpu: 0, distributed training: False, 16-bits training: False

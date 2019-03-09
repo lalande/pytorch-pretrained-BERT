@@ -25,6 +25,8 @@ import math
 import os
 import random
 import sys
+import re
+import string
 from io import open
 import datetime
 import csv
@@ -125,6 +127,238 @@ class InputFeatures(object):
         self.end_position = end_position
         self.is_impossible = is_impossible
 
+def write_error_analysis(args, gold_file=None):
+    """Compare Gold-Standard SQuAD json file to Predictions file and write new error analysis file."""
+
+    # All methods between dashed lines are from the official SQuAD 2.0 eval script and DFP starter code
+    # https://worksheets.codalab.org/rest/bundles/0x6b567e1cf2e041ec80d7098f031c5c9e/contents/blob/
+    # ---------------------------------------------------------------------------------------------------------------------
+    def metric_max_over_ground_truths(metric_fn, prediction, ground_truths):
+        if not ground_truths:
+            return metric_fn(prediction, '')
+        scores_for_ground_truths = []
+        for ground_truth in ground_truths:
+            score = metric_fn(prediction, ground_truth['text'])  # KML added ['text']
+            scores_for_ground_truths.append(score)
+        return max(scores_for_ground_truths)
+    
+    def compute_avna(prediction, ground_truths):
+        """Compute answer vs. no-answer accuracy."""
+        return float(bool(prediction) == bool(ground_truths))
+    
+    def normalize_answer(s):
+        """Convert to lowercase and remove punctuation, articles and extra whitespace."""
+    
+        def remove_articles(text):
+            regex = re.compile(r'\b(a|an|the)\b', re.UNICODE)
+            return re.sub(regex, ' ', text)
+    
+        def white_space_fix(text):
+            return ' '.join(text.split())
+    
+        def remove_punc(text):
+            exclude = set(string.punctuation)
+            return ''.join(ch for ch in text if ch not in exclude)
+    
+        def lower(text):
+            return text.lower()
+    
+        return white_space_fix(remove_articles(remove_punc(lower(s))))
+    
+    def get_tokens(s):
+        if not s:
+            return []
+        return normalize_answer(s).split()
+    
+    def compute_em(a_gold, a_pred):
+        return int(normalize_answer(a_gold) == normalize_answer(a_pred))
+    
+    def compute_f1(a_gold, a_pred):
+        gold_toks = get_tokens(a_gold)
+        pred_toks = get_tokens(a_pred)
+        common = collections.Counter(gold_toks) & collections.Counter(pred_toks)
+        num_same = sum(common.values())
+        if len(gold_toks) == 0 or len(pred_toks) == 0:
+            # If either is no-answer, then F1 is 1 if they agree, 0 otherwise
+            return int(gold_toks == pred_toks)
+        if num_same == 0:
+            return 0
+        precision = 1.0 * num_same / len(pred_toks)
+        recall = 1.0 * num_same / len(gold_toks)
+        f1 = (2 * precision * recall) / (precision + recall)
+        return f1    
+    # ---------------------------------------------------------------------------------------------------------------------
+
+    import xlsxwriter
+    import pandas as pd
+
+    if not gold_file: gold_file=args.predict_file
+    input_prediction_file = os.path.join(args.output_dir, args.time_stamp + "predictions.json")
+    output_error_analysis_file = os.path.join(args.output_dir, args.time_stamp + "errors.json")
+    output_error_analysis_filec = os.path.join(args.output_dir, args.time_stamp + "errors.csv")
+    
+    with open(gold_file, "r", encoding='utf-8') as reader:
+        gold_data = json.load(reader)["data"]
+    
+    gold = {}
+    for entry in gold_data:
+        for paragraph in entry['paragraphs']:
+            for qa in paragraph['qas']:
+                gold_key = qa['id']  # unique identifier for question
+                gold_value = collections.OrderedDict({
+                    'title': entry['title'], 
+                    'context': paragraph['context'],
+                    'question': qa['question'],
+                    'is_impossible': qa["is_impossible"],
+                    'answers': qa['answers'],
+                })
+                gold[gold_key] = gold_value
+
+    
+    with open(input_prediction_file, "r") as reader:
+        pred = json.load(reader)
+    
+    total_gold = len(gold)
+    total_pred = len(pred)
+    question_types = ['who', 'what', 'which', 'when', 'where', 'why', 'how']
+    q_len = [collections.defaultdict(int) for _ in range(3)]  # Question length [no match, exact match, partial match]
+    a_len = [collections.defaultdict(int) for _ in range(3)]  # Answer length [no match, exact match, partial match]
+    c_len = [collections.defaultdict(int) for _ in range(3)]  # Context length [no match, exact match, partial match]
+    q_type = [collections.defaultdict(int) for _ in range(3)] # Type of question
+    
+    no_match, partial_match = [], []
+    avna = em_total = f1_total = total = 0
+
+    for key, value in pred.items():
+        total += 1
+        ground_truths = gold[key]['answers']
+        pred_answer = value
+        em = metric_max_over_ground_truths(compute_em, pred_answer, ground_truths)
+        f1 = metric_max_over_ground_truths(compute_f1, pred_answer, ground_truths)
+        if args.version_2_with_negative:
+            avna += compute_avna(pred_answer, ground_truths)
+        
+        if em == 1:
+            match = 1  # exact match
+        elif f1 == 0:
+            match = 0  # no match
+            example = gold[key]
+            example['pred_answer'] = pred_answer
+            example['f1'] = f1
+            no_match.append(example)
+        else:
+            match = 2  # partial match
+            example = gold[key]
+            example['pred_answer'] = pred_answer
+            example['f1'] = f1
+            partial_match.append(example)
+        
+        em_total += em
+        f1_total += f1
+
+        a_len[match][len(pred_answer)] += 1 # increment answer length counter       
+        q_len[match][len(gold[key]['question'])] += 1  # increment question length counter
+        c_len[match][len(gold[key]['context'])] += 1  # increment context length counter
+        
+        if gold[key]['is_impossible']:
+            q_type[match]['is_impossible'] += 1
+        else:
+            q_type[match]['is_possible'] += 1
+            
+        for item in question_types:
+            if item == question_types[0]: found = False
+            if gold[key]['question'].lower().find(item) >= 0:  # note could be more or less than 1-to-1 relationship
+                q_type[match][item] += 1
+                found = True
+            if item == question_types[-1] and not found:
+                for other_item in ['is', 'was', 'do', 'did', 'does', 'are', 'can', 'name', 'if', 'has', 'were', 'could']:
+                    if gold[key]['question'].lower().split()[0] == other_item:
+                        q_type[match]['other_' + other_item] += 1
+                        found = True
+                        break
+                if not found:
+                    print(gold[key]['question'])
+                    q_type[match]['other'] += 1
+            
+    eval_dict = {'gold_file': gold_file,
+                 'total_gold': total_gold,
+                 'predict_file': input_prediction_file,
+                 'total_pred': total_pred,
+                 'EM': 100. * em_total / total,
+                 'F1': 100. * f1_total / total}
+
+    if args.version_2_with_negative:
+        eval_dict['AvNA'] = 100. * avna / total
+
+    # ----------------------------------------------------------
+    # Save model errors and performance statistics
+    # ----------------------------------------------------------
+
+    with open(output_error_analysis_file, "w") as writer:
+        for summary_data in [eval_dict, q_type, q_len, a_len]:
+            writer.write("-"*80 + "\n")
+            writer.write(json.dumps(summary_data, sort_keys=True, indent=4) + "\n")
+        for example in no_match:
+            writer.write("-"*80 + "\n")
+            writer.write(json.dumps(example, indent=4) + "\n")
+        for example in partial_match:
+            writer.write("-"*80 + "\n")
+            writer.write(json.dumps(example, indent=4) + "\n")
+    
+    # Setup columns and rows for DataFrames    
+    match_types = ['no_match', 'exact_match', 'partial_match']
+    question_possible = ['is_possible', 'is_impossible']
+    question_types = []
+    for i in range(len(match_types)):
+        for key in q_type[i].keys():
+            if key not in question_possible and key not in question_types:
+                question_types.append(key)
+
+    # Create empty DataFrames
+    df_q_possible = pd.DataFrame(columns = match_types, index = question_possible)
+    df_q_type = pd.DataFrame(columns = match_types, index = question_types)
+    df_c_len = pd.DataFrame(columns = match_types, index = list(range(5 * args.max_seq_length)))
+    df_q_len = pd.DataFrame(columns = match_types, index = list(range(5 * args.max_query_length)))
+    df_a_len = pd.DataFrame(columns = match_types, index = list(range(5 * args.max_answer_length)))
+    
+    # Convert Dicts to DataFrame for easy ExcelWriter
+    df_eval_dict = pd.DataFrame(list(eval_dict.values()), index= eval_dict.keys())
+
+    for col_num, col_name in enumerate(match_types):
+        for row in question_possible:
+            df_q_possible.loc[row][col_name] = q_type[col_num][row]
+    df_q_len.fillna(value=0, inplace=True)
+
+    for col_num, col_name in enumerate(match_types):
+        for row in question_types:
+            df_q_type.loc[row][col_name] = q_type[col_num][row]
+    df_q_len.fillna(value=0, inplace=True)
+
+    
+    for col_num, col_name in enumerate(match_types):
+        for row, value in q_len[col_num].items():
+            df_q_len.iloc[row][col_name] = value
+    df_q_len.fillna(value=0, inplace=True)
+    df_q_len.drop_duplicates(keep= False, inplace= True)
+    df_q_len.head()
+    
+    # CSV for easy import into MSExcel
+    # TODO--Quick-and-dirty; change this to Pandas
+    csv.register_dialect('myDialect', delimiter = ',', quoting=csv.QUOTE_NONE)
+    with open(output_error_analysis_filec, 'w') as csv_fh:
+        fieldnames = ['key', 'value']
+        #csv_writer = csv.DictWriter(csv_fh, fieldnames=fieldnames, dialect ='myDialect')
+        csv_writer = csv.writer(csv_fh, dialect ='myDialect')
+        for summary_data in [eval_dict, q_type[0], q_type[1], q_type[2], q_len[0], q_len[1], q_len[2], a_len[0], a_len[1], a_len[2]]:
+            #csv_writer.writerow('eval_dict')
+            #csv_writer.writeheader()
+            #csv_writer.writerows(summary_data)
+            for k, v in summary_data.items():
+                csv_writer.writerow([k, v])
+        
+            
+
+    return eval_dict
 
 def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_data=False):
     """Read a SQuAD json file into a list of SquadExample."""
@@ -815,6 +1049,7 @@ def main():
                              "be truncated to this length.")
     parser.add_argument("--do_train", action='store_true', help="Whether to run training.")
     parser.add_argument("--do_predict", action='store_true', help="Whether to run eval on the dev set.")
+    parser.add_argument("--do_error_analysis", action='store_true', help="Whether to run error analysis on the dev set vs predictions.")  # KML
     parser.add_argument("--train_batch_size", default=32, type=int, help="Total batch size for training.")
     parser.add_argument("--predict_batch_size", default=8, type=int, help="Total batch size for predictions.")
     parser.add_argument("--learning_rate", default=5e-5, type=float, help="The initial learning rate for Adam.")
@@ -904,7 +1139,11 @@ def main():
         torch.cuda.manual_seed_all(args.seed)
 
     if not args.do_train and not args.do_predict:
-        raise ValueError("At least one of `do_train` or `do_predict` must be True.")
+        if args.do_error_analysis:
+            write_error_analysis(args)
+            exit()
+        else:
+            raise ValueError("At least one of `do_train` or `do_predict` or 'do_error_analysis' must be True.")
 
     if args.do_train:
         if not args.train_file:
@@ -1065,6 +1304,7 @@ def main():
     else:
         try:
             # Load a previously saved tuned model specified by --time_stamp
+            # note: cannot reload a model .bin file on local CPU machine that was trained on remote GPU machine
             output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
             output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
             config = BertConfig(output_config_file)
@@ -1130,5 +1370,8 @@ def main():
                           args.version_2_with_negative, args.null_score_diff_threshold)
 
 
+        if args.do_error_analysis:
+            write_error_analysis(args)
+        
 if __name__ == "__main__":
     main()
