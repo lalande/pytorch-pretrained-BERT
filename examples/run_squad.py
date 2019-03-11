@@ -39,7 +39,7 @@ from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
 
 from pytorch_pretrained_bert.file_utils import PYTORCH_PRETRAINED_BERT_CACHE
-from pytorch_pretrained_bert.modeling import BertForQuestionAnswering_v3, BertConfig, WEIGHTS_NAME, CONFIG_NAME
+from pytorch_pretrained_bert.modeling import BertForQuestionAnswering, BertConfig, WEIGHTS_NAME, CONFIG_NAME
 from pytorch_pretrained_bert.optimization import BertAdam, warmup_linear
 from pytorch_pretrained_bert.tokenization import (BasicTokenizer,
                                                   BertTokenizer,
@@ -1241,7 +1241,7 @@ def main():
 
     # Prepare model
     print(PYTORCH_PRETRAINED_BERT_CACHE)
-    model = BertForQuestionAnswering_v3.from_pretrained(args.bert_model,
+    model = BertForQuestionAnswering.from_pretrained(args.bert_model,
                 cache_dir=os.path.join(str(PYTORCH_PRETRAINED_BERT_CACHE), 'distributed_{}'.format(args.local_rank)))
 
     if args.fp16:
@@ -1371,7 +1371,7 @@ def main():
 
         # Load a trained model and config that you have fine-tuned
         config = BertConfig(output_config_file)
-        model = BertForQuestionAnswering_v3(config)
+        model = BertForQuestionAnswering(config)
         model.load_state_dict(torch.load(output_model_file))
     else:
         try:
@@ -1380,10 +1380,10 @@ def main():
             output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
             output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
             config = BertConfig(output_config_file)
-            model = BertForQuestionAnswering_v3(config)
+            model = BertForQuestionAnswering(config)
             model.load_state_dict(torch.load(output_model_file))
         except:
-            model = BertForQuestionAnswering_v3.from_pretrained(args.bert_model)
+            model = BertForQuestionAnswering.from_pretrained(args.bert_model)
 
     model.to(device)
 
