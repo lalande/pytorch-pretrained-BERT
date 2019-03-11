@@ -39,7 +39,7 @@ from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
 
 from pytorch_pretrained_bert.file_utils import PYTORCH_PRETRAINED_BERT_CACHE
-from pytorch_pretrained_bert.modeling import BertForQuestionAnswering, BertConfig, WEIGHTS_NAME, CONFIG_NAME
+from pytorch_pretrained_bert.modeling import BertForQuestionAnswering_v3, BertConfig, WEIGHTS_NAME, CONFIG_NAME
 from pytorch_pretrained_bert.optimization import BertAdam, warmup_linear
 from pytorch_pretrained_bert.tokenization import (BasicTokenizer,
                                                   BertTokenizer,
@@ -194,8 +194,9 @@ def write_error_analysis(args, gold_file=None):
 
     if not gold_file: gold_file=args.predict_file
     input_prediction_file = os.path.join(args.output_dir, args.time_stamp + "predictions.json")
-    output_error_analysis_file = os.path.join(args.output_dir, args.time_stamp + "errors.json")
-    output_error_analysis_filec = os.path.join(args.output_dir, args.time_stamp + "errors.csv")
+    output_error_analysis_file = os.path.join(args.output_dir, args.time_stamp + "errors")    
+    #output_error_analysis_file = os.path.join(args.output_dir, args.time_stamp + "errors.json")
+    #output_error_analysis_filec = os.path.join(args.output_dir, args.time_stamp + "errors.csv")
     
     with open(gold_file, "r", encoding='utf-8') as reader:
         gold_data = json.load(reader)["data"]
@@ -206,6 +207,7 @@ def write_error_analysis(args, gold_file=None):
             for qa in paragraph['qas']:
                 gold_key = qa['id']  # unique identifier for question
                 gold_value = collections.OrderedDict({
+                    'qid': gold_key, 
                     'title': entry['title'], 
                     'context': paragraph['context'],
                     'question': qa['question'],
@@ -294,7 +296,7 @@ def write_error_analysis(args, gold_file=None):
     # Save model errors and performance statistics
     # ----------------------------------------------------------
 
-    with open(output_error_analysis_file, "w") as writer:
+    with open(output_error_analysis_file + '.json', "w") as writer:
         for summary_data in [eval_dict, q_type, q_len, a_len]:
             writer.write("-"*80 + "\n")
             writer.write(json.dumps(summary_data, sort_keys=True, indent=4) + "\n")
@@ -317,9 +319,9 @@ def write_error_analysis(args, gold_file=None):
     # Create empty DataFrames
     df_q_possible = pd.DataFrame(columns = match_types, index = question_possible)
     df_q_type = pd.DataFrame(columns = match_types, index = question_types)
-    df_c_len = pd.DataFrame(columns = match_types, index = list(range(5 * args.max_seq_length)))
-    df_q_len = pd.DataFrame(columns = match_types, index = list(range(5 * args.max_query_length)))
-    df_a_len = pd.DataFrame(columns = match_types, index = list(range(5 * args.max_answer_length)))
+    df_c_len = pd.DataFrame(columns = match_types, index = list(range(50 * args.max_seq_length)))
+    df_q_len = pd.DataFrame(columns = match_types, index = list(range(50 * args.max_query_length)))
+    df_a_len = pd.DataFrame(columns = match_types, index = list(range(50 * args.max_answer_length)))
     
     # Convert Dicts to DataFrame for easy ExcelWriter
     df_eval_dict = pd.DataFrame(list(eval_dict.values()), index= eval_dict.keys())
@@ -327,34 +329,104 @@ def write_error_analysis(args, gold_file=None):
     for col_num, col_name in enumerate(match_types):
         for row in question_possible:
             df_q_possible.loc[row][col_name] = q_type[col_num][row]
-    df_q_len.fillna(value=0, inplace=True)
+    df_q_possible.fillna(value=0, inplace=True)
+    df_q_possible['total'] = df_q_possible.no_match + df_q_possible.exact_match + df_q_possible.partial_match
+    df_q_possible.sort_values(by= ['total'] , ascending=False, inplace=True)
 
     for col_num, col_name in enumerate(match_types):
         for row in question_types:
             df_q_type.loc[row][col_name] = q_type[col_num][row]
-    df_q_len.fillna(value=0, inplace=True)
-
+    df_q_type.fillna(value=0, inplace=True)
+    df_q_type['total'] = df_q_type.no_match + df_q_type.exact_match + df_q_type.partial_match
+    df_q_type.sort_values(by= ['total'] , ascending=False, inplace=True)
     
+    for col_num, col_name in enumerate(match_types):
+        for row, value in c_len[col_num].items():
+            df_c_len.iloc[row][col_name] = value
+    df_c_len.fillna(value=0, inplace=True)
+    # df_c_len.drop_duplicates(keep= False, inplace= True)
+    df_c_len['total'] = df_c_len.no_match + df_c_len.exact_match + df_c_len.partial_match
+    df_c_len = df_c_len[df_c_len.total > 0]
+
     for col_num, col_name in enumerate(match_types):
         for row, value in q_len[col_num].items():
             df_q_len.iloc[row][col_name] = value
     df_q_len.fillna(value=0, inplace=True)
-    df_q_len.drop_duplicates(keep= False, inplace= True)
-    df_q_len.head()
+    # df_q_len.drop_duplicates(keep= False, inplace= True)
+    df_q_len['total'] = df_q_len.no_match + df_q_len.exact_match + df_q_len.partial_match
+    df_q_len = df_q_len[df_q_len.total > 0]
+
+    for col_num, col_name in enumerate(match_types):
+        for row, value in a_len[col_num].items():
+            df_a_len.iloc[row][col_name] = value
+    df_a_len.fillna(value=0, inplace=True)
+    # df_a_len.drop_duplicates(keep= False, inplace= True)
+    df_a_len['total'] = df_a_len.no_match + df_a_len.exact_match + df_a_len.partial_match
+    df_a_len = df_a_len[df_a_len.total > 0]
     
-    # CSV for easy import into MSExcel
-    # TODO--Quick-and-dirty; change this to Pandas
-    csv.register_dialect('myDialect', delimiter = ',', quoting=csv.QUOTE_NONE)
-    with open(output_error_analysis_filec, 'w') as csv_fh:
-        fieldnames = ['key', 'value']
-        #csv_writer = csv.DictWriter(csv_fh, fieldnames=fieldnames, dialect ='myDialect')
-        csv_writer = csv.writer(csv_fh, dialect ='myDialect')
-        for summary_data in [eval_dict, q_type[0], q_type[1], q_type[2], q_len[0], q_len[1], q_len[2], a_len[0], a_len[1], a_len[2]]:
-            #csv_writer.writerow('eval_dict')
-            #csv_writer.writeheader()
-            #csv_writer.writerows(summary_data)
-            for k, v in summary_data.items():
-                csv_writer.writerow([k, v])
+    # Write DataFrames to Excel
+    writer = pd.ExcelWriter(output_error_analysis_file + '.xlsx', engine='xlsxwriter',
+                            datetime_format='yyyy-mm-dd', date_format='yyyy-mm-dd')
+    workbook = writer.book
+    col_format = workbook.add_format({'align': 'right',})
+    ticker_idx = True
+    startcol = 2
+    startrow = 2
+    df_eval_dict.to_excel(writer, sheet_name= 'errorAnalysis', startrow= startrow, startcol= startcol,
+                     header= False, index= ticker_idx)
+    startrow += len(df_eval_dict) + 2
+    worksheet = writer.sheets['errorAnalysis']
+    
+    df_q_possible.to_excel(writer, sheet_name= 'errorAnalysis', startrow= startrow, startcol= startcol,
+                     header= True, index= ticker_idx)
+    worksheet.write(startrow - 1, startcol, "Answerability of Question")
+    
+    offset = startrow + len(df_q_possible) + 4
+    df_q_type.to_excel(writer, sheet_name= 'errorAnalysis', startrow= offset, startcol= startcol,
+                     header= True, index= ticker_idx)
+    worksheet.write(offset - 1, startcol, "Type of Question")
+   
+    startcol = 10
+    startrow = startrow
+    df_c_len.to_excel(writer, sheet_name= 'errorAnalysis', startrow= startrow, startcol= startcol,
+                     header= True, index= ticker_idx)
+    worksheet.write(startrow - 1, startcol, "Length of Context")
+    
+    startcol = 17
+    startrow = startrow
+    df_q_len.to_excel(writer, sheet_name= 'errorAnalysis', startrow= startrow, startcol= startcol,
+                     header= True, index= ticker_idx)
+    worksheet.write(startrow - 1, startcol, "Length of Question")
+
+    startcol = 24
+    startrow = startrow
+    df_a_len.to_excel(writer, sheet_name= 'errorAnalysis', startrow= startrow, startcol= startcol,
+                     header= True, index= ticker_idx)
+    worksheet.write(startrow - 1, startcol, "Length of Answer")
+    
+    
+    # TODO: Write four new worksheet tabs for [summary, detail] examples of [no_match, partial_match]
+    
+    #worksheet = writer.sheets['errorAnalysis']
+    #worksheet.set_column(0, ticker_col, 20, col_format)
+    #worksheet.write(1, ticker_col - 1, ticker)
+    writer.save()
+    
+        
+    
+    ## CSV for easy import into MSExcel
+    ## TODO--Quick-and-dirty; change this to Pandas
+    #csv.register_dialect('myDialect', delimiter = ',', quoting=csv.QUOTE_NONE)
+    #with open(output_error_analysis_file +'.csv', 'w') as csv_fh:
+        #fieldnames = ['key', 'value']
+        ##csv_writer = csv.DictWriter(csv_fh, fieldnames=fieldnames, dialect ='myDialect')
+        #csv_writer = csv.writer(csv_fh, dialect ='myDialect')
+        #for summary_data in [eval_dict, q_type[0], q_type[1], q_type[2], q_len[0], q_len[1], q_len[2], a_len[0], a_len[1], a_len[2]]:
+            ##csv_writer.writerow('eval_dict')
+            ##csv_writer.writeheader()
+            ##csv_writer.writerows(summary_data)
+            #for k, v in summary_data.items():
+                #csv_writer.writerow([k, v])
         
             
 
@@ -1169,7 +1241,7 @@ def main():
 
     # Prepare model
     print(PYTORCH_PRETRAINED_BERT_CACHE)
-    model = BertForQuestionAnswering.from_pretrained(args.bert_model,
+    model = BertForQuestionAnswering_v3.from_pretrained(args.bert_model,
                 cache_dir=os.path.join(str(PYTORCH_PRETRAINED_BERT_CACHE), 'distributed_{}'.format(args.local_rank)))
 
     if args.fp16:
@@ -1299,7 +1371,7 @@ def main():
 
         # Load a trained model and config that you have fine-tuned
         config = BertConfig(output_config_file)
-        model = BertForQuestionAnswering(config)
+        model = BertForQuestionAnswering_v3(config)
         model.load_state_dict(torch.load(output_model_file))
     else:
         try:
@@ -1308,10 +1380,10 @@ def main():
             output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
             output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
             config = BertConfig(output_config_file)
-            model = BertForQuestionAnswering(config)
+            model = BertForQuestionAnswering_v3(config)
             model.load_state_dict(torch.load(output_model_file))
         except:
-            model = BertForQuestionAnswering.from_pretrained(args.bert_model)
+            model = BertForQuestionAnswering_v3.from_pretrained(args.bert_model)
 
     model.to(device)
 
