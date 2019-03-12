@@ -432,7 +432,7 @@ def write_error_analysis(args, gold_file=None):
 
     return eval_dict
 
-def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_data=False):
+def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_data=False, is_trivaqa=False):
     """Read a SQuAD json file into a list of SquadExample."""
     with open(input_file, "r", encoding='utf-8') as reader:
         input_data = json.load(reader)["data"]
@@ -492,6 +492,10 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
                         actual_text = " ".join(doc_tokens[start_position:(end_position + 1)])
                         cleaned_answer_text = " ".join(
                             whitespace_tokenize(orig_answer_text))
+                        is_trivaqa = True  # debug
+                        if is_trivaqa and actual_text.find(cleaned_answer_text) == -1:  # try all lower case if TriviaQA mismatch
+                            actual_text = actual_text.lower()
+                            cleaned_answer_text = cleaned_answer_text.lower()
                         if actual_text.find(cleaned_answer_text) == -1:
                             logger.warning("Could not find answer: '%s' vs. '%s'",
                                            actual_text, cleaned_answer_text)
@@ -1108,6 +1112,7 @@ def main():
     ## Other parameters
     parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")  # KML
     parser.add_argument("--tiny_data", action='store_true', help="Whether to use just 100 train/dev examples to debug code")  # KML
+    parser.add_argument("--add_triviaqa_train", action='store_true', help="Whether to add TriviaQA examples to train. Postpend -triviaqa.json to --train_file")  # KML    
     parser.add_argument("--train_file", default=None, type=str, help="SQuAD json for training. E.g., train-v1.1.json")
     parser.add_argument("--predict_file", default=None, type=str,
                         help="SQuAD json for predictions. E.g., dev-v1.1.json or test-v1.1.json")
@@ -1234,6 +1239,11 @@ def main():
         train_examples = read_squad_examples(
             input_file=args.train_file, is_training=True, version_2_with_negative=args.version_2_with_negative,
             tiny_data=args.tiny_data)
+        if args.add_triviaqa_train:
+            train_examples_triviaqa = read_squad_examples(
+                input_file=args.train_file.split('.json')[0] + '-triviaqa.json', is_training=True, version_2_with_negative=args.version_2_with_negative,
+                tiny_data=args.tiny_data, is_trivaqa=True)
+            train_examples += train_examples_triviaqa[0:-1]
         num_train_optimization_steps = int(
             len(train_examples) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
         if args.local_rank != -1:
@@ -1293,8 +1303,8 @@ def main():
 
     global_step = 0
     if args.do_train:
-        cached_train_features_file = args.train_file+'_{0}_{1}_{2}_{3}'.format(
-            list(filter(None, args.bert_model.split('/'))).pop(), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length))
+        cached_train_features_file = args.train_file+'_{0}_{1}_{2}_{3}_{4}'.format(
+            list(filter(None, args.bert_model.split('/'))).pop(), str(args.add_triviaqa_train), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length))
         train_features = None
         try:
             if args.tiny_data:
