@@ -481,6 +481,10 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
                         orig_answer_text = answer["text"]
                         answer_offset = answer["answer_start"]
                         answer_length = len(orig_answer_text)
+                        if (answer_offset + answer_length - 1) >= len(char_to_word_offset):
+                            logger.warning("Answer beyond bounds of context string: '%s' vs. '%s'",
+                                           orig_answer_text, answer_offset)
+                            continue                            
                         start_position = char_to_word_offset[answer_offset]
                         end_position = char_to_word_offset[answer_offset + answer_length - 1]
                         # Only add answers where the text can be exactly recovered from the
