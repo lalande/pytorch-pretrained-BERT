@@ -436,6 +436,10 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
     """Read a SQuAD json file into a list of SquadExample."""
     with open(input_file, "r", encoding='utf-8') as reader:
         input_data = json.load(reader)["data"]
+        
+    def save_squad_examples(input_file, examples):
+        with open(input_file.split('.json')[0] + '-pickled', "wb") as writer:
+            pickle.dump(examples, writer)     
 
     def is_whitespace(c):
         if c == " " or c == "\t" or c == "\r" or c == "\n" or ord(c) == 0x202F:
@@ -520,11 +524,13 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
                     is_impossible=is_impossible)
                 examples.append(example)
                 if tiny_data and len(examples) == TINY_DATA_SIZE:
+                    save_squad_examples(input_file, examples)
                     return examples
 
     logger.info("***** Read Squad Examples *****")
     logger.info("  Num Squad examples = %d", len(examples))
     logger.info("  Num Squad examples with No Answer = %d", num_impossible)
+    save_squad_examples(input_file, examples)
     return examples
 
 
@@ -1307,11 +1313,11 @@ def main():
 
     global_step = 0
     if args.do_train:
-        cached_train_features_file = args.train_file+'_{0}_{1}_{2}_{3}_{4}'.format(
-            list(filter(None, args.bert_model.split('/'))).pop(), str(args.add_triviaqa_train), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length))
+        cached_train_features_file = args.train_file+'_{0}_{1}_{2}_{3}_{4}_{5}'.format(
+            list(filter(None, args.bert_model.split('/'))).pop(), str(args.add_triviaqa_train), str(args.tiny_data), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length))
         train_features = None
         try:
-            if args.tiny_data:
+            if False:  # args.tiny_data:
                 raise Exception('Ignoring cached features file because --tiny_data flag is set')
             else:                
                 with open(cached_train_features_file, "rb") as reader:
@@ -1324,7 +1330,7 @@ def main():
                 doc_stride=args.doc_stride,
                 max_query_length=args.max_query_length,
                 is_training=True)
-            if not args.tiny_data and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
+            if (args.local_rank == -1 or torch.distributed.get_rank() == 0):  # not args.tiny_data and
                 logger.info("  Saving train features into cached file %s", cached_train_features_file)
                 with open(cached_train_features_file, "wb") as writer:
                     pickle.dump(train_features, writer)
@@ -1412,6 +1418,13 @@ def main():
             doc_stride=args.doc_stride,
             max_query_length=args.max_query_length,
             is_training=False)
+
+        # dump a copy of eval_features for run_classifier.py
+        cached_eval_features_file = args.predict_file+'_{0}_{1}_{2}_{3}_{4}_{5}'.format(
+            list(filter(None, args.bert_model.split('/'))).pop(), str(False), str(args.tiny_data), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length)) 
+        logger.info("  Saving eval features into cached file %s", cached_eval_features_file)
+        with open(cached_eval_features_file, "wb") as writer:
+            pickle.dump(eval_features, writer)
 
         logger.info("***** Running predictions *****")
         logger.info("  Num orig examples = %d", len(eval_examples))

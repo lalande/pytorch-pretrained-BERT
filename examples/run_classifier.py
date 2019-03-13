@@ -23,6 +23,8 @@ import logging
 import os
 import random
 import sys
+import json
+import pickle
 
 import numpy as np
 import torch
@@ -35,6 +37,8 @@ from pytorch_pretrained_bert.file_utils import PYTORCH_PRETRAINED_BERT_CACHE
 from pytorch_pretrained_bert.modeling import BertForSequenceClassification, BertConfig, WEIGHTS_NAME, CONFIG_NAME
 from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.optimization import BertAdam, warmup_linear
+
+from run_squad import SquadExample
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
@@ -198,6 +202,55 @@ class QnliProcessor(DataProcessor):
             if line[3] == 'entailment':
                 label = "0"
             elif line[3] == 'not_entailment':
+                label = "1"
+            else:
+                logger.info("warning: skipping invalid label {}".format(line[3]))
+                continue
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
+
+class SquadProcessor(DataProcessor):
+    """Processor for the SQuAD data set from run_squad.py pickle dump."""
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        filename = "train-v2.0-pickled"
+        with open(os.path.join(data_dir, filename), "rb") as reader:
+            squad_examples = pickle.load(reader)
+        examples = self._create_examples(squad_examples)   
+        return self._create_examples(squad_examples)
+        
+        #return self._create_examples(
+            #self._read_tsv(os.path.join(data_dir, "train.tsv")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        filename = "dev-v2.0-pickled"
+        with open(os.path.join(data_dir, filename), "rb") as reader:
+            squad_examples = pickle.load(reader)
+        examples = self._create_examples(squad_examples)   
+        return self._create_examples(squad_examples)
+        
+        #return self._create_examples(
+            #self._read_tsv(os.path.join(data_dir, "dev.tsv")),
+            #"dev")
+
+    def get_labels(self):
+        """See base class."""
+        return ["0", "1", ]  # {enatilment: is_impossible=False, not_entailment, is_impossible=True}
+
+
+    def _create_examples(self, squad_examples, set_type= None):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for example in squad_examples:
+            guid = example.qas_id
+            text_a = example.question_text
+            text_b = " ".join(example.doc_tokens)
+            if example.is_impossible == False:
+                label = "0"
+            elif example.is_impossible == True:
                 label = "1"
             else:
                 logger.info("warning: skipping invalid label {}".format(line[3]))
@@ -440,7 +493,8 @@ def main():
         "cola": ColaProcessor,
         "mnli": MnliProcessor,
         "mrpc": MrpcProcessor,
-        "qnli": QnliProcessor,
+        "qnli": QnliProcessor,  # KML
+        "squad": SquadProcessor,  # KML
     }
 
     num_labels_task = {
@@ -448,6 +502,7 @@ def main():
         "mnli": 3,
         "mrpc": 2,
         "qnli": 2,
+        "squad": 2,
     }
 
     if args.local_rank == -1 or args.no_cuda:
@@ -638,6 +693,8 @@ def main():
         model.eval()
         eval_loss, eval_accuracy = 0, 0
         nb_eval_steps, nb_eval_examples = 0, 0
+        predict_all = {}
+        predict_is_impossible = {}
  
         for input_ids, input_mask, segment_ids, label_ids in tqdm(eval_dataloader, desc="Evaluating"):
             input_ids = input_ids.to(device)
@@ -648,6 +705,8 @@ def main():
             with torch.no_grad():
                 tmp_eval_loss = model(input_ids, segment_ids, input_mask, label_ids)
                 logits = model(input_ids, segment_ids, input_mask)
+                
+                y_hat = torch.sigmoid(logits).argmax(dim = 1)  # KML get batch predictions
 
             logits = logits.detach().cpu().numpy()
             label_ids = label_ids.to('cpu').numpy()
@@ -655,6 +714,14 @@ def main():
 
             eval_loss += tmp_eval_loss.mean().item()
             eval_accuracy += tmp_eval_accuracy
+            
+            # create dicts of predictions and one dict that just has is_impossible predictions
+            for i in range(input_ids.size(0)):
+                key = eval_examples[nb_eval_examples + i].guid
+                val = y_hat[i].item()
+                if val == 1:
+                    predict_is_impossible[key] = val
+                predict_all[key] = val
 
             nb_eval_examples += input_ids.size(0)
             nb_eval_steps += 1
@@ -673,6 +740,18 @@ def main():
             for key in sorted(result.keys()):
                 logger.info("  %s = %s", key, str(result[key]))
                 writer.write("%s = %s\n" % (key, str(result[key])))
+
+        output_eval_file = os.path.join(args.output_dir, "eval_predictions.txt")
+        with open(output_eval_file, "w") as writer:
+            logger.info("***** Eval results *****")
+            for key in sorted(predict_all.keys()):
+                logger.info("  %s: %s", key, str(predict_all[key]))
+                writer.write("%s: %s\n" % (key, str(predict_all[key])))
+        
+        output_eval_file = os.path.join(args.output_dir, "eval_predictions-pickle")        
+        with open(output_eval_file, "wb") as writer:
+            pickle.dump(predict_is_impossible, writer)
+        
 
 if __name__ == "__main__":
     main()
