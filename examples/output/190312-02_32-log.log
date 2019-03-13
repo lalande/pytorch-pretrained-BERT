@@ -1,0 +1,390 @@
+device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+***** Read Squad Examples *****
+  Num Squad examples = 130319
+  Num Squad examples with No Answer = 43498
+Could not find answer: keira knightley vs. keira knightly
+Could not find answer: clijsters came vs. kim clijsters
+Could not find answer: rutger oelsen vs. rutger hauer
+Could not find answer: charles ii of england , was vs. king charles ii of england
+Could not find answer: cold feet , vs. 'cold feet'
+Could not find answer: draughts vs. checkers
+Could not find answer: archangel vs. archangels
+Could not find answer: blue boar inn vs. the blue boar
+Could not find answer: 36 feet vs. six
+Could not find answer: alfred tennyson the vs. alfred lord tennyson
+Could not find answer: world is not enough ( 1999 vs. the world is not enough
+Could not find answer: assumption vs. assumptions
+Could not find answer: vitamin b2 vs. riboflavin
+Could not find answer: clash and vs. the clash
+Could not find answer: godgyfu meant vs. lady godiva
+Could not find answer: pepsi- cola vs. pepsi cola
+Could not find answer: mussorgsky 's charming vs. modest mussorgsky
+Could not find answer: smith with vs. adam smith
+Could not find answer: james mcneill vs. james whistler
+Could not find answer: metatarsus vs. metatarsals
+Could not find answer: chilites vs. chi-lites
+Could not find answer: headingley vs. headingly
+Could not find answer: do not vs. don’t
+Could not find answer: judi dench vs. judy dench
+Could not find answer: persea vs. avocado
+Could not find answer: salvador dalí vs. salvador dali
+Could not find answer: stanley burrell vs. mc hammer
+Could not find answer: gypsum plaster , vs. plaster of paris
+Could not find answer: tweeted vs. twitter
+Could not find answer: kepler and the vs. johannes kepler
+Could not find answer: ford coppola . shire vs. francis ford coppola
+Could not find answer: stan and ollie here vs. laurel and hardy
+Could not find answer: st thérèse vs. st. therese
+Could not find answer: adriatic ' ( vs. adriatic sea
+Could not find answer: state vs. utah
+Could not find answer: wolf of wall street breaks vs. the wolf of wall street
+Could not find answer: meter vs. metre
+Could not find answer: south pacific '' vs. 'south pacific'
+Could not find answer: nine vs. 9
+Could not find answer: medway memories vs. the medway towns
+Could not find answer: madama butterfly . vs. 'madame butterfly'
+Could not find answer: noises off is vs. 'noises off'
+Could not find answer: liberty valance . a trailer vs. the man who shot liberty valance
+Could not find answer: edward vii british vs. king edward vii
+Could not find answer: panna cotta vs. pannacotta
+Could not find answer: sunshine band kicks off vs. kc and the sunshine band
+Could not find answer: african queen ” | vs. the african queen
+Could not find answer: luxemburg vs. luxembourg
+Could not find answer: love me tender '' vs. 'love me tender'
+Could not find answer: philip ii of spain vs. king philip ii
+Could not find answer: jm coetzee : vs. j.m. coetzee
+Could not find answer: ronald dahl vs. roald dahl
+Could not find answer: mussorgsky : pictures vs. modest mussorgsky
+Could not find answer: adhesive capsulitis vs. frozen shoulder
+Could not find answer: bbc director vs. b.b.c.
+Could not find answer: spuds vs. potato
+Could not find answer: adventures of tintin '' vs. the adventures of tintin
+Could not find answer: faeroes ) include vs. faroe islands
+Could not find answer: lord tennyson once said vs. alfred lord tennyson
+Could not find answer: sun king vs. louis xiv
+Could not find answer: slaves vs. slavery
+Could not find answer: puccini at his vs. giacomo puccini
+Could not find answer: tail-end vs. scut
+Could not find answer: pentagonal vs. pentagons
+Could not find answer: vladimir vs. lenin
+Could not find answer: ascii ( ) , abbreviated from american standard code vs. american standard code for information interchange
+Could not find answer: dirty vs. comets
+Could not find answer: iron chicken , vs. 'the clangers'
+Could not find answer: john a. macdonald vs. john a macdonald
+Could not find answer: barbary macaques vs. barbary ape
+Could not find answer: much ado about nothing '' vs. 'much ado about nothing'
+Could not find answer: betjeman in praise vs. sir john betjeman
+Could not find answer: camelot legend vs. 'camelot'
+Could not find answer: george foreman vs. george forman
+Could not find answer: perey ( 1909-975 vs. marguerite perey
+Could not find answer: color blindness vs. colour blindness
+Could not find answer: jeté vs. jete
+Could not find answer: capital vs. peshawar
+Could not find answer: mistress was vs. mistresses
+Could not find answer: tabard inn in southwark vs. 'the tabard inn'
+Could not find answer: william jefferson vs. bill clinton
+Could not find answer: instant camera , which vs. polaroid photography
+Could not find answer: midnight in paris ) vs. 'midnight in paris'
+Could not find answer: luxor hotel vs. the luxor
+Could not find answer: clockwork orange - vs. a clockwork orange
+Could not find answer: berlusconi gets 7 vs. silvio berlusconi
+Could not find answer: paper size vs. paper sizes
+Could not find answer: anton chekhov vs. anton chekov
+Could not find answer: joey vs. a joey
+Could not find answer: bullet train is vs. the bullet train
+Could not find answer: lion king . nature vs. 'the lion king'
+Could not find answer: viet nam vs. vietnam
+Could not find answer: mexican government agencies vs. united mexican states
+Could not find answer: cubist vs. cubism
+Could not find answer: little big planet vs. littlebigplanet
+Could not find answer: john philip sousa vs. john phillip sousa
+Could not find answer: francis chichester ï¿½s vs. sir francis chichester
+Could not find answer: crucible theatre vs. the crucible
+Could not find answer: clockwise and vs. anti clockwise
+Could not find answer: sulfur vs. sulphur
+Could not find answer: coconut milk to vs. coconut (milk)
+Could not find answer: carousel : vs. 'carousel'
+Could not find answer: carbohydrate vs. carbohydrates
+Could not find answer: auckand - avis rent a vs. auckland, new zealand
+Could not find answer: lungs for vs. pulmonary
+Could not find answer: soon vs. sioux
+Could not find answer: doire cholm vs. londonderry
+Could not find answer: deliverance ” vs. 'deliverance'
+Could not find answer: bentley boys of vs. the bentley boys
+Could not find answer: mosquitoes from vs. mosquito bite
+Could not find answer: hatters after vs. 'the hatters'
+Could not find answer: tiger and vs. the tiger
+Could not find answer: rocco francis vs. rocky marciano
+Could not find answer: noël coward vs. noel coward
+Could not find answer: shark became vs. a shark
+Could not find answer: calif . they vs. california
+Could not find answer: painter vs. painting
+Could not find answer: boryokudan vs. yakuza
+Could not find answer: allan smethurst biography vs. 'the singing postman'
+Could not find answer: varicella : vs. chicken pox
+Could not find answer: barry morris goldwater vs. barry goldwater
+Could not find answer: animals - biography vs. the animals
+Could not find answer: dogface '' vs. 'dogface'
+Could not find answer: newtonian science vs. isaac newton
+Could not find answer: tauromachy vs. bullfight
+Could not find answer: thomas more , vs. st thomas more
+Could not find answer: henry ii of england vs. henry the second
+Could not find answer: sheffield eagles to vs. sheffield (eagles)
+Could not find answer: leslie lynch vs. gerald ford
+Could not find answer: state vs. alaska
+Could not find answer: tomato varieties vs. tomatoes
+Could not find answer: rainbow guides vs. 'rainbows'
+Could not find answer: dresser , which vs. the dresser
+Could not find answer: university of vs. universities
+Could not find answer: donald turnupseed vs. james dean
+Could not find answer: republic vs. namibia
+Could not find answer: derry travel vs. londonderry
+Could not find answer: burkina faso vs. burkina faso.
+Could not find answer: repeated vs. peas
+Could not find answer: wagner a german vs. richard wagner
+Could not find answer: light years vs. lightyear
+Could not find answer: valentina tereshkova : vs. (valentina) tereshkova
+Could not find answer: hurricane vs. hurricanes
+Could not find answer: british vs. flybe.
+Could not find answer: wynne evans vs. gio compario
+Could not find answer: goon show , featured vs. the goon show
+Could not find answer: gravitational vs. gravity
+Could not find answer: chopin funeral vs. frederic chopin
+Could not find answer: ostrich vs. ich dien
+Could not find answer: butterflies- vs. butterfly
+Could not find answer: los pacaminos vs. paul young
+Could not find answer: dacron ” vs. terylene
+Could not find answer: twilight zone . vs. the twilight zone
+Could not find answer: hook or vs. a hook
+Could not find answer: tomato varieties vs. tomatoes
+Could not find answer: 2 to vs. two
+Could not find answer: dermatophytosis vs. ringworm
+Could not find answer: geococcyx vs. roadrunner
+Could not find answer: government . due vs. new mexico
+Could not find answer: edgar allan poe vs. edgar allen poe
+Could not find answer: madonna louise vs. lourdes maria
+Could not find answer: van gogh biography vs. vincent van gogh
+Could not find answer: hamlet practically vs. 'hamlet'
+Could not find answer: grand ole opry . this vs. the grand ole opry
+Could not find answer: 20 sous vs. twenty
+Could not find answer: muntjacs vs. muntjack
+Could not find answer: war of roses site vs. war of the roses
+Could not find answer: united states virgin vs. us virgin islands
+Could not find answer: charles lutwidge vs. lewis carroll
+Could not find answer: swiss flag vs. switzerland
+Could not find answer: letters vs. a
+Could not find answer: bow he vs. a bow
+Could not find answer: overlook hotel was vs. the overlook hotel
+Could not find answer: flintstones and vs. the flintstones
+Could not find answer: ravel | biography vs. maurice ravel
+Could not find answer: dead kennedys tribute vs. the dead kennedys
+Could not find answer: shapps : 5 things vs. grant shapps
+Could not find answer: italian vs. italy
+Could not find answer: white stripes artist vs. the white stripes
+Could not find answer: puccini returned vs. giacomo puccini
+Could not find answer: florentine vs. florence
+Could not find answer: alternately , and vs. television
+Could not find answer: pinguinus vs. great auk
+Could not find answer: domestic vs. sheep
+Could not find answer: saint jude vs. st. jude
+Could not find answer: italian job worse vs. los angeles
+Could not find answer: paul cézanne vs. paul cezanne
+Could not find answer: wolfgang vs. christo
+Could not find answer: merseyside and vs. river mersey
+Could not find answer: københavn vs. copenhagen
+Could not find answer: house , a circular vs. the 'house'
+Could not find answer: wye , you vs. the wye
+Could not find answer: half crown - silveragecoins.com vs. the half crown
+Could not find answer: george w. bush vs. george w bush
+Could not find answer: cheese unveils vs. a cheese
+Could not find answer: joker 's vs. the joker
+Could not find answer: willing to vs. illinois
+Could not find answer: julia elizabeth vs. julie andrews
+Could not find answer: nixon : `` telephone vs. richard nixon
+Could not find answer: wladziu vs. liberace
+Could not find answer: willow ? vs. 'willow'
+Could not find answer: four institutions are vs. the open university
+Could not find answer: brouilly . vs. beaujolais
+Could not find answer: gunpowder plot of vs. the gunpowder plot
+Could not find answer: 12 labors vs. twelve
+Could not find answer: hate vs. hats
+Could not find answer: martello tower vs. martello towers
+Could not find answer: burma changed vs. myanmar
+Could not find answer: paul cézanne vs. paul cezanne
+Could not find answer: hugh dowding commander vs. sir hugh dowding
+Could not find answer: desperate housewives , vs. 'desperate housewives'
+Could not find answer: bundys leaving chicago vs. married...with children
+Could not find answer: nelson mandela vs. rolihlahla
+Could not find answer: gavel vs. a gavel
+Could not find answer: burkina fasso vs. burkina faso
+Could not find answer: battle of flodden vs. flodden field
+Could not find answer: 2009 vs. two
+Could not find answer: red sox fan vs. boston red sox
+Could not find answer: natasha richardson is vs. natasha (richardson)
+Could not find answer: president theodore roosevelt vs. (theodore) roosevelt
+Could not find answer: jefferson finis vs. jefferson davies
+Could not find answer: apogee vs. perigee
+Could not find answer: namath `` vs. joe namath
+Could not find answer: zombies , blunstone vs. the zombies
+Could not find answer: angela isadora vs. isadora duncan
+Could not find answer: franklin roosevelt administration vs. franklin d. roosevelt
+Could not find answer: freemasonry vs. freemasons
+Could not find answer: rickshaw , the vs. the rickshaw
+Could not find answer: stalin to improve vs. joseph stalin
+Could not find answer: boulevard tickets vs. los angeles
+Could not find answer: rolling stones . it vs. the rolling stones
+Could not find answer: jam . he vs. the jam
+Could not find answer: doctor vs. dr hook
+Could not find answer: palace of westminster is vs. the palace of westminster
+Could not find answer: keats home vs. john keats
+Could not find answer: ratko mladić vs. ratko mladic
+Could not find answer: george vi 's struggles vs. king george vi
+Could not find answer: fawns have vs. the deer
+Could not find answer: man from uncle vs. t.h.r.u.s.h
+Could not find answer: fischer remembered vs. che guevara
+Could not find answer: trailing-scandents : these vs. climbing plants
+Could not find answer: francisco vázquez vs. francisco coronado
+Could not find answer: apple vs. apples
+Could not find answer: betjeman , a vs. john betjeman
+Could not find answer: edward rochester vs. jane eyre
+Could not find answer: oscar wilde vs. oscar wilde.
+Could not find answer: charlotte brontë vs. currer bell
+Could not find answer: gershwin 's world vs. george gershwin
+Could not find answer: occlusal vs. occlusion
+Could not find answer: son of '' vs. son of ...
+Could not find answer: dude `` vs. the dude
+Could not find answer: people vs. zambia
+Could not find answer: inbetweeners plan vs. the inbetweeners
+Could not find answer: farming vs. farms
+Could not find answer: carlo lorenzini vs. carlo collodi
+Could not find answer: max aitken had a vs. lord beaverbrook
+Could not find answer: john creasey vs. john creasy
+Could not find answer: corsair vs. corsairs
+Could not find answer: st trinian ’ vs. st trinian's
+Could not find answer: capital vs. jakarta
+Could not find answer: fred astaire and ginger rogers vs. fred astaire and ginger rogers.
+Could not find answer: chambre hardman and his vs. edward chambre hardman
+Could not find answer: that vs. hats
+Could not find answer: psittacine vs. parrot
+Could not find answer: ben whishaw vs. ben wishaw
+Could not find answer: stavros spyros niarchos vs. stavros niarchos
+Could not find answer: petroleum vs. crude oil
+Could not find answer: mondale of minnesota vs. walter mondale
+Could not find answer: mexican vs. mexico
+Could not find answer: ancient mariner / samuel vs. the ancient mariner
+Could not find answer: rampant vs. couchant
+Could not find answer: eighteenth-century vs. 18th
+Could not find answer: trachea and vs. the windpipe
+Could not find answer: don josé ( vs. 'don jose'
+Could not find answer: italian vs. italy
+Could not find answer: meteorological vs. meteorology
+Could not find answer: kuiper belt objects vs. the kuiper belt
+Could not find answer: mary celeste – exequy vs. the mary celeste
+Could not find answer: jordan river vs. river jordan
+Could not find answer: flintstones bedrock vs. the flintstones
+Could not find answer: leslie vs. twiggy
+Could not find answer: president mckinley vs. william mckinley
+Could not find answer: royal pavilion , vs. brighton pavilion
+Could not find answer: kampuchea vs. cambodia
+Could not find answer: stalin , napoleon vs. joseph stalin
+Could not find answer: swiss saver vs. switzerland
+Could not find answer: محمد رسول vs. muhammad
+Could not find answer: banksy quotes vs. """banksy"""
+Could not find answer: renate blauel vs. elton john
+Could not find answer: method vs. 't'
+Could not find answer: scent vs. scents
+Could not find answer: whole note vs. semibreve
+Could not find answer: admirable crichton : james vs. the admirable crichton
+Could not find answer: angle-swiss condensed vs. switzerland
+Could not find answer: billie paul vs. billy piper
+Could not find answer: 8 feet vs. eight
+Could not find answer: octave , vs. an octave
+Could not find answer: united vs. usa
+Could not find answer: carpathian mountain vs. carpathian mountains
+Could not find answer: london eye and vs. the london eye
+Could not find answer: spud , vs. potato
+Could not find answer: epistaxis epistaxis vs. nose bleeding
+Could not find answer: muhammad ali vs. muhammed ali
+Could not find answer: milhouse | gameteep vs. milhouse van houten
+Could not find answer: secret garden : character vs. the secret garden
+Could not find answer: dna pioneer says he vs. (structure of) dna
+Could not find answer: night before christmas , when vs. the night before christmas
+Could not find answer: 20th-century vs. two
+Could not find answer: america vs. usa
+Could not find answer: hms conqueror vs. hms conqueror.
+Could not find answer: 21st century vs. first
+Could not find answer: shangai vs. shanghai
+Could not find answer: workability vs. concrete
+Could not find answer: bebop vs. be-bop
+Could not find answer: pope urban vs. urban ii
+Could not find answer: arctic/subarctic vs. sioux
+Could not find answer: negative angles vs. reflex angle
+Could not find answer: fifteen vs. 15
+Could not find answer: king edward vs. edward iv
+Could not find answer: luxor , some vs. luxor, egypt
+Could not find answer: iris , which vs. the iris
+Could not find answer: de armado : garrulous vs. love's labours lost
+Could not find answer: active regions vs. sunspots
+Could not find answer: muntjac vs. muntjack
+Could not find answer: mouth and vs. the mouth
+Could not find answer: swiss valley vs. switzerland
+Could not find answer: types of vs. sucrose
+Could not find answer: super mario bros. super vs. super mario brothers
+Could not find answer: 123⁄456 ” ; the vs. forward slash
+Could not find answer: hard times '' vs. 'hard times'
+Could not find answer: ceylon , vs. sri lanka
+Could not find answer: naval vs. navy
+Could not find answer: coagulation vs. clotting
+Could not find answer: florentine vs. florence
+Could not find answer: giacometti biography vs. alberto giacometti
+Could not find answer: harry truman 's vs. harry s. truman
+Could not find answer: kander and ebb vs. kander & ebb
+Could not find answer: color blindness vs. colour blindness
+Could not find answer: sdp ) . vs. the sdp
+Could not find answer: saint michael vs. st michael
+Could not find answer: marseille vs. marseilles
+Could not find answer: squab is vs. a squab
+Could not find answer: clueless ( vs. 'clueless'
+Could not find answer: brethren movement vs. plymouth brethren
+Could not find answer: italian vs. italy
+Could not find answer: columbine iiithe vs. air force one
+Could not find answer: help vs. help!
+Could not find answer: passage to indiaby vs. a passage to india
+Could not find answer: two rivers vs. mesopotamia
+Could not find answer: raymond vs. rain man
+Could not find answer: george loveless . as vs. the tolpuddle martyrs
+Could not find answer: auld mug , as the vs. the americas cup
+Could not find answer: flagship vs. florida
+Could not find answer: football vs. soccer
+Could not find answer: rubella ( german vs. german measles
+Could not find answer: zipper ? - find vs. zip fastener
+Could not find answer: geoffrey shawcross vs. hetty wainthropp
+Could not find answer: dardanelles campaign vs. (battle of) gallipoli
+Could not find answer: kreta vs. crete
+Could not find answer: slow food movement . he vs. the slow food movement
+Could not find answer: patron saint vs. st. jude
+Could not find answer: 1750–1820 vs. five
+Could not find answer: king the vs. the king
+Could not find answer: polanski fifteen vs. roman polanski
+Could not find answer: makkah vs. mecca
+Could not find answer: sumo tournament vs. sumo wrestling
+Could not find answer: beach boys . after vs. the beach boys
+Could not find answer: menisci vs. meniscus
+Could not find answer: hispalis vs. seville
+Could not find answer: filmmaker federico vs. film making
+Could not find answer: kalypso vs. calypso
+Could not find answer: three vs. 3
+Could not find answer: wish of many vs. wisconsin
+Could not find answer: pan american games article vs. the pan-american games
+Could not find answer: king henry vs. henry viii
+Could not find answer: kepler johannes vs. johannes kepler
+Could not find answer: stravinsky dedicated vs. igor stravinsky
+Could not find answer: zemeckis and written vs. robert zemeckis
+Could not find answer: edith louisa vs. edith cavell
+Could not find answer: sal paradise vs. on the road
+Could not find answer: osmotic vs. osmosis
+Could not find answer: alexander conklin after vs. 'the bourne identity'
+Could not find answer: pokémon vs. pokemon
+Could not find answer: oval shows saturday vs. kennington oval
+Could not find answer: doctoral vs. doctors
+Could not find answer: 'sun king ' and vs. the sun king

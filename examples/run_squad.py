@@ -501,8 +501,8 @@ def read_squad_examples(input_file, is_training, version_2_with_negative, tiny_d
                             actual_text = actual_text.lower()
                             cleaned_answer_text = cleaned_answer_text.lower()
                         if actual_text.find(cleaned_answer_text) == -1:
-                            logger.warning("Could not find answer: '%s' vs. '%s'",
-                                           actual_text, cleaned_answer_text)
+                            logger.warning("Could not find answer: {} vs. {}".format(
+                                           actual_text, cleaned_answer_text))
                             continue
                     else:
                         start_position = -1
@@ -1193,7 +1193,7 @@ def main():
         os.makedirs(args.output_dir)
     # KML save runtime logs to disk
     output_log_file = os.path.join(args.output_dir, args.time_stamp + "log.log")
-    logger.addHandler(logging.FileHandler(output_log_file))
+    logger.addHandler(logging.FileHandler(output_log_file, 'w', 'utf-8'))
 
     if args.local_rank == -1 or args.no_cuda:
         device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
