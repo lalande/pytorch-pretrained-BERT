@@ -38,7 +38,8 @@ from pytorch_pretrained_bert.modeling import BertForSequenceClassification, Bert
 from pytorch_pretrained_bert.tokenization import BertTokenizer
 from pytorch_pretrained_bert.optimization import BertAdam, warmup_linear
 
-from run_squad import SquadExample
+from run_squad import SquadExample, load_split_data
+from tensorboard_api import Tensorboard
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
@@ -415,6 +416,9 @@ def main():
                         help="The output directory where the model predictions and checkpoints will be written.")
 
     ## Other parameters
+    parser.add_argument("--log_traindev_loss", action='store_true', help="Whether to use 10% of train data as dev set and log train/dev loss")  # KML
+    parser.add_argument("--val_steps", default=1000, type=int, help="Number of training steps to take between validation measurements")  # KML
+    
     parser.add_argument("--cache_dir",
                         default="",
                         type=str,
@@ -504,6 +508,8 @@ def main():
         "qnli": 2,
         "squad": 2,
     }
+    
+    tensorboard = Tensorboard('logs')
 
     if args.local_rank == -1 or args.no_cuda:
         device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
@@ -552,8 +558,14 @@ def main():
     num_train_optimization_steps = None
     if args.do_train:
         train_examples = processor.get_train_examples(args.data_dir)
+        # Adjust if necessary for Train/Dev sub-split for loss tracking
+        if args.log_traindev_loss:
+            split_multiplier = 0.9
+        else:
+            split_multiplier = 1.0
+        
         num_train_optimization_steps = int(
-            len(train_examples) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
+            (len(train_examples) * split_multiplier) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
         if args.local_rank != -1:
             num_train_optimization_steps = num_train_optimization_steps // torch.distributed.get_world_size()
 
@@ -619,13 +631,17 @@ def main():
         all_segment_ids = torch.tensor([f.segment_ids for f in train_features], dtype=torch.long)
         all_label_ids = torch.tensor([f.label_id for f in train_features], dtype=torch.long)
         train_data = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_label_ids)
-        if args.local_rank == -1:
-            train_sampler = RandomSampler(train_data)
-        else:
-            train_sampler = DistributedSampler(train_data)
-        train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=args.train_batch_size)
+        
+        train_dataloader, val_dataloader = load_split_data(args, train_data)
+        
+        #if args.local_rank == -1:
+            #train_sampler = RandomSampler(train_data)
+        #else:
+            #train_sampler = DistributedSampler(train_data)
+        #train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=args.train_batch_size)
 
         model.train()
+        running_loss = 0
         for _ in trange(int(args.num_train_epochs), desc="Epoch"):
             tr_loss = 0
             nb_tr_examples, nb_tr_steps = 0, 0
@@ -656,6 +672,28 @@ def main():
                     optimizer.step()
                     optimizer.zero_grad()
                     global_step += 1
+                    
+                running_loss += loss.item()
+                
+                if step % args.val_steps == 0 and (args.log_traindev_loss):
+                    val_loss = 0
+                    model.eval()
+                    with torch.no_grad():
+                        for batch in val_dataloader:
+                            if n_gpu == 1:
+                                batch = tuple(t.to(device) for t in batch) # multi-gpu does scattering it-self
+                            input_ids, input_mask, segment_ids, start_positions, end_positions = batch
+                            batch_loss = model(input_ids, segment_ids, input_mask, start_positions, end_positions)
+                            if n_gpu > 1:
+                                batch_loss = val_loss.mean() # mean() to average on multi-gpu.
+                            if args.gradient_accumulation_steps > 1:
+                                batch_loss = val_loss / args.gradient_accumulation_steps
+                            val_loss += batch_loss.item()
+                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), step)
+                    tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), step)
+                    running_loss = 0
+                    model.train()
+                
 
     if args.do_train:
         # Save a trained model and the associated configuration

@@ -34,7 +34,7 @@ import csv
 import numpy as np
 import torch
 from torch.utils.data import (DataLoader, RandomSampler, SequentialSampler,
-                              TensorDataset)
+                              TensorDataset, Subset)
 from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
 
@@ -45,12 +45,14 @@ from pytorch_pretrained_bert.tokenization import (BasicTokenizer,
                                                   BertTokenizer,
                                                   whitespace_tokenize)
 
+from tensorboard_api import Tensorboard
+
 if sys.version_info[0] == 2:
     import cPickle as pickle
 else:
     import pickle
 
-TINY_DATA_SIZE = 24  # number of examples for debug
+TINY_DATA_SIZE = 240  # number of examples for debug
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
@@ -219,6 +221,15 @@ def write_error_analysis(args, gold_file=None):
     
     with open(input_prediction_file, "r") as reader:
         pred = json.load(reader)
+
+    # load is_impossible predictions output from run_classifier.py; if qas id is in dict, then predicted is_impossible=True
+    if args.ensemble:
+        try:        
+            with open('eval_predictions-pickle', "rb") as reader:
+                predict_is_impossible = pickle.load(reader)
+        except:
+            predict_is_impossible = {}
+    
     
     total_gold = len(gold)
     total_pred = len(pred)
@@ -234,7 +245,10 @@ def write_error_analysis(args, gold_file=None):
     for key, value in pred.items():
         total += 1
         ground_truths = gold[key]['answers']
-        pred_answer = value
+        if args.ensemble and key in predict_is_impossible.keys():  # classifier overrides QA for is_impossible
+            pred_answer = ''
+        else:
+            pred_answer = value
         em = metric_max_over_ground_truths(compute_em, pred_answer, ground_truths)
         f1 = metric_max_over_ground_truths(compute_f1, pred_answer, ground_truths)
         if args.version_2_with_negative:
@@ -1108,6 +1122,37 @@ def _compute_softmax(scores):
         probs.append(score / total_sum)
     return probs
 
+
+def load_split_data(args, data, split=0.9):
+    """Split training data into train and validation"""
+    
+    if args.log_traindev_loss:
+        to_train = int(len(data) * split)
+        #train_data = data[:to_train]
+        #val_data = data[to_train:]
+        train_data = Subset(data, range(to_train))
+        val_data = Subset(data, range(to_train, len(data)))
+    else:
+        train_data = data
+        val_data = None
+    
+    if args.local_rank == -1:
+        train_sampler = RandomSampler(train_data)
+        if val_data is not None: val_sampler = RandomSampler(val_data)
+            
+    else:
+        train_sampler = DistributedSampler(train_data)
+        if val_data is not None: val_sampler = DistributedSampler(val_data)
+        
+    train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=args.train_batch_size)
+    if val_data is not None:
+        val_dataloader = DataLoader(val_data, sampler= val_sampler, batch_size=args.train_batch_size)
+    else:
+        val_dataloader = None
+        
+    return train_dataloader, val_dataloader
+
+
 def main():
     parser = argparse.ArgumentParser()
 
@@ -1121,8 +1166,11 @@ def main():
 
     ## Other parameters
     parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")  # KML
+    parser.add_argument("--log_traindev_loss", action='store_true', help="Whether to use 10% of train data as dev set and log train/dev loss")  # KML
+    parser.add_argument("--val_steps", default=100, type=int, help="Number of training steps to take between validation measurements")  # KML
     parser.add_argument("--tiny_data", action='store_true', help="Whether to use just 100 train/dev examples to debug code")  # KML
-    parser.add_argument("--add_triviaqa_train", action='store_true', help="Whether to add TriviaQA examples to train. Postpend -triviaqa.json to --train_file")  # KML    
+    parser.add_argument("--add_triviaqa_train", action='store_true', help="Whether to add TriviaQA examples to train. Postpend -triviaqa.json to --train_file")  # KML
+    parser.add_argument("--ensemble", action='store_true', help="Whether to ensemble Classifier and QA models.")  # KML    
     parser.add_argument("--train_file", default=None, type=str, help="SQuAD json for training. E.g., train-v1.1.json")
     parser.add_argument("--predict_file", default=None, type=str,
                         help="SQuAD json for predictions. E.g., dev-v1.1.json or test-v1.1.json")
@@ -1200,6 +1248,10 @@ def main():
     # KML save runtime logs to disk
     output_log_file = os.path.join(args.output_dir, args.time_stamp + "log.log")
     logger.addHandler(logging.FileHandler(output_log_file, 'w', 'utf-8'))
+    
+    # KML Setup tensorboard logging
+    if args.log_traindev_loss:
+        tensorboard = Tensorboard('logs')
 
     if args.local_rank == -1 or args.no_cuda:
         device = torch.device("cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
@@ -1254,8 +1306,13 @@ def main():
                 input_file=args.train_file.split('.json')[0] + '-triviaqa.json', is_training=True, version_2_with_negative=args.version_2_with_negative,
                 tiny_data=args.tiny_data, is_trivaqa=True)
             train_examples += train_examples_triviaqa[0:-1]
+        # Adjust if necessary for Train/Dev sub-split for loss tracking
+        if args.log_traindev_loss:
+            split_multiplier = 0.9
+        else:
+            split_multiplier = 1.0
         num_train_optimization_steps = int(
-            len(train_examples) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
+            (len(train_examples) * split_multiplier) / args.train_batch_size / args.gradient_accumulation_steps) * args.num_train_epochs
         if args.local_rank != -1:
             num_train_optimization_steps = num_train_optimization_steps // torch.distributed.get_world_size()
 
@@ -1335,6 +1392,10 @@ def main():
                 with open(cached_train_features_file, "wb") as writer:
                     pickle.dump(train_features, writer)
 
+        #if args.log_traindev_loss:
+            #train_end_index = int(len(train_examples) * split_multiplier)
+            #train_examples, dev_examples = train_examples[0:train_end_index], train_examples[train_end_index+1, :]
+
         logger.info("***** Running training *****")
         logger.info("  Num orig examples = %d", len(train_examples))
         logger.info("  Num split examples = %d", len(train_features))
@@ -1347,13 +1408,17 @@ def main():
         all_end_positions = torch.tensor([f.end_position for f in train_features], dtype=torch.long)
         train_data = TensorDataset(all_input_ids, all_input_mask, all_segment_ids,
                                    all_start_positions, all_end_positions)
-        if args.local_rank == -1:
-            train_sampler = RandomSampler(train_data)
-        else:
-            train_sampler = DistributedSampler(train_data)
-        train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=args.train_batch_size)
+        
+        train_dataloader, val_dataloader = load_split_data(args, train_data)
+        
+        #if args.local_rank == -1:
+            #train_sampler = RandomSampler(train_data)
+        #else:
+            #train_sampler = DistributedSampler(train_data)
+        #train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=args.train_batch_size)
 
         model.train()
+        running_loss = 0
         for _ in trange(int(args.num_train_epochs), desc="Epoch"):
             for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
                 if n_gpu == 1:
@@ -1379,6 +1444,30 @@ def main():
                     optimizer.step()
                     optimizer.zero_grad()
                     global_step += 1
+                
+                running_loss += loss.item()
+                    
+                if step % args.val_steps == 0 and (args.log_traindev_loss):
+                    val_loss = 0
+                    model.eval()
+                    with torch.no_grad():
+                        for batch in val_dataloader:
+                            if n_gpu == 1:
+                                batch = tuple(t.to(device) for t in batch) # multi-gpu does scattering it-self
+                            input_ids, input_mask, segment_ids, start_positions, end_positions = batch
+                            batch_loss = model(input_ids, segment_ids, input_mask, start_positions, end_positions)
+                            if n_gpu > 1:
+                                batch_loss = val_loss.mean() # mean() to average on multi-gpu.
+                            if args.gradient_accumulation_steps > 1:
+                                batch_loss = val_loss / args.gradient_accumulation_steps
+                            val_loss += batch_loss.item()
+                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), step)
+                    tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), step)
+                    running_loss = 0
+                    model.train()
+                            
+                            
+                    
 
     if args.do_train:
         # Save a trained model and the associated configuration
@@ -1401,7 +1490,7 @@ def main():
             output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
             config = BertConfig(output_config_file)
             model = BertForQuestionAnswering_v4(config)
-            model.load_state_dict(torch.load(output_model_file))
+            model.load_state_dict(torch.load(output_model_file), map_location=device)  # KML this should map GPU to CPU models
         except:
             model = BertForQuestionAnswering_v4.from_pretrained(args.bert_model)
 
@@ -1462,6 +1551,16 @@ def main():
         output_prediction_file = os.path.join(args.output_dir, args.time_stamp + "predictions.json")
         output_nbest_file = os.path.join(args.output_dir, args.time_stamp + "nbest_predictions.json")
         output_null_log_odds_file = os.path.join(args.output_dir, args.time_stamp + "null_odds.json")
+        
+        # debug flag -- set to False 
+        if True:
+            logger.info("  Saving pickle dump of eval_examples, eval_features, all_results for debug analysis")
+            cached_eval_results_file = args.predict_file+'_{0}_{1}_{2}_{3}_{4}_{5}'.format(
+            list(filter(None, args.bert_model.split('/'))).pop(), str(False), str(args.tiny_data), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length)) 
+            with open(cached_eval_results_file, "wb") as writer:
+                pickle.dump([eval_examples, eval_features, all_results], writer)
+            
+        
         write_predictions(eval_examples, eval_features, all_results,
                           args.n_best_size, args.max_answer_length,
                           args.do_lower_case, output_prediction_file,

@@ -5,7 +5,7 @@ https://becominghuman.ai/logging-in-tensorboard-with-pytorch-or-any-other-librar
 
 import io
 import numpy as np
-from PIL import Image
+# from PIL import Image
 import tensorflow as tf
 
 class Tensorboard:
