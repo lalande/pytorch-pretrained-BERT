@@ -1457,9 +1457,9 @@ def main():
                             input_ids, input_mask, segment_ids, start_positions, end_positions = batch
                             batch_loss = model(input_ids, segment_ids, input_mask, start_positions, end_positions)
                             if n_gpu > 1:
-                                batch_loss = val_loss.mean() # mean() to average on multi-gpu.
+                                batch_loss = batch_loss.mean() # mean() to average on multi-gpu.
                             if args.gradient_accumulation_steps > 1:
-                                batch_loss = val_loss / args.gradient_accumulation_steps
+                                batch_loss = batch_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
                     tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), step)
                     tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), step)
@@ -1570,6 +1570,8 @@ def main():
 
         if args.do_error_analysis:
             write_error_analysis(args)
+        
+        tensorboard.close()
         
 if __name__ == "__main__":
     main()
