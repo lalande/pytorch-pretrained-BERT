@@ -642,6 +642,7 @@ def main():
 
         model.train()
         running_loss = 0
+        all_steps = -1
         for _ in trange(int(args.num_train_epochs), desc="Epoch"):
             tr_loss = 0
             nb_tr_examples, nb_tr_steps = 0, 0
@@ -672,25 +673,26 @@ def main():
                     optimizer.step()
                     optimizer.zero_grad()
                     global_step += 1
-                    
+                
+                all_steps += 1    
                 running_loss += loss.item()
                 
-                if step % args.val_steps == 0 and (args.log_traindev_loss):
+                if all_steps % args.val_steps == 0 and (args.log_traindev_loss):
                     val_loss = 0
                     model.eval()
                     with torch.no_grad():
                         for batch in val_dataloader:
                             if n_gpu == 1:
                                 batch = tuple(t.to(device) for t in batch) # multi-gpu does scattering it-self
-                            input_ids, input_mask, segment_ids, start_positions, end_positions = batch
-                            batch_loss = model(input_ids, segment_ids, input_mask, start_positions, end_positions)
+                            input_ids, input_mask, segment_ids, label_ids = batch
+                            batch_loss = model(input_ids, segment_ids, input_mask, label_ids)
                             if n_gpu > 1:
                                 batch_loss = val_loss.mean() # mean() to average on multi-gpu.
                             if args.gradient_accumulation_steps > 1:
                                 batch_loss = val_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
-                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), step)
-                    tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), step)
+                    tensorboard.log_scalar('train loss', running_loss / 1, all_steps)  # len(train_dataloader)
+                    tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), all_steps)
                     running_loss = 0
                     model.train()
                 

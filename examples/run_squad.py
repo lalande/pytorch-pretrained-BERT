@@ -1419,6 +1419,7 @@ def main():
 
         model.train()
         running_loss = 0
+        all_steps = -1
         for _ in trange(int(args.num_train_epochs), desc="Epoch"):
             for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
                 if n_gpu == 1:
@@ -1445,9 +1446,10 @@ def main():
                     optimizer.zero_grad()
                     global_step += 1
                 
+                all_steps += 1
                 running_loss += loss.item()
                     
-                if step % args.val_steps == 0 and (args.log_traindev_loss):
+                if all_steps % args.val_steps == 0 and (args.log_traindev_loss):
                     val_loss = 0
                     model.eval()
                     with torch.no_grad():
@@ -1461,8 +1463,8 @@ def main():
                             if args.gradient_accumulation_steps > 1:
                                 batch_loss = batch_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
-                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), step)
-                    tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), step)
+                    tensorboard.log_scalar('train loss', running_loss / 1, all_steps)  # len(train_dataloader)
+                    tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), all_steps)
                     running_loss = 0
                     model.train()
                             
@@ -1555,8 +1557,9 @@ def main():
         # debug flag -- set to False 
         if True:
             logger.info("  Saving pickle dump of eval_examples, eval_features, all_results for debug analysis")
-            cached_eval_results_file = args.predict_file+'_{0}_{1}_{2}_{3}_{4}_{5}'.format(
-            list(filter(None, args.bert_model.split('/'))).pop(), str(False), str(args.tiny_data), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length)) 
+            #cached_eval_results_file = args.predict_file+'_{0}_{1}'.format(
+            #list(filter(None, args.bert_model.split('/'))).pop(), 'pickle_eval_results' )
+            cached_eval_results_file = 'all_results-pickle'
             with open(cached_eval_results_file, "wb") as writer:
                 pickle.dump([eval_examples, eval_features, all_results], writer)
             
