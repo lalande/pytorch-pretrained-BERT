@@ -1463,7 +1463,7 @@ def main():
                             if args.gradient_accumulation_steps > 1:
                                 batch_loss = batch_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
-                    tensorboard.log_scalar('train loss', running_loss / 1, all_steps)  # len(train_dataloader)
+                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), all_steps)  # len(train_dataloader)
                     tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), all_steps)
                     running_loss = 0
                     model.train()
@@ -1492,7 +1492,7 @@ def main():
             output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
             config = BertConfig(output_config_file)
             model = BertForQuestionAnswering_v4(config)
-            model.load_state_dict(torch.load(output_model_file), map_location=device)  # KML this should map GPU to CPU models
+            model.load_state_dict(torch.load(output_model_file, map_location=device))  # KML this should map GPU to CPU models
         except:
             model = BertForQuestionAnswering_v4.from_pretrained(args.bert_model)
 
