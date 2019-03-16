@@ -40,7 +40,7 @@ Id,Predicted
 045da878b85eeedd173bcaa9e,Śródmieście
 047d4d3ea64cee05fe6fa20a4,
 049d3dfd19180dc0ea766ec58,gravity
-04ab24c55b6067b4f35e8746c,arbitrary
+04ab24c55b6067b4f35e8746c,
 04cfa7ca0eb4bc89ccbab6ba3,
 04fa4ab6abd312dea3d8b5c54,
 05074597acc9f9ceeecffdd55,
@@ -57,14 +57,14 @@ Id,Predicted
 05ee1caadae94918ff38ea866,
 05fc4459fdacf16c9f51af7df,Wahhabism
 061faadc3bc1dbd2ce05b0bc0,"The Cadillac DeVille and Fleetwood, Buick Electra, Oldsmobile 98, Lincoln Continental, Mercury Marquis"
-0659b6c26b3ccdabecab9c404,Algeria
+0659b6c26b3ccdabecab9c404,
 065e375a5769df5ca4a7b4996,
 067ea3b9fdd5e44e5ca14c1cb,
 069bfddad87b192ddead40b5f,1745
 06b9839075d0dc5fe0e8a0c5c,until 1796
 06bc7ec7edae6c2a39da0fee4,attacked the British column
 06bd969dafee5efc1d908f26e,
-06c064e6a89a579f56f5fd51f,"Sandwich, Faversham and Maidstone"
+06c064e6a89a579f56f5fd51f,
 06cad95e2200ddd3c8b3ef5b7,
 06dccf02daf3fad4e62f72a3c,regulatory T cells
 06f0419e968a0034e61bbde6e,1115–1234
@@ -75,7 +75,7 @@ Id,Predicted
 071ebf7b9ca766fadc7be22e7,
 0737718153d5faabeb51f554b,
 07393fdd2467fa843bdac34f7,
-0742e8b21aecea2c9bb1bb0aa,Asia and Africa
+0742e8b21aecea2c9bb1bb0aa,
 0743cf580ca9efa8c6a01b5ff,
 074ecc871473dbbc2f54ecb11,free
 075d3fdf07ba291acc81d747d,
@@ -84,12 +84,12 @@ Id,Predicted
 07a40f1ccd3fe03ff53f694e7,
 07a6b1ed127b6985dbc146592,
 07d0b38cb929ee9be9b8c4b8f,
-07d6dd37c7001eb3aa71e93ec,friction
+07d6dd37c7001eb3aa71e93ec,
 07dd7ba9cae9daa6d0f856ad8,
 07e7cc6063aadcecadcaeca4e,two poles
 07eaeda946efb1bdc9de48cd5,Opposition leaders
 07efcdaeb782cf15befe6ef5b,
-07f3afbe4b3b9e19f00addea7,economic
+07f3afbe4b3b9e19f00addea7,
 07faeef6fc4d0b4df2f2413da,leftist/communist/nationalist insurgents/opposition
 080bea1b4aa5d6bdbbcdf4e6c,1526
 081df9bada42df2cbaee8ade5,late 19th century
@@ -119,7 +119,7 @@ Id,Predicted
 09ab8dfbe5ccc6ea00f2b86cf,Marquis de la Jonquière
 09ad8bc4aaad8cac3bed30d2c,200–300
 09bb6d9c5be1c4c7af55ebe8d,
-09db230e2a88cacb5ef86d8e5,yin-yang and wuxing philosophy
+09db230e2a88cacb5ef86d8e5,
 09df6eb05fcf5cb38e0b5affd,
 09f750eaf37c4511fb7a8acaa,Midsummer’s Night
 0a154ae0bb804e8ebe51ff8fd,
@@ -137,7 +137,7 @@ Id,Predicted
 0a9aa7ffedaffb180be5e1a9b,
 0a9cfda5889ec89dd1a1aba7e,
 0aaff834dc2fd01c6ee0633d4,dampening the fire
-0ab0ee77ce1dfcbac1572a1fb,failed
+0ab0ee77ce1dfcbac1572a1fb,
 0ab5f02db274ed026a6fce27c,
 0ab7ad85dad01c6d6d1f3aea3,
 0aba75aac2cdafcfd0db519ee,
@@ -159,14 +159,14 @@ Id,Predicted
 0b07f8ceaddcc130f5b34cda0,
 0b5feee8e7c23c49aa9ca1a2f,international law and public law
 0b7f0cc26f4e7674f9425aca7,1390
-0b841d1d0246d5226f61e84cb,computer science departments at academic and research institutions
+0b841d1d0246d5226f61e84cb,
 0b9f5dae9ebc1de4e9a954ca4,self molecules
 0ba5e8fc5e8dd42115a89f9ad,
 0bb2a00bbe9b6ad90fddb29ae,yellow fever virus
 0bbbbfef2456b4ece5abdaba5,
 0bbcda3c41afdc16bed0dc4df,Ogród Saski
 0bbd7716b4b76bd4d0c2af1ee,
-0bccefb453bbec5eb3842ef93,2003
+0bccefb453bbec5eb3842ef93,
 0bdecbe663cd0c47cf5c96bb6,
 0bded95ab9e336da421bf77f3,
 0be4e3e95f727b6dbf1bcf6aa,rotary
@@ -176,7 +176,7 @@ Id,Predicted
 0beeec70cec01c164b5fb5881,as a function of the size of the instance
 0bf3e2ce1aceafe7dedfbd59b,Red Turban rebels
 0bf87abb2943d1fc13ddadbec,
-0c07602c717daca41dd8ea8fb,a commune (gmina)
+0c07602c717daca41dd8ea8fb,
 0c098997e7e975a3ab6a79e4e,
 0c17ff2dedf4b7de41079bc22,The Muslims in the semu class
 0c67be085511c63848766d7cd,
@@ -206,17 +206,17 @@ Id,Predicted
 0d249ccdcccdbada0cbafa77d,
 0d290bea8ddde7a73baeec3b2,
 0d36dc7efa87332a1acd78e79,Eastern Europe
-0d3d6be3ddcc8cb88bb1f24af,Renaissance architecture
+0d3d6be3ddcc8cb88bb1f24af,
 0d4028ab743db9b051659ac02,function problem
 0d40e4f8afe09a6e5c3c2ffd3,
 0d538db6ed563dcd6e277bdbf,less than a year
 0d5c7fd7fa91e0c6812dc2da5,Historical and Critical Dictionary
-0d6ae72d8e3c97d47a6eb7ebf,a chain or screw stoking mechanism
+0d6ae72d8e3c97d47a6eb7ebf,
 0d7fbef805fcee1ac3e49acc6,
 0d840aae08ded8c62bcecf7f9,1805
 0daaea799e72a6c37288646aa,
 0db2d8ccde149ca72a3a3d2ef,a statement
-0dbf6b3eccde6af6b81a86edd,he followed the fishermen and captured the mermaid
+0dbf6b3eccde6af6b81a86edd,
 0dc53f1b4cecfe03cd3f7b9d8,
 0dce06368c16dd242303df4fb,
 0dd7d3cac0f5662d7fdbea446,"Acura, Lexus and Infiniti"
@@ -228,7 +228,7 @@ Id,Predicted
 0dee47bfcf3cabec12b7aa3db,Giovanni Branca
 0dfc21e5daf37df64db7fd884,
 0dfeca724fce954b55a5b77be,after 1850
-0e10d820d651e10f25532acc5,doubtful
+0e10d820d651e10f25532acc5,
 0e11ec8fdbad69016bccb20a6,
 0e2a2f0c3d9fd3807e78fc2d3,lamprey and hagfish
 0e52dcbb9cdba2939d1a5a9fa,reflects the desire to encourage consensus amongst elected members
@@ -243,7 +243,7 @@ Id,Predicted
 0e9bd0cababdc051bce3d6ff7,
 0e9eab481de5d14d4cf13ac7b,Tugh Temur
 0eaa339ae84feba38903898af,
-0eab5fd1da48b8148988d9e7b,Sir Isaac Newton
+0eab5fd1da48b8148988d9e7b,
 0eadb6abc82fdbe67a471d7b0,World War II
 0eb775f3c4efe4d4edfc35a27,le roi Huguet
 0ebc89b1080ec02ece59a30a6,
@@ -252,23 +252,23 @@ Id,Predicted
 0ed61bd6ccedbbc6e77da1bc1,
 0eda570dd279cad8be3fdf8f0,
 0ee199fec5e0ba8ffe4dd5cf5,polynomial algebra
-0eeae5b38e83c8dc4a1d8a2fe,making ARPANET technology public
+0eeae5b38e83c8dc4a1d8a2fe,
 0ef24269f783cc3cff186ceaf,
 0ef2eba5e24fa8c9d74cad97a,
 0f041c8f13ac55e95615316d0,architectural
 0f0c41e2bd17ac26d7dc15c6c,
 0f14fd71af6c2dbef18841516,
-0f1a8943d3fb2967e0971acdb,Yale
-0f1ec85f1880e60be06ea1d1e,Trypanosoma brucei
+0f1a8943d3fb2967e0971acdb,
+0f1ec85f1880e60be06ea1d1e,
 0f2cf34ba606fbeb2de611ee8,
-0f2fecd83bc063f31b07acc88,hormone levels
+0f2fecd83bc063f31b07acc88,
 0f30c5bacadcdfdde36a7fb8d,1622
 0f3c0cdac85071d0c5fa4c104,
 0f4acde4dfc9b5b1da9d4e3ed,
 0f4d981bdac9bbe918f2967ac,300
 0f50eb22119b3a8cd46265816,
 0f54ede46d5ee83cad22bf3fd,
-0f55ad442fde2a3f7cc735f2d,55 mph
+0f55ad442fde2a3f7cc735f2d,
 0f5a0dbb7bad3584ee850afba,
 0f5da097dfda2e85ac9f8f76e,
 0f6f1de90de1ea3e9b24a8cf5,
@@ -281,16 +281,16 @@ Id,Predicted
 0fa5c53be0fc6db2aa6ba4862,Under the Mongols
 0fac61e43f07c265ccc01ffc1,
 0fb877c3fdb1a6dbf225da617,1685
-0fbc38f5cadb01b25aeffafca,Indians fought on both sides of the conflict
+0fbc38f5cadb01b25aeffafca,
 0fbefc795d7dddbb7b98d5a2a,
-0fca0559b3f6c17dceca625ca,The packet header can be small
+0fca0559b3f6c17dceca625ca,
 0fd30a679fecea739e31fa3ab,
 0fdc9a0fb205a08c9c98097ec,"leptin, pituitary growth hormone, and prolactin"
 0fe4ddefbb05bff6d5c370ef7,
 0fea6f7e958dd0d51b2b5c35e,
 0feaceff7706d9cefe06be8ba,"$57,000"
 0fec4edbdd9ecef894bc1dbe5,
-0ff9cbb6eab74ddcdaece0ad4,4 August 1915
+0ff9cbb6eab74ddcdaece0ad4,
 0ffefcb1430c1badf6d31b054,"manufacturing, metal processing, steel and electronic manufacturing and food processing"
 0ffffa9bba3fc43bb128dd4a2,
 1020e7e8de24bd3c6a5bf2e4b,with the help of the military
@@ -313,7 +313,7 @@ Id,Predicted
 11ffb9047bb992dcb6cfefedf,260 kilometres
 11ffd373fddd4d0cb9df6d481,Immunodeficiency
 1204edbcab5f3b840d7ac6fc6,
-12235410d4ddbabfe1d9af8a3,quality
+12235410d4ddbabfe1d9af8a3,
 126b4b436bcc70b9fd3ac9588,"The graph isomorphism problem, the discrete logarithm problem and the integer factorization problem"
 127dc681cb1f6d1fa36bf25bc,1978
 12b3d2cb6e2ddfdfaeee1acb6,vitamin D
@@ -362,7 +362,7 @@ Id,Predicted
 15a6ec53051d2c3f07fbbcc4c,Several procedures
 15cde5f324b5fbb22ffabbdca,cytotoxic natural killer cells and CTLs
 15cfbec892bcaff4ebad1cb20,
-15dbc4b2c1e92def2b182e932,Lake George
+15dbc4b2c1e92def2b182e932,
 15dfcefb9ec6f1c1b89eeaafc,1253
 15eef4ea2e9f9e7b30237eacb,
 15f5cf99e84fac19efaa14b71,to dislodge the French
@@ -388,7 +388,7 @@ Id,Predicted
 17ce6bfe0ab77da2feacdd5bb,
 17ed2ee7c2585cd5ce12b4974,citizens
 17f84ff69dccb36689265b5af,historians
-17fba1aa51bee32db30cf5ce2,to help the packet find its way to its destination
+17fba1aa51bee32db30cf5ce2,
 17ff6b9a339a49b8c6a8f5d73,
 180ce02dd776b26dd2f1aabf1,in committee
 181fc82dddecaf3dfeebb24b1,cylinders and valve gear
@@ -404,8 +404,8 @@ Id,Predicted
 18b1a4cd54d4f5a65ccff4f2c,
 18b9d1d56dfd8649c337204f3,diplomacy or military force
 18c00c3ddfb815f87e998fbfb,USSR
-18db682bd5524f51c4bbc5815,5
-18dc1aeb3598fa95a81bb8ecd,"painting, mathematics, calligraphy, poetry, and theater"
+18db682bd5524f51c4bbc5815,
+18dc1aeb3598fa95a81bb8ecd,
 18df2cb191bd68b8839c1ac35,115.7 metres
 18f13fc9ce31ae582e8f80add,
 190c9ac9ad9977aff9d6e5dec,
@@ -414,7 +414,7 @@ Id,Predicted
 191c08bdfcf6f0f9be0024feb,from 4 August 1915 until November 1918
 192b89bf2fb36b475baf9abbb,released Islamists from prison and welcomed home exiles
 19aceb5a8097c6abf1bc25fba,William Pitt
-19e9c468feae5c3e8acd61fb7,counter-terrorism police
+19e9c468feae5c3e8acd61fb7,
 19ecffc0ed59d90e9ad9f4695,Huguon
 1a0fedc10d8d38a819a089ada,
 1a1f8cebffdaf4af3dbd5bbc7,Richard Trevithick
@@ -433,7 +433,7 @@ Id,Predicted
 1adbf67208caca0dbfcbf2ee4,the Middle East
 1adedc3defc977b9d26d8d6a7,National Islamic Front
 1adf39b6e9efbab7cbc92ac5d,"three, later four"
-1ae889ff10bdea68b8ed4d9ed,Western musical instruments
+1ae889ff10bdea68b8ed4d9ed,
 1aecf6f6213ee33c732929fef,
 1aee1ced641bcbd8741fffce7,
 1af8ace8ad5a633da38dfb4bf,Ireland
@@ -444,26 +444,26 @@ Id,Predicted
 1b4af9dd2e458198caebc63fd,public PAD service Telepad
 1b52c03be766edb95bc4a8c68,
 1b53a4d1bbbb55fe0c2c41dd8,
-1b555829c8a9f7d24b1c0ecee,different view of Muslim history
+1b555829c8a9f7d24b1c0ecee,
 1b565ef86efae8e6b7da8b2ad,gauge bosons
-1b613c7a5ad8e383a8def7b52,1769
-1b6c6a9efc270f3afcf7fa8f9,mucus
-1b6dfffcbf75fcc842d01fafb,Type IV hypersensitivity (also known as cell-mediated or delayed type hypersensitivity
+1b613c7a5ad8e383a8def7b52,
+1b6c6a9efc270f3afcf7fa8f9,
+1b6dfffcbf75fcc842d01fafb,
 1ba7c5fee0d4dd978b8adec12,
 1bafde27aecf77c96e94e7eb0,
 1bdcbddae9d0445e47c84ff8d,colonialism
 1bdcdfcfbd9fcded8edeed2d6,Spain
 1be2c2ccccffa0d9c22f48ce6,
-1be58ede1a10f5197f3d6e2d1,RSA algorithm
+1be58ede1a10f5197f3d6e2d1,
 1be9fa378cbee6d9fa8b6ac78,10th
-1bf8da89f9ea2ff8bc99c678e,magnitude and direction
-1bf92fd3d3769faaf96ccf410,vicious and destructive
+1bf8da89f9ea2ff8bc99c678e,
+1bf92fd3d3769faaf96ccf410,
 1c1bb0ebdf1f59ad5f5b27960,1981 model year
 1c36becebccc10ddb3cb6413a,fee per unit of information transmitted
 1c3c188a216dcacccccfe938e,Iroquois rule
 1c556ea3c93bd26e3d79cc9c3,Medical University of Warsaw
 1c593156e4d8c6715ac0cd49c,
-1c7e5fa8c8f39e7e9c0fc6cdb,Newton
+1c7e5fa8c8f39e7e9c0fc6cdb,
 1c87e9265fdc15da90ce7292e,Virginia
 1c8afc70a96435c4ed7e28cdd,
 1c9d65da1bbf34dddc0d4e24f,
@@ -492,15 +492,15 @@ Id,Predicted
 1d77fefc2cc42ff5a3692ecee,Middle East
 1d7dbc50c88d2d9aec2eb8b2f,
 1d81187bf8d2faa2caa3cb5f6,
-1d8cb89e4c4288ab6c1b28d7b,MCI Telecommunications
+1d8cb89e4c4288ab6c1b28d7b,
 1d8deffae43a4df877ddcf999,one-eighth
 1da4497306ac351c8ef92bc7b,
 1da7ec2b43b2cf2f2ba4bef79,The embargo
-1dac1a9c209d928532ffda8b7,the revolution could only succeed in Russia as part of a world revolution
+1dac1a9c209d928532ffda8b7,
 1dafade05543df18bbedde88c,"if they were non-discriminatory, ""justified by imperative requirements in the general interest"" and proportionately applied"
 1db7f9327cfeb25df1ba6d2d2,dreadnought battleships
 1dbdcb506dde8a3d029e855e9,
-1dd16ade1db6fef4b4c6b8748,two million items
+1dd16ade1db6fef4b4c6b8748,
 1dd18bb2d7ebad656a3f9db0a,
 1ddabbbe8e0e25e19193ae76f,
 1ddfda8bcd8ed83fd7bcec0dc,Warszawa
@@ -513,7 +513,7 @@ Id,Predicted
 1e54e8ea8cfaf5339aa9c6d1a,
 1e65cfde8e46c552fbeeefdde,turbo-electric transmission
 1e9cde65cd6c9fb5be56a38f7,Edict of Potsdam
-1ea1bdd3c625d0aebf4cc7cdf,73
+1ea1bdd3c625d0aebf4cc7cdf,
 1ea8e8e9c8bdb26ac5208fe6a,
 1eabcbef32bceb2de7eab90ad,European Anti-fraud Office
 1eac7bb7db2c4a9ff3df6fcb6,
@@ -551,7 +551,7 @@ Id,Predicted
 1faf7dcbd3eb40fa3b9014dfe,Kraków
 1fb44c1a8873cada7e023babf,forces between particles smaller than atoms
 1fc2cc6e4fd9afac6b36edf38,
-1fc4da46445c2c1c2dc0ddeda,Rollo
+1fc4da46445c2c1c2dc0ddeda,
 1fca8f58eb88cc92d0af174c4,road engines
 1fcadcf4341001fe0c9ab0c06,founding of new Protestant churches
 1fcfe60feb6d690b470545cef,Corliss
@@ -587,12 +587,12 @@ Id,Predicted
 221814e42837bfba647234858,
 224c99d15bbcded3eaa731df8,
 226b905b9edafc50df3fd6e45,
-22820cdaed0afd0fab4d0ab3c,Air Force
+22820cdaed0afd0fab4d0ab3c,
 22ae0abdede0f439f7ddf2b8e,"solid economic growth, an increase in foreign investment as well as funding from the European Union"
 22aea80a5c8e7a2a193967df7,circuit switching
 22b7c4bb54425a3b4ebe6e0ff,
 22bc5a4c87c37ef632ad04beb,1041
-22ca56cef4ca441b0c91daa94,independent components
+22ca56cef4ca441b0c91daa94,
 22ca8acfc89d7dcf2fce630a4,1862–90
 22d6e0ccc87018afe2c8793fd,European Court of Justice and the highest national courts
 22d9c4d9bfb45554cb4cd3f5f,
@@ -617,8 +617,8 @@ Id,Predicted
 2457856892f2bad2260d6c5bb,northeast border
 2458ebee47cbfa27ddbbdc733,
 24798b48b78fced352ca95d76,neuronal dendrites
-24951aceb79f3d3463bcc32b4,Warsaw Uprising Monument
-24ab78fab9bb7ee43927ac8ea,Sant'Eufemia
+24951aceb79f3d3463bcc32b4,
+24ab78fab9bb7ee43927ac8ea,
 24ad03eacbc14b462b7c5dea3,a separate condenser
 24b23e4c03a9bc2a8bba91dcb,
 24c0ae2b08dbded56fcdd0a26,Khanbaliq
@@ -626,26 +626,26 @@ Id,Predicted
 24cce9d09f3c2c0af5add9f4b,zaju
 24dc3f5ebda9bfbc7d9780b9d,
 24f5d01f8d0c21c7abb1c71ec,
-24f78eac329bd80a9c7f4e12c,domestic social reforms could cure the international disease of imperialism by removing its economic foundation
-252043cfe5f509fcdabc1b5f1,fourth Session
+24f78eac329bd80a9c7f4e12c,
+252043cfe5f509fcdabc1b5f1,
 258431ea0ae8fd6dfc7ecee95,"a ""principal hostile country"
 25953dbfa4f69faef2b800fdd,the Peabody Museum of Archaeology and Ethnology
 25a8f88c7aac0b9bdfaceaf90,Beijing
 25acbe2dca6edbdac4bad33d7,Maxwell
 25b8f5ebcdc28da12de0afddf,Political
-25fae4d33d8a3b7bc6bfcadc3,Milan
+25fae4d33d8a3b7bc6bfcadc3,
 25fb8c6b425af9bd4db8c4a3d,
-263f5fff0db7be191ea3dfea5,issues related to the substance of the statement
+263f5fff0db7be191ea3dfea5,
 265cbaabf24ad24c0378ecf00,violence
 26886dbc0b0e56580b6fd93ec,
 268a1023ade64e0e95cedff2e,Camisards
 269abfc943cf2a15587efbd1f,Edward the Confessor
-26a4cce083731f921d02ef3a0,8.8
+26a4cce083731f921d02ef3a0,
 26b1fdfeb50b8cbeb2eec5af9,Treaties establishing the European Union
 26bc62affaeaad7bcb91d5b15,
 26bcecceb75e7fbea635c70c5,the 17th century
 26bec0db139c1fdcecea3b4de,Tibetan Buddhism
-26cacf0aa01ea2a2ffad61401,sorghum
+26cacf0aa01ea2a2ffad61401,
 26dda29a42dfabddc36db102c,different ministers of the member states
 26ddc58dfeccdcbf217da2c81,
 26e4bd51cf81b3a6a4ef9473e,four
@@ -658,27 +658,27 @@ Id,Predicted
 27771dc5047a7b8d9e3baf1bd,
 27821ff01b8d4e3a6afbb0c2b,
 27834adc52143e5b218d3d3dd,
-278f3a62ee44dcefc7583fb4c,put an end to Saddam Hussein's occupation of Kuwait
+278f3a62ee44dcefc7583fb4c,
 279007455a9aa10e9ffd02aed,wine
 27c5a4d766ccfbbdeedb885df,Hassan al Banna
 27ed9f12c07cd165e8a050d6b,
 27faba1d4eebc7161acacfc5f,Shor's algorithm
 2809cd6acaeb83ebde1b1bec3,
 281bbfc27dbce25bc5ee2c919,Gaelic
-2850dccee6eddbc04b11e8feb,Park Ujazdowski
+2850dccee6eddbc04b11e8feb,
 2883dcb4c202ea0b9ae470bbb,
 288844244d5cfc4bb5101cf62,
 28a84e0a8c7c7ffabaa40c8fd,
 28ae6a8f0b93a1ee9dbe9cf8c,
 28b4eae699630ab2b7bfdf848,
 28b88bc77bc0614ff06efdb05,
-28e13b657a1a9e333b91dada9,the Normans
+28e13b657a1a9e333b91dada9,
 28ea8cc07acfce8f5db4dd559,
 28eacaf4a4e904ecb4d98ea09,Faroe Islands
 28ebe898ccb5efbedab80ba10,ambiguous
 28f6eeac0f2d024eff43f767a,
 290746deddd2cd0f0b0ff953c,
-291cf4787cf3acc1cacb36355,DTIME(f(n))
+291cf4787cf3acc1cacb36355,
 292e1d01c477fdce19ebca8b4,"protest that blocked heavy traffic passing over the A13, Brenner Autobahn"
 294b0bb195c2df9f170ee5cef,the outbreak of the First World War
 2960d8ccee9d2374c2dc0eef7,
@@ -693,11 +693,11 @@ Id,Predicted
 29fa347feef6adbf42dcb1cbc,Sainte Foy in Quebec
 29fb70dbdfdbdcbdbbb0e962a,pine forest
 2a2c8e1c1eada60fe7abb55d6,
-2a2d6fe4e28704a1a10d6a7ba,forceful
+2a2d6fe4e28704a1a10d6a7ba,
 2a2e7ef2f9e2d57f0ddd77d1b,380 years
 2a2fadad0df5dc9e2d4ab33bd,King Sigismund III Vasa
 2a5b0deb42c6ae7ae6b3d28ff,
-2a6116bd80fc70f3b4cccb4aa,direct
+2a6116bd80fc70f3b4cccb4aa,
 2a67cccdfbf087618f1fbabd3,
 2a69c8e3879d7ddfc57c5cb67,2.666 million
 2a867467b24e13ce79ab8b197,
@@ -718,22 +718,22 @@ Id,Predicted
 2ae5ca46d71b1dbbad2c8a173,
 2aefac8eaf8a8c7e9eb92b131,
 2af8b05275cb6fd53f0501aec,
-2afad36ca7cd1354fa3dc75e6,set up an insurance fund for employees to claim unpaid wages if their employers had gone insolvent
+2afad36ca7cd1354fa3dc75e6,
 2afef77aa9d0c3fc4eab03561,
-2b20a7e3a7899e22700abfdd7,Masking antigens with host molecules
+2b20a7e3a7899e22700abfdd7,
 2b26a8ca4bd02642cb03b8ae6,imperialist
 2b43df8f3a321af54454bef5a,
 2b4dc2b9b6631d62180a0aded,
 2b5c5c9ccbee4f121889a489d,
 2b5e92cdc52e6cbf00c66a4fa,through the wilderness of the Maine district
 2b6209ed6555ea3ae3cd4e0c7,Vγ9/Vδ2 T cells
-2b6f70dfa3fae5d80ac7cfd50,Inertia
+2b6f70dfa3fae5d80ac7cfd50,
 2b7debaada1bcafe74690dc42,constituency seats
 2b828ac44a8a9101bd395a16a,Matthew Murray
 2b854e907cffcdefc14e7a1ad,
 2b86fbfcdef7a6b300440dc01,France
 2b94e18d5e3b1fdfa230ea123,
-2ba552aaa66f0ea1e1bbe6df4,using unreliable datagrams and associated end-to-end protocol mechanisms
+2ba552aaa66f0ea1e1bbe6df4,
 2baac7b843e20fcef4b9cd8ce,
 2bace9a69085a426f1fb9a5b6,cubic interpolation formula
 2baf963aba1fb6bbdf22d6bf2,early vertebrates
@@ -745,7 +745,7 @@ Id,Predicted
 2bd8fed9ffcfdaf52105b8ff9,
 2bdda2bbbe823cada73cc237e,
 2be32cedad57ffd51e9cce6d5,
-2be60a9ac066acdf59ab3e2f5,introduce smaller and fuel-efficient models for domestic sales
+2be60a9ac066acdf59ab3e2f5,
 2be7ca909f22edbe8e4ae1b17,
 2bed39b6f476cca81e9a2c2ca,Nonconservative forces other than friction include other contact forces
 2bffc86b0dba64abfce46bb88,1928
@@ -772,7 +772,7 @@ Id,Predicted
 2cf7badae7b4d7b4c7fce22ba,deterministic Turing machines
 2d2aacb15ae57f8a5b0d2cdbb,one
 2d3213a040afc23ccf30ae10b,salt and iron
-2d33cdfd0aa44becb2f6baaed,Sweden
+2d33cdfd0aa44becb2f6baaed,
 2d396efbff85e1fe8e51fce9f,
 2d3d5f6c6d271fc6e4d406e8d,
 2d510ed0caeb095c91ca5dc19,Osama bin Laden
@@ -791,7 +791,7 @@ Id,Predicted
 2dfd2f4f83bc246f6e0b8aa1c,Kingdom of Qocho and Tibetan intermediaries
 2e04630bc327067dea15c7aa1,prestigious
 2e08df38369ab34ba3e6ebd39,belonging to Warsz
-2e10ea8f6ec2d4fcff1e9af93,it is not known if they are distinct or equal classes
+2e10ea8f6ec2d4fcff1e9af93,
 2e1c4d50bf2a3cb505e4d5e44,
 2e1fb652fdb0acd4eb2b8f7eb,the Great Yuan
 2e217085bdebe5eca1f49d455,superheaters
@@ -799,7 +799,7 @@ Id,Predicted
 2e33efaa182cc58fe9cb8e571,the army and the populace
 2e34fa3fe0ca01aa2b9b98e33,PSPACE
 2e375390bc568825bd2af5f2b,Maria de la Queillerie
-2e3edb371cc80b7d13b6bccf6,masses
+2e3edb371cc80b7d13b6bccf6,
 2e45ae6cdc898982bbe1c611b,formal language
 2e45ce57a1ccdf03cae0b10be,
 2e5bf19b482b3cdffbc3b9ed3,
@@ -809,7 +809,7 @@ Id,Predicted
 2e712abeaeb4cd9413bb046d8,polynomial time algorithm
 2e7fb7c9d2825af7fed52ede5,there is no revising chamber
 2e809a896dc4e0faac484f82a,
-2e882bfcdc1366c40afc1d7ef,environmental determinism
+2e882bfcdc1366c40afc1d7ef,
 2e8a44cee4df24abe2fccb89a,
 2e8c31a5e7fcdb65da05ac57d,
 2e8e7381bd0aed1917ba62a0a,1999
@@ -817,7 +817,7 @@ Id,Predicted
 2ea092daa93b9cfc2aae832ec,Oneida Carry
 2ea7a4ddedca95aafa1d0caf2,
 2ea91560b4b01cfa1ef55828e,mass of the attracting body
-2eb367d761b480a69a3cfa496,astrophysicists
+2eb367d761b480a69a3cfa496,
 2ebb6ec3a054beb3d690ba2be,
 2ebfbde5e5bdac6a6baeaebec,Deabolis
 2ec0b09800ddc33e42baa2cbf,1759-60
@@ -825,7 +825,7 @@ Id,Predicted
 2ecd2cfea3dcf564b91de0afa,Edict of Nantes
 2ecf0a6faaddaeef6f7bbcb02,
 2ecf9b03699a40a557abeb4ab,
-2edcbf079ceb095549b5d2c20,artisans and farmers
+2edcbf079ceb095549b5d2c20,
 2ee68fbba0bcc9e96917e71a5,
 2ef7b9cabe4eea36b1ab187cb,
 2efafdf6e7da4ed0ccee42c48,the Song dynasty and the Ming dynasty
@@ -843,26 +843,26 @@ Id,Predicted
 2faf6a5ceecacfa9eaabda2ef,
 2fafb6cf1eae8acd4e173bb63,
 2fb01ee50ceee2bf2bde979b2,
-2fbdcb7a0fea101c9d8ecc152,the exoskeleton
+2fbdcb7a0fea101c9d8ecc152,
 2fc22dedd2a97d3dbfad52afb,Hypersensitivity
 2fc6ab06bc5b3dc38f1dbc1e7,
 2fc83a2c74c88f12eeb4ee1f4,
-2fcca79e6295694fcbe1c8523,instantaneously in action-reaction pairs
+2fcca79e6295694fcbe1c8523,
 2fced7ea8cd7217e1d5bd5e3f,glass-making works
 2fd0deafa7a9eb1eb7ee72064,
 2fd9cdfcdddbdf459b95aa9a9,
 2fda2c03b9eaa3286fc8bac18,
 2fe07b29b49ffb6b77e56d7fb,
 2fe9fceae27d49d72c67bb5df,The Quasiturbine
-2ffa402ac1c080db4cb2fa68f,luxury divisions
+2ffa402ac1c080db4cb2fa68f,
 2fff2ceed58bfdf0b4a0febcf,
 300abba7ee87ae7ef5bcee5ee,reduction
 3022861bfff81ace8a478cccc,
 303da8abd54eee1aebceabcde,
 30495515cda6f139a44bc986a,Sinterklaas
-305668bebeea0c9b3fa4c2898,Lothar de Maizière
+305668bebeea0c9b3fa4c2898,
 30609ab2ea0bad6f33c42b973,Amboise plot
-307efaee5b06fee93f1e18cad,protease activity
+307efaee5b06fee93f1e18cad,
 3096e09a1d7aed92b940a1e59,
 30a3e33d9cbab2aacd52e4ee1,Zachęta National Gallery of Art
 30ceaecefabfaebffd5eceade,
@@ -889,7 +889,7 @@ Id,Predicted
 3230f84e6aaf3b2bfc6c90d18,UNESCO World Heritage Site
 323b47acae9a7c0cb59e7b36c,
 3243bffcaba602fdbc0f13ff4,
-324ebce1f784ebea72c60f6d3,yin-yang and wuxing philosophy
+324ebce1f784ebea72c60f6d3,
 324fe6dbaee9fc05947caa4db,
 325df39e7b26e2eeb679f78c8,antigenic variation
 325ed2c42c8ec1aae6749ca9d,Robert Koch and Emil von Behring
@@ -901,16 +901,16 @@ Id,Predicted
 32dbe9adbd38eb1d01ce2f86f,Cork City
 32ffd3fefd0804c9ef8a50a14,cytokines
 3300babd4d7dd922ccb54424b,1639
-330cbeaf8e02a36ff1f76afd0,a setup phase in each involved node before any packet is transferred to establish the parameters of communication
+330cbeaf8e02a36ff1f76afd0,
 333bebcdfef5b0b0f96ca1ca5,
 33b1e7ec503efdbf7b1a6bff2,
 33b2b288bba70d59edebf3b5d,several hundred horsepower
-33b2faadd25dddebe1ab3f7e7,deterministic Turing machines
+33b2faadd25dddebe1ab3f7e7,
 33b380f82083765a6cec5cfde,
 33b7daf7e68bed4cf7193fa1b,a nationwide network
-33c09fd8b0fbabc978b0420cb,Krasiński Palace Garden
+33c09fd8b0fbabc978b0420cb,
 33dbba1d3efc5a9fcda2514c7,
-33eaabeb4a2dc6743ff5a3dd5,never
+33eaabeb4a2dc6743ff5a3dd5,
 33ecb6fdc57cd97d7ccb4a369,
 33f7bdebd8b0ed21a2411c9bb,internal combustion engines
 33f7daeb81da2e0f0dfe37b0c,
@@ -918,7 +918,7 @@ Id,Predicted
 345ddec94bc6baa8e60e76dbf,$414 million
 346adb89da43c3fc83cb8cf31,ideological
 346aec4fddfd3b6e77e45c3d7,1951
-347b712cafd1c3536dae04986,color confinement
+347b712cafd1c3536dae04986,
 349d32b09be8b94cddb5d5efa,balance of parties across Parliament
 34acec27fd3bbaac023b7afef,
 34dfdf0aa7c79fdee16b72d4c,
@@ -926,7 +926,7 @@ Id,Predicted
 34f8c4bdb1aaeaae6e8cfcc9d,in the aftermath of the Warsaw Uprising of 1944
 3505f9098245ebac2d6abfefd,
 3515bf7dff5db33d051bffd96,southern and central parts
-351d4cb01f188395c686f3cfd,The weak force
+351d4cb01f188395c686f3cfd,
 353a46ee6ea0bdcb6d839ee40,Germany
 354ddc26e9a4336cfdaee14fc,Decision Time
 35567343d000ffaf3aedde2e9,
@@ -938,12 +938,12 @@ Id,Predicted
 35cb27734bc47c7c496adb6ff,
 35deffc94e3cc5e4ebabac3c3,
 36074afdc69b9ddc7535b790f,
-361c39bf0ebaabbb9ff273f56,the Huguenots had their own militia
+361c39bf0ebaabbb9ff273f56,
 362ff4da9cb3bbc778c100ac7,1851
 364dab96d0c49f6cac7ec0bdf,
 36911fbc4f5e5ba9b0a6b2cbf,polynomial time
 36a7f806c454eb7306cca70aa,
-36b37ab02fe617bb6c309bc3c,Egypt
+36b37ab02fe617bb6c309bc3c,
 36befae66d9aa2e5e0b0d7b12,
 36c09e2eec1afac2a044ac8b2,
 36c5bf65ffce80eaa8fbaae58,
@@ -954,15 +954,15 @@ Id,Predicted
 3751221d3c87bfdaebcb2ba01,"Mongolian, Tibetan, and Chinese"
 376a0ec10b8c9c0c6c0c6fd46,RNA silencing
 376d5adf925c6ef9aa95aedff,Lisbon Treaty
-3781b065d1f18f93cedef2d2d,Toyota Hilux and the Datsun Truck
+3781b065d1f18f93cedef2d2d,
 3790f1e76a2b3c3b7cb5fd4b7,
 37a69cefaca29a42db43f6ee6,
 37aa39d2fe680ecbcaab3abed,immune surveillance
 37b45ea5cc242a33bbfda23cb,complexity theory
 37c2f5692e8416a8ecf27daa5,
 37caf38bc56c7d4240ecf2d30,
-37cdcd7ebff1cb29eb1d4aee0,constant bit rate and latency between nodes
-37dde13eb21f29b99b01cfdbe,time complexity (or any other complexity measure) of different inputs
+37cdcd7ebff1cb29eb1d4aee0,
+37dde13eb21f29b99b01cfdbe,
 37e2df3bed8d0bb371f7a5699,coal
 37e54d41dfcc1afd9dee6bd4b,"16,000 to 35,000"
 3804eed7ac1dd3aaecf5bdbea,
@@ -984,7 +984,7 @@ Id,Predicted
 3973466bbe308a3ac2ad1c7a8,Minister of the Interior
 397aad1ac91291849b11c7b9f,
 3982f8deb9e11d2be6ed39612,to build a premise that would allow for U.S authorship of a 'new world' which was to be characterized by geographical order
-398c6fbd80ed8ed6cf6aa88f7,Protestantism in favour of Roman Catholicism
+398c6fbd80ed8ed6cf6aa88f7,
 399cdba83ed0d9befdfdc5bf0,Jacques Legardeur de Saint-Pierre
 399e35ece3fdc2fecdb6c4ef6,European Court of Human Rights
 39b6cd469ccfa6f466c75caba,transport
@@ -1021,7 +1021,7 @@ Id,Predicted
 3aefdee35af416ca1d7b3b7ab,connect more than 100 universities and research and engineering institutions
 3af5b60fdcc7acdfaa9e0defe,
 3af7d8efa23723edb8c20e65b,
-3afadcef9fd0f6bb3dadd0ebd,Charleston
+3afadcef9fd0f6bb3dadd0ebd,
 3afd7eba7fddaef3223e2d8b8,1775–1795
 3afe399f4f2a6032ff0463aab,
 3b0a98ec40ebb3e0efab94a38,
@@ -1042,13 +1042,13 @@ Id,Predicted
 3bcdb4a9a60abefad9fdc5778,
 3bcdef7c45dd94ef911d1abdf,
 3bcfb580daa31b0e83acfd7bf,to determine the practical limits on what computers can and cannot do
-3bdb6ec7704cff1925c20c9dc,religion from politics
+3bdb6ec7704cff1925c20c9dc,
 3bdccc29be3f5e6a9bd50e1cb,
 3bea3bfe2fa49ad6cefa27e8a,
 3bed1c36ee2de73c1bfdacd03,5 pm
 3bf051c9f1cfeaade982ad156,"struggle, famine, and bitterness among the populace"
 3bf704a9ef7a4fcef58c29984,James Clerk Maxwell
-3bfe8ba73fe0fa0aaaac79fab,Red Turban Rebellion
+3bfe8ba73fe0fa0aaaac79fab,
 3c0136d974d68ed43ddd193e0,Bureau of Buddhist and Tibetan Affairs
 3c07ec80d5ca4e9dbf28374ee,
 3c07fc028002f57daea780fe7,The French Protestant Church of London
@@ -1061,10 +1061,10 @@ Id,Predicted
 3c3d15e73aec63fb55ca6d54c,
 3c3dacbccaf7dfc5ba199f3ef,
 3c3ee94cfeab0da4becddbd27,Jin
-3c5ea63a865271ad0fda7d534,"distributed adaptive message block switching during his research at the RAND Corporation for the US Air Force into survivable communications networks, first presented to the Air Force"
+3c5ea63a865271ad0fda7d534,
 3c78421ef7ac9cdd080243b81,Canterbury
 3c7dfbcec6cf603571a9745ff,general relativity
-3c7f72deba4aff5cd68c5ae6b,dedicated network bandwidth
+3c7f72deba4aff5cd68c5ae6b,
 3c835d32ff0be9f639a02dc5e,
 3c84ecae1fbb11c1d7b9ded8d,
 3c92f1ad18edaa94fd5265ebd,34%
@@ -1072,7 +1072,7 @@ Id,Predicted
 3ca58fdea5830739471b0c203,
 3cad0ba5dbdb893f2dda305b0,internal migration and urbanisation
 3cb36523f9e4224df1dea0ef9,orthogonal components
-3cbbdbd8ee93ec6cd62acae4b,1985
+3cbbdbd8ee93ec6cd62acae4b,
 3cc2982aceded3eddf7ffda58,
 3cc7ba3cb6bdbffb3ec4cfeb7,
 3ccb023e300d5048976ac6af4,specific memory cells
@@ -1085,8 +1085,8 @@ Id,Predicted
 3cfb9f5cafeab36956fbd1cd7,Irena Bajerska
 3cfd3fec4091cb0a31f4bfc02,1526
 3cfffe10a8fa8b1f8cfca36b0,
-3d1aa5db38c484e86ab930a3e,Manakin Episcopal Church
-3d1cc2ff48cbd27979cc5d02d,3600 revolutions per minute (RPM)
+3d1aa5db38c484e86ab930a3e,
+3d1cc2ff48cbd27979cc5d02d,
 3d2474f104b46adab0b81c726,The invasion failed both militarily and politically
 3d32a6aaada1de88e992cf64d,
 3d3fdb85ae2b15ee1d2c9cf15,the European Community
@@ -1096,7 +1096,7 @@ Id,Predicted
 3d6a328cb63ffacbcdb276fe4,
 3d739f6e03d3871c8ade9d2d4,
 3d7e893e90dc6bb446fbca037,constitutional law
-3d87ad5197754fd4f8d322ede,Rankine cycle
+3d87ad5197754fd4f8d322ede,
 3d8a7ecff62edd730eeaf6cba,Matthew Murray
 3d8ac4e83cef454eba05afe38,
 3dabd5c5e6f6aeddadfeaebcb,
@@ -1119,11 +1119,11 @@ Id,Predicted
 3e570dbb1b512dff69c4a5b7a,
 3e74e33d04825e06ab6f7fc8c,deadly explosives
 3e7c9d89cc7ee178fc93b43df,British America and New France
-3e84c11c88ee6ea416ccab1d4,an invasion of Britain
+3e84c11c88ee6ea416ccab1d4,
 3e9271becb9b7c2ce2b2abd80,
 3ebb8eedabe1f0ca0dc3ba2b0,
 3ebe0ba30dd96465f68788ccc,
-3ec4d5c857417575817ef4882,allowed local area networks to be established ad hoc without the requirement for a centralized router or server
+3ec4d5c857417575817ef4882,
 3ec5eec63f9d9bcd053f4ee4d,Newtonian mechanics
 3ed5a5c6dd8bc81ca6c684689,ten
 3ee219ac9ecb1ef3fdf6f1b85,
@@ -1206,14 +1206,14 @@ Id,Predicted
 43d4c20ddb471cdefa5bd5948,Pawiak
 43e3c0dc76ac17d52c2d1e7ae,
 43f35d7a3c8bb4a65a3f3b76a,
-43fb3ee88c53fdb9bc624eef4,bark of mulberry trees
+43fb3ee88c53fdb9bc624eef4,
 43fca05c629fafcafa1c54fdd,distributed adaptive message block switching
 43fccaaca7c2d8adc4928b294,
 4423e819defc367bc83666fec,
-4481c401b2acfc02d87ca0b17,protein A
+4481c401b2acfc02d87ca0b17,
 448bcbbaebd09c6fb736e0c0f,Robert Koch
 44b08b838ca5f7e6e41c5d29b,
-44bcb597c2338e6dc88489fb1,Laszlo Babai and Eugene Luks
+44bcb597c2338e6dc88489fb1,
 44bff8fad9bda08f6a9d2222a,
 44ce28afefbbb37fd1bc7dfb2,
 44fcfdf1aa9ebe58c75f9c52a,
@@ -1229,9 +1229,9 @@ Id,Predicted
 45fcd3ee432cd4f1cdacf56ba,
 460bd12bf0dbde18c93d255f5,moraine plateau
 460beac144edfccd45d1ad44d,semi-legal
-461042ee44cccb23bfe0eede8,at rest
-461c54bcbf25b96ffc7daade0,Dartmouth
-4637e8bcbecda75d4aeb7a5b8,1997
+461042ee44cccb23bfe0eede8,
+461c54bcbf25b96ffc7daade0,
+4637e8bcbecda75d4aeb7a5b8,
 466b9f0efed0af56adb1be3df,immunological memory
 469f24aabd0e5b44edd6cdcdf,1977
 46ab0dfa7ffa0cefcae96accc,"badly disposed towards the French, and are entirely devoted to the English"
@@ -1248,7 +1248,7 @@ Id,Predicted
 475019d0f1eb99b5a6c5cbcbb,
 475959184f3313f36ba2ac49b,
 475bd3b8acb63dbafb82c01ed,to denote unknown or unexplored territory
-475d871c93ae69bcfd3cedbdf,disagreed about the disposition of prisoners' personal effects
+475d871c93ae69bcfd3cedbdf,
 4769dcbdc0dadfbc9dccb5b07,
 47a9b1d650209d3cb011ce5a9,1964 and 1968
 47ccb2ad40ff2447df7fd8c2a,
@@ -1264,7 +1264,7 @@ Id,Predicted
 48cb6cb94c2ccdefb4efac641,circuit switching
 48d7b2da162bd8adbeb14b4cb,Lead fusible plugs
 48dfe3918f9f620a4adfa00d0,
-48eafba9ae7de0515b9ca79db,multi
+48eafba9ae7de0515b9ca79db,
 48eddc0a948adbbb690b7eb3b,at the right bank of the Vistula
 493226bb59e5e0bdc8b6c1bef,
 4955e45ea1b4d4d1296dcfdea,
@@ -1273,13 +1273,13 @@ Id,Predicted
 49f3a5dbea8c45efba2a3dfad,Katyń Museum
 49fe2e8bc2ae8c8c74decb67f,None
 4a24d7fa5b7cee7e8d94423ef,O(n2)
-4a3e2a515c7ba2bddc9f5fc9e,a village located at the modern-day site of Mariensztat neighbourhood
+4a3e2a515c7ba2bddc9f5fc9e,
 4a4323273d3d8b87f3243fcab,pathogens
 4a4bfd4abd83beab75f1ce23e,an outside proposer
 4a5a397b2b307ebf6aebe5bf5,Kingdom of Prussia
 4a6bfb9f34ee4cbda800af23a,1013
 4a6fe8d9f5f9afaf34e3fde3b,net force
-4a7a3fadae87c3beb8b0e4da0,brisk trade in European colonial captives from either side.
+4a7a3fadae87c3beb8b0e4da0,
 4a7ed6b3a3b5ec7aaec1eafe6,Mongol and Turkic
 4a877ebb27adb8aa310ae4bae,
 4a885decf06c517be80499b90,to clean them of plants and sediments
@@ -1291,7 +1291,7 @@ Id,Predicted
 4accf3457fb90966b8f3cc207,yes
 4adbaef34ec9afb8c3b9d3fba,non-self molecules
 4ae73ead03e6fe8b78ce9db7f,
-4aeda97736bfc9f6ba0adcfe0,woodblocks
+4aeda97736bfc9f6ba0adcfe0,
 4afbe0b7faecb5ddae8d0f02e,
 4b06fbef50e4c54acbfa6490f,the Treaty on the Functioning of the European Union
 4b129d0d67ee77dfeb72eb5fd,
@@ -1321,7 +1321,7 @@ Id,Predicted
 4bfb11bb1dae9aa5ef64ad903,
 4c1b7dbfeb001fb7d9ef3ce41,
 4c365641dba631ce1c25e11d6,
-4c39b0fc7afb11d8db8dd826b,Pauli exclusion principle
+4c39b0fc7afb11d8db8dd826b,
 4c3d2123e054409cb0cc4831c,Kingdom of Sicily
 4c4311e9717ddd5a6c0f2dbd8,
 4c471be2be2bdcea3da19e42a,housing
@@ -1347,12 +1347,12 @@ Id,Predicted
 4cf9eceb1b3e81121af96a88c,Hangzhou
 4d053b9fabdcc1cc1c7bb78df,revolution or invasion
 4d1dadcb6ce23266f3a61cafa,
-4d39430e5f46c88f9ccfcdda3,1013
+4d39430e5f46c88f9ccfcdda3,
 4d3f35817e0a86e8baefbd4ac,
 4d5afe5efbb76af2d668071f3,
 4d5cf6f2ce516e6bbc2de3c37,The Reconstruction of Religious Thought in Islam
 4d5f0ce4fa2f111aaacaad7c2,connection-oriented operations
-4d5fdc67db016efd9bfec90db,the Monarch
+4d5fdc67db016efd9bfec90db,
 4d5febb1a55efbfddd97b4a57,time and space hierarchy theorems
 4d66e26b5ddcced18c8da2ce4,
 4d6dcdfedce23af0d6bfff0da,
@@ -1360,7 +1360,7 @@ Id,Predicted
 4d87ce4e37f1008aaabe5eb3e,machine gun
 4da3bb9f666005e58f6566a14,Khitan Liao and Jurchen Jin dynasties
 4da42debfe4f298131da2c564,
-4daf9dbb2c9c8461afacdd7f8,8.8
+4daf9dbb2c9c8461afacdd7f8,
 4db31e0b00d75ddeefb64d23e,A decade after the 1973 oil crisis
 4dbacd7ff27b4ad7d1efe8fab,Conservative Party
 4dbbe9fd9fc25ce3edaa76ec0,young and the elderly
@@ -1377,11 +1377,11 @@ Id,Predicted
 4e1c48b2740bbb9be9c2795bd,four days
 4e1e32187be307c1cac3abbbf,"Each packet is labeled with a destination address, source address, and port numbers"
 4e4dafb2e17eefbccfaa50d5a,
-4e5aba123c4fec0fa6e5be008,Labour
+4e5aba123c4fec0fa6e5be008,
 4e5c5aace17bdddf3d36bcab5,
 4e5f0ffcfc9cfbcafecc467fa,Bills
 4e64d4ac755d2d683b64283bd,
-4e7cae2edbab19afedb3bd10c,"The graph isomorphism problem, the discrete logarithm problem and the integer factorization problem"
+4e7cae2edbab19afedb3bd10c,
 4e974d5da27c459a08c3d4ea3,1981
 4e9c17abdb9e4dcf7ede5b8a9,
 4e9cdbdcc953f0dcea0e0596f,
@@ -1399,27 +1399,27 @@ Id,Predicted
 4ee2ba564e122f10f5efd3c00,less than two percent per year
 4ee9ac634c1c275b0f05dfc84,
 4eef4a2babd684a885ad09804,
-4ef6bb4bf51bd5aa93fdd2eb6,as a function of the size of the instance
+4ef6bb4bf51bd5aa93fdd2eb6,
 4efbe9c06c3b671bbac27f5ac,
-4f0850a23482ef78fe3beec70,many years
+4f0850a23482ef78fe3beec70,
 4f0effa0b40fc1e94cdada143,
 4f3870ce7e6edf6c66f85e3cc,blueprint for devolution
 4f3bbaf248fffb4e12a7d1abb,It was the first network to make the hosts responsible for reliable delivery of data
-4f3bfc7c0bdc1cc90726b46bd,the Fourth Intercolonial War and the Great War for the Empire
+4f3bfc7c0bdc1cc90726b46bd,
 4f5dcbe3c09a2c1340e92af2f,
-4f5dcc26fbdbed1bf80c2a9bf,1816
+4f5dcc26fbdbed1bf80c2a9bf,
 4f6fcd3f75fbab2cbf1d6b4ad,
 4f8dcc025265166567beb5fda,Dublin
 4fa2f8fd8bae2f02f2dc335a4,1281
 4fad81da0a6d36b01cdc32bd9,theory of general relativity
-4fae3508523011bf13ddaeaba,200
+4fae3508523011bf13ddaeaba,
 4fbbdafcc6f95364beb86bf7a,4
 4fca2fc0ad11aa8ac23aa042b,1970s
 4fca2ffa097b25db00e23795f,Sybilla of Normandy
 4fcb0184f29abea0efbcaa89f,11
 4fcbffbbbaf0adcc2e51df8e8,a political focus
-4fcd09ab5b9d8edd3de6aefbe,electromagnetism
-4fdd08fe5af85b4cd5c9ef7f1,NP-complete knapsack problem
+4fcd09ab5b9d8edd3de6aefbe,
+4fdd08fe5af85b4cd5c9ef7f1,
 4fe3d4af3de794cd40a7bd2b0,
 501c1f1caaac6b275c5a5cd22,Cobham-Edmonds thesis
 502373b91e9f2a179b2f9cd4a,Warsaw City Council
@@ -1431,7 +1431,7 @@ Id,Predicted
 505ae2a0edeed41d47ca5ecc0,1708
 509cd7ad0898ef6b4bbfebbce,
 50b1a0ca54df6c9afdd9ab6ca,the children who served as messengers and frontline troops in the Warsaw Uprising
-50bdf598060d7ae9d589d80f2,Tatyana Ali
+50bdf598060d7ae9d589d80f2,
 50d4e3b8cacf1603f87afa7d9,
 50dbadbad14acede48ea46fb2,Joseph Black
 50eea52f21b9cdfcf561b1986,
@@ -1442,7 +1442,7 @@ Id,Predicted
 5185e9f3addaced5c1ee26c2b,Guo Shoujing
 5192fcac6bbc2bdb3be1a0cf7,Sweden
 51a1c5c08afeb6e9dcda827ad,since the 1950s
-51b61aa4cdad2fffedd4dc6dd,12
+51b61aa4cdad2fffedd4dc6dd,
 51ba7ceffbddffea3fc01779c,
 51bba699dad59a0ca58efadeb,Parliamentary Bureau
 51c9f9b33994d8d0a5c6acb7c,
@@ -1466,7 +1466,7 @@ Id,Predicted
 53d39324ad9d6e0a2cade0d8a,
 53d71738dfdb8a3ad63a314a3,
 53dbe6c0fdbdb6cadbe1ac4b4,to connect two PDP-11 minicomputers
-53dc0f7dcbb5362d3a5c52b3b,Sweyn Forkbeard
+53dc0f7dcbb5362d3a5c52b3b,
 53dd3daf7c8428dfbaaef5e95,
 53ec2dbbed1a76dfebc5de7f7,18 million
 5413d4fa18b18aed2faffff0f,
@@ -1484,13 +1484,13 @@ Id,Predicted
 558c592c05f2fee55c0ebfc06,fifty percent
 55a02cf539c644f0bfd9a8695,macrophysical considerations that yield forces as arising from a macroscopic statistical average of microstates
 55a358aacc6a93c8e2de3bdba,
-55b25527c828b12bf4ff83aa4,according to a multiple access scheme
+55b25527c828b12bf4ff83aa4,
 55bfecab8a08ff89e9de7ccc9,since at least the mid-14th century
-55c8acdd333f944afc6dbed5b,packet switching
+55c8acdd333f944afc6dbed5b,
 55cf04cde82e33bec8ef4cc3e,
 55ddb11abaadceb660c4d9d3a,
 55de7d614ced4cca5dccc2fe2,
-55f3ff6bfddb11e1d27fecc4d,unity of God
+55f3ff6bfddb11e1d27fecc4d,
 5602a5a6e192ec2cfdad0859e,less than a year
 560872c38db0ea5beebdb57a0,
 560febb5ffab0ff62bb91cbcb,the program was believed to disadvantage low-income and under-represented minority applicants applying to selective universities
@@ -1507,11 +1507,11 @@ Id,Predicted
 56f11aaab914c4acc0ae655f6,quietist/non-political Islam
 56f3c27fbdb696c6f4ac17a6b,
 56f522b5408c68c9decb8e168,
-570f5b3087e2cadc58c62ff30,Jewish
+570f5b3087e2cadc58c62ff30,
 570fcdff79c84e850a044a7f4,Kraków
 572cd638cfa9e653c3acf7d5d,complicated definitions
 572dc2caee8fe6d6ceaa6d355,
-57510ed4ff2743c37fccbfdf0,"80,000"
+57510ed4ff2743c37fccbfdf0,
 579067edcffacf8dfaa935e9e,
 57bcab69b2ab728ffb2d15e04,
 57cac5280ea7e7ff45e473afa,symbiotic
@@ -1531,10 +1531,10 @@ Id,Predicted
 58e19a9bfacfbb163792fab9d,Zhongshu Sheng
 58e5b3cacdeadfc0ccebabc3a,
 58e85c8df3e7dc0a10df5e452,1775
-58f373d4b25a9c5a1c7ede54f,President
+58f373d4b25a9c5a1c7ede54f,
 58fd9af42e0cd870841d1e70b,six years
 591ddcc62bcfa4ffbeecb2009,packet switching
-591faa710b62a3e6dd012e2ce,burning combustible materials with an appropriate supply of air
+591faa710b62a3e6dd012e2ce,
 592eb27afabdec764fe6077fd,orientalism and tropicality
 598e7b4ceaf82a2acd3b6ce0a,Seal of the city of Warsaw
 599bbee35defabb32c9a49bdd,
@@ -1569,7 +1569,7 @@ Id,Predicted
 5aece8cba678db1225de2cea4,a commune (gmina)
 5afadcbd57a22b0f58e8bf5dc,
 5afbfd3195f1efb24fcf2b7ea,as soon as they enter into force
-5aff575ea5a4c4cc842404b8c,Pathogens
+5aff575ea5a4c4cc842404b8c,
 5b2725b9d36b2f1df98fea5f6,computational
 5b28f8cfae36c7e23f852796c,Africa
 5b35e919d2410e68171bebf05,
@@ -1590,7 +1590,7 @@ Id,Predicted
 5be89c52a7f1d0bb63ee4daf3,
 5be9bee2c5e7e82be4dfbdc0b,
 5bede8a9ca08d1abc9ce5d3f5,
-5bf15d7e3001450aeea48ea4f,Steam engines
+5bf15d7e3001450aeea48ea4f,
 5c07288bedbcb9f0c9f69da0a,attacked the British column
 5c2491829155b8aadc70ba1bc,
 5c28f333fac4fe83a8ebe6038,
@@ -1598,7 +1598,7 @@ Id,Predicted
 5c3afbc674baaad9da8546beb,
 5c6ec340db95bbcd8c4a55c47,
 5c75b7eb50127fbdce16e71de,quicksort
-5c7880a66c83ccfee07d0d110,Huguenots
+5c7880a66c83ccfee07d0d110,
 5c78a4fdeea1f0d7ed9b6feba,
 5c7ca0ae5dfdceed3d7a71cee,
 5c9782536c71c96ba00edc7a7,
@@ -1606,7 +1606,7 @@ Id,Predicted
 5cadbfccee2ef1d671c5f44ba,
 5cb00551d6f7fb913cbbaaa79,economic stagnation
 5cbdb15ba0f1908c4faf9f4dd,"$38,000"
-5cc7e9d169abb28bc8e16d6f5,plug-n-play system
+5cc7e9d169abb28bc8e16d6f5,
 5cca07dbb7f3cd06336f92dcb,steam turbines
 5ccfdd81e1be53aecb4c1fd7f,
 5cd90a1d74aac9cf47b740b1a,
@@ -1624,9 +1624,9 @@ Id,Predicted
 5d3df52bdd1d12a0d375aeccf,dozens
 5d508bfdcf6fff840e0ceec20,creating greater scarcity
 5d55ee149b9a67301eef7eaa2,
-5d56fb537cf484a90e4329a4b,France's claim to the region was superior to that of the British
+5d56fb537cf484a90e4329a4b,
 5d6049bf2fff778ec69b6312b,
-5d6dcb6b9bf1dec147bc6d9df,alcohol
+5d6dcb6b9bf1dec147bc6d9df,
 5d72c001d76a811d32cae707b,
 5d907ec3a5ceefbae9ad4b5c2,
 5d9a80e098ad0faccdfc04fe1,
@@ -1644,7 +1644,7 @@ Id,Predicted
 5e2c846a8cdc7abb32daeac05,
 5e39cdaecafbfc78690dc9d41,closed
 5e5499cbf7a64d9e163c1acfe,
-5e6585f91b84dafa559fdd171,education
+5e6585f91b84dafa559fdd171,
 5e66aeaff91ee4ead6abaa496,eight
 5e67e618efa45f096123af59d,
 5e6ecc3bd4a4adaa6ffd6d0a7,eight
@@ -1668,7 +1668,7 @@ Id,Predicted
 5edce98cfc9de9c1aeff7c4c3,Normans and Norman
 5ede8ffad55ed40f0090ea0cb,
 5ee4954eb7b4cf5b652eb5c7c,
-5eecce29bdfedb47bac1a5ad7,the nuclear force
+5eecce29bdfedb47bac1a5ad7,
 5eeeec38379c4bd3cbc9e396c,constant factors and smaller terms. This makes the bounds independent of the specific details of the computational model used
 5efc02f78ddcfd5ad605147c5,four
 5efcaeeaefd2f85da165ccba9,"420,000"
@@ -1684,7 +1684,7 @@ Id,Predicted
 5f71dbb195c54ab2dbdf502aa,The first item of business on Wednesdays is usually Time for Reflection
 5f7dcda1eb486adedf36d9270,the British were able to prevent the arrival of French relief ships in the naval Battle of the Restigouche
 5f8c0838fbd82a6ffaf4d782a,
-5fa1e76df93bafaac2b13c910,Conan O'Brien
+5fa1e76df93bafaac2b13c910,
 5fafaf61912d9f9e18914bed6,
 5fb4dfbef4d81d1c9a6a178d8,"Richard Trevithick and, separately, Oliver Evans"
 5fbac6a0eed8c8c2bc19f0de1,Anwar Sadat
@@ -1701,13 +1701,13 @@ Id,Predicted
 60329ef744dddd0160c0acdab,300 percent
 605d7fa14eac29c8746609bcd,
 60676e51df75afd63e4ed1a8d,
-6098cb2cd7c1b1d95ca5e1e7e,Stalin was hostile to the idea of an independent Poland
+6098cb2cd7c1b1d95ca5e1e7e,
 60ab934b5a7f3d4bf7ef07d5c,
 60b1aa0e4f9daacca0ab7dd34,
 60b6be433575ad9abdd7cf7c7,Fort Beauséjour
 60baeee10b12dbd2d2b4f2dce,Calvinist
 60c0a1c88eefcacc9ec8bf822,
-60cfd1e6211da7fbacbed6fc9,9th century
+60cfd1e6211da7fbacbed6fc9,
 60d2b2bf167b7abfddab50fb6,European Union law
 60f97438a0bd3ea3777c9ffe7,
 610ebeb21f0e9bdcf7c2c53b7,NFIL3
@@ -1737,7 +1737,7 @@ Id,Predicted
 62def55d4f4ddee5a0da9a8e1,Hervé
 630b99004a602f9facdeeaaeb,Dendritic cells
 630dafdb2fedf009eebafc4be,1604
-630dcdda3cbc0d4d1c53aa3ab,Tension forces
+630dcdda3cbc0d4d1c53aa3ab,
 6333a7bd1a999e8aa174112af,Works Council Directive
 6333c8b8f3d1e14244ee8beaf,
 6349bc169cc25be73c3f4d8af,sent Dieskau to Fort St. Frédéric to meet that threat
@@ -1749,14 +1749,14 @@ Id,Predicted
 63e58f16d3b6b6ab5a88f4ea9,dreadnought battleships
 63ef92bcc50abbb0bddee32f5,90%
 63f93509946273ad8cf32df12,
-640ba494b8b2d4615aa54c657,sea level
+640ba494b8b2d4615aa54c657,
 640d3a1fdcda83ea4f47b5765,a much larger conflict between France and Great Britain
 6411f10dba3cff5eccb7cc01b,binary notation
 64124c05128e307cd9e4078d2,1849
 6432b461abfa9c08e147d7ac5,antibodies are generated against tumor cells
 643a33b5effa4a1ccd2e41cbe,
 646bae60595ef967ec8502f4d,2006 Israel-Lebanon conflict
-6472e1bafa65bbbf6bac40a97,the Oneida Carry
+6472e1bafa65bbbf6bac40a97,
 6479408ccda90ee78f85b3a86,steam engine indicator
 64805c9bd9dc4efa676e4bfae,solar
 6484abb02effd34559b6e36df,
@@ -1764,15 +1764,15 @@ Id,Predicted
 648ffcb3b0dbb2fcd757acac9,
 649a0ddda26bb9a3cdca07e96,rich and well socially standing
 64acfaf4cd8cb4ab81e630ada,CYP27B1
-64beeaf8deac9777abadcfca6,"""John Harvard Scholar"" and ""Harvard College Scholar"""
+64beeaf8deac9777abadcfca6,
 64c9f4749b3afe14afdc20caf,adjustable spring-loaded valve
 64cbf1fcc763f70114eae1fcc,
-64d6a5f2f4bb7ec9dc2ecc13c,1754
+64d6a5f2f4bb7ec9dc2ecc13c,
 64dc4bea75c2b9902803fe743,
 64e6da3cb88c4fb2c37fe6192,
 64ec2da3b3fc7fd55e5ffd0ff,
 64f4fdbdcc0ec3cdcf40acb12,
-651fdbcd2f45fc0c8005dfeb0,Fringe or splinter movements
+651fdbcd2f45fc0c8005dfeb0,
 654aebc6bb8fb4af4acae9cff,one of the most influential movements
 655cb9c9e6adf71eefdbf27b6,
 65626eca2ff5c3eaf558e16c1,
@@ -1803,7 +1803,7 @@ Id,Predicted
 68ae3ccaeffdea42b8ef7a4ff,
 68b19ec8d27ce861a60c278a0,
 68cf05f67fd29c6f129fe2fb9,France
-68db3a09e77de171b465c61ba,a party has commanded a parliamentary majority
+68db3a09e77de171b465c61ba,
 68faff1f93a9712b179a28a7c,
 68febef44add3bc2b756fbbb1,
 690c14bca5cd1b2ecb31aca27,
@@ -1816,12 +1816,12 @@ Id,Predicted
 69d6c4d3bf055959924ca230f,
 69dcc3a3b1bbcfa0bcaadef91,
 69f3ecfaba653ab97f9b53a16,
-69fb8656d00aed0dde2cc06cb,brain drain
+69fb8656d00aed0dde2cc06cb,
 69ff94b81dddab7438a1150f9,physical control
 6a14f34b624eacdc3929dc160,
 6a1a98cb4b7e53efcbe2e99f0,marginal
-6a208a8e82afa8cef6ef0c61b,"Ba'athism, Arab socialism"
-6a22f7b259ed9358766eb68b9,Wars of Religion
+6a208a8e82afa8cef6ef0c61b,
+6a22f7b259ed9358766eb68b9,
 6a35eab59b18f9b5c2aabda9d,generally poor French results
 6a3f97d598bcb3dfbf60ffb6d,Ryan Leslie
 6a4db5dae0a47cb1a4eb3be2d,three years
@@ -1829,18 +1829,18 @@ Id,Predicted
 6a6cace3ab1e41a92dba4666d,
 6a6d8b63ea9f35fc4cd5183bc,
 6a7c8faa5f04decbb8f4bbe60,Soviet
-6a7c9ebbbc3bccd0a08874a40,"macrophages, neutrophils, and dendritic cells"
+6a7c9ebbbc3bccd0a08874a40,
 6a8cdfb23a2cda198db3c810e,sleep
 6a9392af4ded3ad2dfebbf3f8,four
 6a9a94febe1492cefacb8eafc,
 6ab0aa1fbff031d5dd4b5f869,Very high-speed Backbone Network Service
 6ab48b35fac61a5ffa0be9efc,
 6ab4dba44d3df44450960aaf5,
-6ac8bcf0c12bb5df6d4d6e167,Feynman diagrams
+6ac8bcf0c12bb5df6d4d6e167,
 6acf5c19aadea2bc6feebc3ba,
 6ad0e1ef4a1e0cee96111a8aa,three or four
 6add3b7baf20f87fa520afc19,1249
-6aeab7ee1ea03d7e10fdbe3e4,At Decision Time
+6aeab7ee1ea03d7e10fdbe3e4,
 6af8404ab67e2c6a827522fea,
 6afa8afac2f0beaef54fca4cd,
 6afbda70eaba0d9214e77e904,21 February 1804
@@ -1867,7 +1867,7 @@ Id,Predicted
 6bb1e1fdf07b5f3a53f8187ae,three
 6bbc4fc428f89ac7874c2104c,
 6bbfa9f60af64a9decaaf8dc5,
-6bd32abdfa93aa517856d30de,first Thursday in May
+6bd32abdfa93aa517856d30de,
 6bd3a3baaf3d98ddacda2c925,
 6be16e9a8e948169668c567ab,
 6bf69a82f7c4b689f62c575bd,local administrative structure of past Chinese dynasties
@@ -1887,10 +1887,10 @@ Id,Predicted
 6ca861dae68b1b65ef6c9fe76,"Havana, Cuba"
 6caa10c1c2e07ebf6ce0997c8,
 6cabf6b748aafe7b545205de6,
-6cb073b045d1ac26fc5fbbcbb,"no French regular army troops were stationed in North America, and few British troops"
+6cb073b045d1ac26fc5fbbcbb,
 6cb4cd0633c3e63341ec0484e,the Catholic Church
 6cb5f2ad2d3c0ae91fb78dad5,CD4
-6cbc9a7bd74badd0ff85d00cf,the Normans
+6cbc9a7bd74badd0ff85d00cf,
 6ccdbceab898fbb6bff7b5e9f,conservative Muslims
 6cceef4decdddcc196ee8b060,their disastrous financial situation
 6cde9a197cec0fb61c7a6696e,
@@ -1901,7 +1901,7 @@ Id,Predicted
 6d10bac0ddafa3b1183dfa502,New Rochelle
 6d119d81ee4c37da9f0bfda60,"common rules for coal and steel, and then atomic energy"
 6d1dbd2dffebebbe8959f78fa,Warraghiggey
-6d2fff36bcac0ea0e689a5a31,William the Conqueror
+6d2fff36bcac0ea0e689a5a31,
 6d31dce2b2dcee622bec8d0cd,
 6d36fc7b0ddaaeeccb80bb0d1,
 6d3f5948a3fd534d684228fa9,dangerous enemies
@@ -1912,24 +1912,24 @@ Id,Predicted
 6dc893f1b08303d0c99bfb5f1,the Arctic
 6dca4bad72fb93cae2bb4d790,
 6dd5dcc8f60c7a785ab1d4560,
-6de35e88e3f5576d96ddcc183,1964
+6de35e88e3f5576d96ddcc183,
 6de4e24fec02bf6e7ecadc81b,ten million
-6deccbaedebbec5cea8ccfe5e,aggressiveness
+6deccbaedebbec5cea8ccfe5e,
 6df7b432a5c3f48fb2afddcbe,
-6dfe568ae635178286cfedbc2,semi-legal
-6e007fcf4ddac73ba3fc9cadc,restaurant
+6dfe568ae635178286cfedbc2,
+6e007fcf4ddac73ba3fc9cadc,
 6e0d0e48d23f0ea5cbebaa4bf,
 6e1c12541c9eb48dda646ce10,
 6e2df77f9fcddaf2bdccb6bc8,Governor Vaudreuil
 6e399b8728def58c87b7c79b4,
-6e45afeec0c2ce4da2aba9a6c,Germanic Museum
+6e45afeec0c2ce4da2aba9a6c,
 6e4aa55e6ce72ecf1f6c0fa89,Montpellier
 6e4cef5b2bb478a8b9cdabe44,
 6e57dd4acf1a91fcad154f8ba,liquid phase
 6e5e57cf3fefa096c9c4f5ad5,
 6e6e8d1dff35903f53f5f5246,independent components
 6e84bba4aeb12a77226cbb6c6,
-6e8ecf2467ecab21ecf4e6a28,28
+6e8ecf2467ecab21ecf4e6a28,
 6e91fd213bb7f21d81a21abad,
 6e9ab3aeadf2e7a0cb7df48fd,
 6ea31ff1ad0cd2ffeacaf98b8,Cornell
@@ -1948,7 +1948,7 @@ Id,Predicted
 6efabe1200b86ceca5dba9269,His objective was to punish the Miami people of Pickawillany for not following Céloron's orders to cease trading with the British
 6efdcfdadc7deca9fdfef84db,
 6f02d5f79c1acaacbaa59b103,
-6f0beed642a18fb22aae7c164,triple and quadruple expansion engines
+6f0beed642a18fb22aae7c164,
 6f12e2d05f60a0c0bd54a74eb,"new and enlarged bridges, a shuttle service and/or a tram"
 6f173cba1c2cbba9acca89627,
 6f1b2b54425febab993a14d24,
@@ -1967,7 +1967,7 @@ Id,Predicted
 6fa3f36cbef0db307efd7e8fb,November 22
 6faaafa8e91a395c0e15afbd2,
 6fabf3422e5bf7d6b84ed0f02,Immunology
-6fc8eff24181e24ea1ef74e90,"Schenectady, Phoenix, Chicago, and Phoenix"
+6fc8eff24181e24ea1ef74e90,
 6fcdccc3b3dfd2a0fbf6711ec,early 1990s
 6fcf2ddaad70d60f5fb77a426,"yes or no, or alternately either 1 or 0"
 6fda5c8ac7c0c6f20ff1b4d57,America
@@ -1996,9 +1996,9 @@ Id,Predicted
 719dd196e2b834bfb5c234cfc,over a wide range of sizes in less than quadratic time
 71ab7bb96efbe6c7bd0dc8f05,Bretton Woods Accord
 71ba3fdc19c8220e0c8e6a71c,MHC class I
-71bafd61a4ffea7ebe67becfb,MCI Telecommunications
+71bafd61a4ffea7ebe67becfb,
 71cee2f8cf3cdab4bea3de67c,empty land
-71d68aaa6c5df27fae2a121b1,209-acre
+71d68aaa6c5df27fae2a121b1,
 71de24c9aadfaa9c47aea5afa,about 1300
 71dea8cefc250fd07cc53abd4,lupus erythematosus
 71eb21da6ccfcfebdd3fc384e,Richard I
@@ -2006,7 +2006,7 @@ Id,Predicted
 720f3a6d9efaf7bb2ecb0beb6,
 721db0d81952f1baffa8efcea,
 726bacea95beb3e73a77fea53,factories
-7278009e55bcde5cd4ae3f243,supply chain
+7278009e55bcde5cd4ae3f243,
 72a7dc23bdcb004ddfba21e82,Wahhabism
 72aadecbd6f60b3ba9731bd36,
 72ce625ecda415e9ede501f0b,southern China withstood and fought to the last before caving in
@@ -2021,16 +2021,16 @@ Id,Predicted
 7383edb378b5e760f2c13efe3,"by assuming the task of interpreting the treaties, and accelerating economic and political integration"
 73a59430d1e8ed6ea6e15f9f6,
 73bc24739a2eabc4b2bcff4a3,Interactive
-73caf9aec0eb4ebccfc195ee2,European theatre of the war
+73caf9aec0eb4ebccfc195ee2,
 73dd9b00edb7a5dfcbb5b31ce,
 73efefb2ab7d86ff8bcaeec4e,Ottoman
 73f3ad2944ca7fae0329be0d9,three
 7406c6ea6e842fa09f4d3a7ae,steamboats
 7430baf925f2535f8634fa1d3,
-745bf0bfae729df8465ffaaf2,Internet2 Network
+745bf0bfae729df8465ffaaf2,
 748cf19f61dfda8f6bac6ffac,
 74a4ac39e0973ceb1a5384604,
-74a933e248bcb43bff40535b4,2016
+74a933e248bcb43bff40535b4,
 74ad3652f36a1d0b8cdf9f661,holding a sword
 74af56cab9dbfbacd31a29fb4,
 74dc1a88d006ddc49dcef8cbe,
@@ -2046,7 +2046,7 @@ Id,Predicted
 75da05aa6141b093edb6cf9ce,
 75dbe2c7446b0bbfa59f2cbed,Enrique Pérez de Guzmán
 75dcb82a88bddca40f01d56da,the Guanabara Confession of Faith
-75dd50be50e1e63a995ea4f8f,ARPANET technology
+75dd50be50e1e63a995ea4f8f,
 75fb2cbbf78474eceaf50eadf,
 76197c70d71ba0748bbcbdcc3,1638
 762b5bdfd1a9a8b72826a42cb,not uniform
@@ -2065,14 +2065,14 @@ Id,Predicted
 771beaad3cdf348024a0ca7eb,
 77470552ab8bd4afc1eaadfd4,
 7794f42aa48cb4fde68ce9fa5,the Horn of Africa
-77ab5f1bb3f5f7e4c4f6c5de5,University of Aberdeen
+77ab5f1bb3f5f7e4c4f6c5de5,
 77abafd72b79d17a8e3ac761c,
 77c72a9074da7482562bd8f57,"Normans of Italy, France and England eventually served as avid Crusaders under the Italo-Norman prince Bohemund I"
 7803eb6bd6d8b4eb4e41a92ab,Battle of Hastings
 783498fb762f10c9adf5cf5b9,1981
 784a3c6d2bdd8bdd3ff7bf7cb,
 7866f3f01aa2cff6ffc8edcf6,
-78a54e9b97aca3ea2fdae82af,flour mill Boulton & Watt were building
+78a54e9b97aca3ea2fdae82af,
 78bd8be843edb8d1afa88413d,
 78c5f660ddbc66612edf74d8f,
 78da1f0d24bf1aaaeaaacfcd6,
@@ -2081,7 +2081,7 @@ Id,Predicted
 7907adc788d9aabcd7a8fdb1a,Rumford medal
 7912eccc67beccbf3bdd5c2bb,
 792b52343d8c7912c4099216e,
-7951d8f11eccbffb0fec5cfc0,Pope
+7951d8f11eccbffb0fec5cfc0,
 796012edbd8ad4cdb190538eb,regulations and directives
 796c5a65bee713dd8c44bffca,
 79745dbbf6ff60d57fedc8fdd,
@@ -2091,13 +2091,13 @@ Id,Predicted
 79efc8317afe9795b091a01bb,they occupied most of the important ports opposite England
 79f78ef8cebeb1d30c09912d0,500
 7a16d9639bbe5d9dca5fe9595,four days
-7a1cd14c172a114bbbfaa0cd4,creditor protection
+7a1cd14c172a114bbbfaa0cd4,
 7a2c09ecc939bc306cd4e2bcf,Xiao Zhala
 7a340532cfa21e507543c7e96,MHC class I molecules
 7a60e47bfe1af57df5aa7f1d7,
 7a82b7e432b6c3d6caab8aab5,
 7a94a2cad5a8a40c79dbde5a0,Switzerland and the Netherlands
-7aa64a2f80c6b7dcbcbf7df9f,infidels
+7aa64a2f80c6b7dcbcbf7df9f,
 7aaabe6c6a16f71402fd8d90e,90°
 7aaad4fa3223890f44962caab,late 1340s
 7aacef0ed3fdcfcaefc556ae2,
@@ -2110,7 +2110,7 @@ Id,Predicted
 7adede2e69c73ecbfa6d1ec04,judicial branch
 7adf2fcb7111097e57cafd4c9,British lace industry
 7ae3bf5db4aa96a3a3f7f7a6d,between 1945 and 1970
-7aeafe0eea6ae1a4d2d83ad84,"leptin, pituitary growth hormone, and prolactin"
+7aeafe0eea6ae1a4d2d83ad84,
 7aec6fa57b23aeed19b9ac0df,20%
 7aed0b81ebcca45999d6af4c7,
 7aeeaa14fac7ec56b596e0d99,south Wales
@@ -2120,29 +2120,29 @@ Id,Predicted
 7afda5556b34a91daa0dc3f6a,Jumonville Glen
 7b0454456bd6dccb893bcc9fd,
 7b0b0a2b7a8dae74eeb810c0f,Soho Square
-7b1bb0fcd247dfdb9cbb43e05,log-space reductions
+7b1bb0fcd247dfdb9cbb43e05,
 7b20a7da4ea05f612c333e0f7,the initial Three-Year
 7b2bb2c3d4ea57a83d8b078c6,Huguon
 7b2bfdad6eac4aac1cafc0f3d,
 7b46bc4aa1ea7ab5daef82acd,
 7b4d9afbebfa9acdb08d79f13,
 7b59101ad4fe467c82afcb24e,1085
-7b5c76d83e546f6ba6fb1ed2f,unemployment
+7b5c76d83e546f6ba6fb1ed2f,
 7b61253db55d62ac5acfb2212,"Boolean satisfiability problem, the Hamiltonian path problem and the vertex cover problem"
 7b6b4b773a3a1934bbbeaa70c,1234
 7ba9fc5e972d7e2de98eafbfc,
 7bafda9aaa5adccefbd6c5c2f,around 1700
 7bb0efee40d857d4d5fd8a84c,1560
-7bb1a2af5a7cffbeaff5f2fb1,Abilene
+7bb1a2af5a7cffbeaff5f2fb1,
 7bbe6a389fb6ffdfa23bcab9c,
 7bca00f5d420b38fe4af9a08b,other parts of an object
 7bce0cfdf471cfb03dc802c08,
-7bd0dc3b57a73c61ae11e9d0e,those that are EXPTIME-hard
+7bd0dc3b57a73c61ae11e9d0e,
 7bd86708f1cfdccd4e584dc6c,unsuccessful
 7bdb2dcff42ac12c88c4eba4e,the member state cannot enforce conflicting laws
 7bdbd0bcbbad26c6b2e386b6b,
-7be3de1484f84333e0fa67f5d,Momus
-7be5cb9c6f756f4d88fc6c7b0,St. Lawrence River valley
+7be3de1484f84333e0fa67f5d,
+7be5cb9c6f756f4d88fc6c7b0,
 7bead518aa4e4ad65dfdfc42d,1413
 7bed7ad8cecea11f7932bcc22,
 7c003ed66daeb5ce30dce6f64,James Wolfe
@@ -2165,7 +2165,7 @@ Id,Predicted
 7cdbc2dff15808eb53d52cadf,
 7cde24f0d09afcc8175e05ff1,Two
 7ce9de90f1dc4135c8f1c8c6b,
-7cf02eee90fb57d88b0c0a4bc,P is not equal to NP
+7cf02eee90fb57d88b0c0a4bc,
 7cfe043797a77e2ac9eaa129b,75%
 7d13b59a70235f5b7a0a6281f,
 7d2f3da880d5df42a39dd1846,"John Pell, Lord of Pelham Manor"
@@ -2174,7 +2174,7 @@ Id,Predicted
 7d47ccc8fd1d1e66df5f883ce,Genghis Khan
 7d4bee1637a23aaa5a69d950b,the majority of the seats
 7da3bc9c6d838e1c3f1aabf19,article 30
-7da4b594c355a0dcdaccef0ba,"spreading awareness of, and access to, national networking"
+7da4b594c355a0dcdaccef0ba,
 7db83c8f9a183f059add89ea9,Tibetan Buddhism
 7dbdb9bfec9b6bbf4e90532a0,
 7dbecfa01ebc4dddc91bcc73e,The Mongols' extensive West Asian and European contacts
@@ -2182,21 +2182,21 @@ Id,Predicted
 7df75afbbd102daca69f95fdc,1894
 7df7a5b47bfebec6c8ebc6c71,
 7df8efbda9cfd1c35cef639fd,Reciprocating piston type
-7dfaaa19b7d8edcb0e3daec4e,Alan Turing
+7dfaaa19b7d8edcb0e3daec4e,
 7e121756c5d3082582be3dad9,
 7e1e4fceda55a2fcf3cdddbb8,
 7e2ecea6dbfafbddde8e06464,1685
 7e44992b8bf9c6f9bd3fc7ba2,Count Ludwig von Nassau-Saarbrücken
 7e4a39ededb4dbf2dbff6fb0e,rack and pinion Middleton Railway
-7e4b20ac26f6fbd3e004cf617,Palestine
+7e4b20ac26f6fbd3e004cf617,
 7e4ea52ebaa22e666b37d73b7,Arab members of OPEC plus Egypt and Syria
 7e5fade9fd04fad65f558df00,
-7e7badb4ded82adeb4c6d0cee,thanks
+7e7badb4ded82adeb4c6d0cee,
 7e83a3ab7c8784d8b1d4bbd5b,
 7e9bd48791dd28455cb61cc53,2
 7ea86ccd5e0abedac09679b30,reform the constitutional law of the European Union
 7ea91de0e13224dd3161972de,William of Orange
-7eaba6d8dc2fbfb8bd65efd28,1996
+7eaba6d8dc2fbfb8bd65efd28,
 7eadac36ef35dde03af9ab91a,
 7ec3ec78e30c8aaacaac05fe1,
 7ec85fc9cae3bb8ddb6b53aad,
@@ -2213,11 +2213,11 @@ Id,Predicted
 7f2fd2e68825417dabd60db23,
 7f3d58b1b2e69f2ed9ecc48fb,94
 7f47acb550566b8fdac47ec79,left alone
-7f4afb71c9a8cde6d6abcafb6,rare and unique materials
+7f4afb71c9a8cde6d6abcafb6,
 7f4bae7b87e4abc5decfeeabe,
 7f7cb7eb0dfff24e8d9d1938f,computer time-sharing service
 7f8aacce43fb5ad6e9a15452d,
-7facd0bacb5c0f1beee7c78cc,"1,000"
+7facd0bacb5c0f1beee7c78cc,
 7fb0bb80bf3fdabb4adfbe5f0,angular velocity
 7fb661979cab3689e6b7bce03,"the Pechenegs, the Bulgars, and especially the Seljuk Turks"
 7fbd5a7db437e8b9c3bb470cc,a fee per unit of information transmitted
@@ -2226,7 +2226,7 @@ Id,Predicted
 7fc4ecdb2b2a39d7864cd40c7,Mongolian patrimonial feudalism and the traditional Chinese autocratic-bureaucratic system
 7fd20d9adf09ef22b539245e7,John Myhill
 7fd3513eb46cbb81af1eb2dda,
-7fd98479ba9e19428ddfffe7d,17
+7fd98479ba9e19428ddfffe7d,
 7fddbcf5eedb7f09e8d743e7a,
 7fdfee2ba6fe612c058f0badf,
 7ffb6ba3d868cd28cfd1906be,first half of the eighteenth century
@@ -2240,7 +2240,7 @@ Id,Predicted
 806f4dda94dbd16b5b8fed133,Central Secretariat
 808873a13e6b7a9eef2c4d89f,causes a great deal of oxidative stress
 80c7ce21aa1bfcae3f5f1236b,to formalize a unified front in trade and negotiations with various Indians
-80cb5aa8580e0edddd0c9fc9a,Newcomen's
+80cb5aa8580e0edddd0c9fc9a,
 80dfcabde9878f0fb4b692c4b,Christianity and French culture
 80f484b0fc0b45e2fb68dbbde,
 80faf8fa13cabcee9c0eeb4b8,
@@ -2248,7 +2248,7 @@ Id,Predicted
 81352aa5d6c69fac8eb6cb64c,
 81353fac8d1c9785f1c682eca,
 814a0ccd6f18bedb59a96baac,fighting horsemen
-819fadce96a5aadff24a0abb9,binary strings
+819fadce96a5aadff24a0abb9,
 81a79001ca7ac2e6b88870de7,William Pitt
 81b13dc5db86ecdc31fb6dba4,
 81f3dddbdac014f25baea5ba8,distribution and price disruptions
@@ -2279,7 +2279,7 @@ Id,Predicted
 847e60b9aebafaa1eefaebdfb,
 849e8ffe3a3dafe053da0b312,
 84a3b51e660cfbe91368753ce,
-84bcfc9fab01d569ac977be12,polynomial time algorithm
+84bcfc9fab01d569ac977be12,
 84bd982c55e6acee334edf4a3,power from the engine
 84c3a06efdba255de9bb5dfaa,unity of God
 84ca2a79e7a2d5717afefecc8,Wednesdays
@@ -2287,7 +2287,7 @@ Id,Predicted
 8508c6da1db1eacfbd2dca60b,the plant produces a localized hypersensitive response
 852b0efb77cb1f38eda43fa4f,
 852d04ab2643d2bfe03ebb7f5,Joseph Black
-8533a44dcdda5ce1f6a3a1038,the force on a spherical object of mass due to the gravitational pull of mass
+8533a44dcdda5ce1f6a3a1038,
 854c4cdc2dcbb073bfeba0113,
 855bbd13bbbcec605fe59bedc,
 85753da0da5b51dbc6b9f4fb5,shipping toxic waste
@@ -2314,7 +2314,7 @@ Id,Predicted
 86bbe6e96d5ffcc54aff150d5,
 86d0634a5070d5ff1a1f9ea9b,Children's Memorial Health Institute
 86dde2efcdc9bc99c9eed43d7,Istanbul
-86f0a68d81de284b824bad2c7,Polish United Workers' Party
+86f0a68d81de284b824bad2c7,
 870f17285987cb67c0eeae2fd,extended
 871bc84a16f097dbfd5c4b9be,
 871d08fd8df8d41dbac9c8a0b,
@@ -2326,7 +2326,7 @@ Id,Predicted
 87b175d88305f6ef5ab99fd82,
 87cb5afbe8a50eafdcae854b8,
 87efc9ac6e7cee93adb13f88a,Hisao Yamada
-87efd00b874e87c64f97a8c6f,Muslim
+87efd00b874e87c64f97a8c6f,
 87fd3b9d3f41f940165e6ce2e,
 87ff1b4fcfebac321c6ded4ac,
 880fcbd76ee3918dbf1ebe67b,
@@ -2349,7 +2349,7 @@ Id,Predicted
 89eedfbc010a3b7d612acc7c5,
 8a01ceccf74a9c2b2deacfc2c,1908
 8a0bcc55fef4ab7fe1ba8e7bd,western frontier
-8a15f0afebe1cd9bfcc6cc255,129
+8a15f0afebe1cd9bfcc6cc255,
 8a3b4c90fc4ba05c0010a64c0,
 8a3c20ddd0f2fb8bcd7c84a3c,Sayyid Abul Ala Maududi
 8a485f0cc5967bd7222e200a9,
@@ -2357,15 +2357,15 @@ Id,Predicted
 8a4fba5e462f6e055a09b23b7,
 8a52dcdbbdeaf85a59aec1910,Leopold Kronenberg Palace
 8a58f02b0a8a0cfe48f607bbc,five
-8a62ffbc1c37b4de909ee6ad4,disease
-8a6f8fecaecf41c8821b0f5e1,distinct or equal classes
+8a62ffbc1c37b4de909ee6ad4,
+8a6f8fecaecf41c8821b0f5e1,
 8a8be7f5151c804d962ccfd1d,
 8a9be3e765897c2081ac9ca7a,10 years
 8ac3ffaae3a59c410c91aeaa1,"55,000"
 8ad7baac17fa9bb5c3b5815f1,"304,016"
 8adfca8ff2548c5d07eeec93c,
 8ae4da3fd6b364ef9ff69533a,
-8aea8b2fd6ea3884026bd165c,Ticonderoga Point
+8aea8b2fd6ea3884026bd165c,
 8aeaeacdbc0aeb0e9ce0bcfa9,Wojciech Bogusławski Theatre
 8aeb8dceb4a8173fe53fdfeff,
 8aee5ed188aeaa77bcfb51eb9,1606
@@ -2403,15 +2403,15 @@ Id,Predicted
 8c3c8c47f8acfdf04dfdb5d31,
 8c5ca269c0c20c9fbdf70d408,
 8c5eaffb0cb7ebcfcb97c3a20,every two years
-8c5f6ac2a3b4dd7cea3d282d1,secondary education
+8c5f6ac2a3b4dd7cea3d282d1,
 8c6520cdefdbcf359427a6c7f,
 8c6eaaa56c5dbdab1380edaa2,
 8c891ead86d9dc8a1bae57931,Stage 2
-8c94ad4f3052ed0a80d2232f1,Richard II of Normandy
+8c94ad4f3052ed0a80d2232f1,
 8c95e1b0dbdebdc3ab80cc7bc,
 8c98cf1030da495abd79d033c,
 8c9eadc3c7c2e9cccfba8fcbc,
-8ca4fce0e69d6dc7c0e02614e,between 3 and 14
+8ca4fce0e69d6dc7c0e02614e,
 8cacb7f9cf8db4b8ba0a05ef7,
 8cacfa8f90e6b2ffaeed90adb,Shi Bingzhi
 8cb65e729127394cd646f997a,partial vacuum
@@ -2437,12 +2437,12 @@ Id,Predicted
 8d9298e6bfda0995cccefa043,
 8d9f90ffaaca87ebad5d5d16e,Masovian Primeval Forest
 8dbaa1af37c5525582be4ec07,"191.766 billion PLN, 111696 PLN per capita"
-8dbcef5dfbdeeaa224917ed56,Osama bin Laden
+8dbcef5dfbdeeaa224917ed56,
 8dc65eeb1a7401b01bbaa9ace,Wahhabism
-8dc797c05a6acaeec2aa41290,prevent cut throat competition
+8dc797c05a6acaeec2aa41290,
 8dca9d1b7b97bf2eb14f4a6e7,
 8dda3d4f062a44ca0d849a66a,"""cellular"" and ""humoral"""
-8de2c15ef31b0fa2eccd3ba5b,informed Céloron that they owned the Ohio Country
+8de2c15ef31b0fa2eccd3ba5b,
 8de9e219f0a6e0172bb2a3bda,
 8df7cb1c57ea297de5eec56fb,"to provide a fault-tolerant, efficient routing method for telecommunication messages"
 8dfcf88fd1dbbcf87ede6fc52,
@@ -2462,7 +2462,7 @@ Id,Predicted
 8ea87306068bf4aa1f148bcd1,
 8ea9025b417eb9df5cd2bd6ef,17
 8eaaa0cdab0dfe17a1bad2f0b,Algeria
-8eab95ace0f64cd521ee8af6b,the comprehensive institutions of the Great Yuan
+8eab95ace0f64cd521ee8af6b,
 8eb12a5c9924cbcb034cb6ddc,long-lived memory cells
 8ebbbb1c8abbe70521b5aabd4,Users typically connected via dial-up connections or dedicated async connections
 8ebe5bb17bcdee0bcd9a2bc1a,Islamic
@@ -2470,7 +2470,7 @@ Id,Predicted
 8ecddafafaac80d9e6a99ff59,coughing and sneezing
 8eced884d0b71edf0b86d726a,combustion chamber
 8edc45db2fd0ef92c1a0ab5ad,over two million
-8eec2f5ee23a53f0b3abdbb88,nominate speakers
+8eec2f5ee23a53f0b3abdbb88,
 8eece3efa17ca2db4c4f8ff37,
 8eedfee5a3d4c3eacbbc532e5,
 8ef0172435bd8ef3dedc9d1f0,
@@ -2500,7 +2500,7 @@ Id,Predicted
 90db4e91fad3c9c21d0c32bb8,
 90ea3c2a1c0b6bb86fecbf4dd,
 90eab9c30b9e1f456c56e343a,
-911aaf743c3fcc9cef8cdcab3,the set of NP-hard problems
+911aaf743c3fcc9cef8cdcab3,
 91328bbe637c5a3ce8cb9adab,one
 9146af2bc13abcdea0811bc41,working fluid
 91520a0c9bc99a0aaa0fec76f,since 2001
@@ -2512,7 +2512,7 @@ Id,Predicted
 91d0baaf3d0f765f85b40b692,
 91d6a7656a44d289abbf2da7f,
 91e4a348829deb16531b885fa,
-91f8017022ff083b94cbeddf9,different paths
+91f8017022ff083b94cbeddf9,
 9216715089734f26845fea0b1,
 9224f48742a962a5b7e7d7ff0,
 9237e6c3e4201ec3bb36ec6ed,
@@ -2524,13 +2524,13 @@ Id,Predicted
 92bdf887ebafecf6f691ac9ff,south
 92ce565e0dcfc1ea0ae762472,
 92d4b97af56f471c0077858aa,390
-92efc1b339edcb972dbd9e583,94
+92efc1b339edcb972dbd9e583,
 92ff2a22df7732eccbe32fea2,the Bible in vernacular languages
 92ff5edb4eeafaacd8ade0bd7,Distributed Adaptive Message Block Switching
-93506ce652e6c8b05b097b6d8,eighteenth century
+93506ce652e6c8b05b097b6d8,
 937146cc9f2e7a6ddaa5bd26f,Boulton
 937b47faf4b6ecfdcdb836b85,
-939c2cedf8c18c5bca7a9f011,World War II
+939c2cedf8c18c5bca7a9f011,
 93aedceef8b5200956f5b2ebd,
 93bcd5bccdde0dfcee96afcfe,
 93cf9dcadbe61a72b741e1b6e,leaders who held secular leanings or who had introduced or promoted Western/foreign ideas and practices into Islamic societies
@@ -2538,17 +2538,17 @@ Id,Predicted
 93eee8bcac6b31c5fe57da001,in the condenser
 93efe8bafdd4edcadaa9bb4cd,
 93f0bdbfde5d1be5d56cb7cc8,
-948dee9c091403d6a2b350faf,over the age of 18
+948dee9c091403d6a2b350faf,
 94902d7fbf6f7c4f0c19fab92,manually suppress the fire
 949220d4dc7ac404788be1670,
-9495592eeebbf7a31bbd179dd,Protestant
+9495592eeebbf7a31bbd179dd,
 94a03dba3bda277bcd93ba1ee,alcohol
 94a824fddb0b69c7e0347e684,12th century
 94b7a98ddda9807592df1ef00,
 94ce2f26ab3efaf0e00dce041,
 94d6eebd8cf4154da0dfe61f8,General Assembly Hall of the Church of Scotland on the Royal Mile in Edinburgh
 94f7d8cbcfff5bc90929d5d1b,
-94fafe3ca464ad6d7f40d011d,division of functions and tasks between the hosts at the edge of the network and the network core
+94fafe3ca464ad6d7f40d011d,
 94fcdcabca01cdbabcd45bee3,"no French regular army troops were stationed in North America, and few British troops"
 950dd9e49953eb02cb1f84bcd,
 953deaab7fee540b8b1c356d2,"After a general debate on the final form of the bill, members proceed to vote at Decision Time"
@@ -2562,23 +2562,23 @@ Id,Predicted
 95bc8938b9cf16a4a96cc14cb,
 95c8f8b3cca6bad5bdaecdfe5,linen
 95d47f7f1ad9dca79acb1763b,October 2007
-95db8bd09cc8b1be45aee8132,narcotic drugs
+95db8bd09cc8b1be45aee8132,
 95fb7b7faae616eaa26ecb57f,United Kingdom
 95fb9a221b063f6a0070f7ec9,
 9603bfa73b80ff8b773bfceaf,fully human
 960ea3d1b411abd50fc7afcad,half
 962bb44f2cecc85cd1efc3a4d,Europe
 9631a005ddf4cfdce72c2c74b,HAMAS
-9669789f4ad2ceae4a2d5e9ba,radius
+9669789f4ad2ceae4a2d5e9ba,
 967281f81be2ca8b2acb0c25d,"using first-in, first-out buffering"
 9673c26acb8fbe8bbc3e6deb8,
 967a44ece12a5a8b7b547e6d8,
 968a34d9b0bae0aabddd3a17c,Industrial Revolution
-969f00f5b0b0ebbaaedcdcf8f,store and forward switching
+969f00f5b0b0ebbaaedcdcf8f,
 96ad6b24e99afae6b71bb2d78,England
 96aee69c3bcab6e512dea9dc4,William Farel
 96b1d3fffbabeebdb2fddfec9,
-96c24cfdc5d3a29a50989cca4,tumors
+96c24cfdc5d3a29a50989cca4,
 96daafa9dab103ca4cf7bc0a0,
 96db3c2809df5eccc55ecd03a,native tribes
 96dc7b6ce21cac5eeaa1bebf4,accidents
@@ -2589,15 +2589,15 @@ Id,Predicted
 9797cb5cf28bb0cab5fc58dff,NP-complete
 979b5ff7edc5e7c9c1d0acf9a,
 97c9e03dc14cb3168db13f0cc,Geneva
-97dca6df2fedac2fa6b380c1a,79
+97dca6df2fedac2fa6b380c1a,
 97e7cdc48b776faaa2fa400da,
-980cffacdfbf702b5db5246a5,Harvard Square
+980cffacdfbf702b5db5246a5,
 9876d95a0cd53b37c8a7d312c,"freedom to continue worshiping in their Roman Catholic tradition, continued ownership of their property, and the right to remain undisturbed in their homes"
 98876c02ef9a6ccfed6741c7e,Pawiak
-98a4d76d841aafadff7bcf33a,Jan van Riebeeck
+98a4d76d841aafadff7bcf33a,
 98b93230998a12ca0bfc03391,
-98cbe4250e99d36efd90b3ac4,random access machines
-98eacbfbb923f6f1dd0becf5d,quadratic time
+98cbe4250e99d36efd90b3ac4,
+98eacbfbb923f6f1dd0becf5d,
 98ef8cb420a68d4da323b3a84,
 98f0b07da1cc1c7e1cbc80455,
 992badbc03255eafbbc4de5ff,
@@ -2623,8 +2623,8 @@ Id,Predicted
 9ab756f0da7032e9238c4ccdb,an oil embargo
 9abd3c02b0e1d3fdbf93b07ac,Kabaty Forest
 9ac6c1fcb2e62b27aec49ddae,
-9adbfc3a3eacfecbcbc3bc324,motorcycles or mopeds pulling trailers
-9ae2c31eef4bc803a2f10cccd,Zhenjin
+9adbfc3a3eacfecbcbc3bc324,
+9ae2c31eef4bc803a2f10cccd,
 9af565ac05bcbfb5da9d0f7ab,
 9b14452d99c31e1d2abf8a38f,EU law
 9b147e1afcd26bb0cf5b3f29f,Karluk Kara-Khanid ruler
@@ -2638,7 +2638,7 @@ Id,Predicted
 9b36caa70a7bcfe9db00fddca,1975
 9b3d25a2ea680cd1b0d7fc3ad,
 9b7efdb2d766ea9fed60c772b,
-9b84fcdccc527b65e96789fa3,1930
+9b84fcdccc527b65e96789fa3,
 9b869d542c594e0de128dfbc1,
 9b8b13c9d2dbb3e635cfab256,Texas
 9b936a308eb8d3125983803bc,
@@ -2646,13 +2646,13 @@ Id,Predicted
 9bb4def42edef3c4a0bfe382a,Paris
 9bba7b0d287e0c2e3a9b19dad,the Middle East
 9bbdf6a76b416d6adda24c1ae,Vietnam Đại Việt
-9bbfcbbee8c1dfa851a4fe26c,kinetic friction force
+9bbfcbbee8c1dfa851a4fe26c,
 9bc2faeeda4dd5c5e33c824aa,concrete
 9bcdb0bf4abff5e3a3c9d2f6e,"the Qur'an is our constitution,"""
 9bcef5dd3ec2a742eecac9a16,
 9bd0a3fdd4bb3bdbc8adbfed1,
 9bd7c3dbe2f1359bdb2d9b5b9,pseudo-sciences
-9be84dc64c41314046e756b4c,an X.25 external interface
+9be84dc64c41314046e756b4c,
 9bedaefedbcfd2e29d4ff35ce,60
 9bedb841a07ffef4ef1e5a78d,violence
 9beebcb8d14d6dba76556e33c,
@@ -2662,7 +2662,7 @@ Id,Predicted
 9c3404c14abfcddfcf63c6e7c,at the right bank of the Vistula
 9c369bb27cebdad8a1efd1f5c,luxurious parks and royal gardens
 9c3c7c3e31bad1eebc321ae22,
-9c453a6cadc2ada2c2b2dfa4f,along military campaigns
+9c453a6cadc2ada2c2b2dfa4f,
 9c4ba2bf647d101b3fab13c78,political weakness of the Mughal state
 9c50fc15568ba33cffdbe2f5f,"people who give services ""for remuneration"
 9c590f92f7ab4db429eceb5ed,
@@ -2677,14 +2677,14 @@ Id,Predicted
 9cca207b9fb745ec4c4cf01f7,the defense and justification of empire-building
 9cde1f18acdc9417f1f42b7f9,
 9ceceacb8e1c4b55b9db3c66f,the Mongols destroyed the weakened Jin dynasty
-9cee6016bf5ac4ca1fb43dd18,1974 Mustang I
+9cee6016bf5ac4ca1fb43dd18,
 9cef1c2bacfaec639aff5067b,"a Commissioner giving her dentist a job, for which he was clearly unqualified, did in fact not break any law"
 9cf68dd4a52efaba7dbfcbdf6,Christopher Gist
 9cfad0235fc04caacd2db8c7e,twice
 9cfdecdbaef3715b11ed2defd,drive shaft
 9d0f5dca3af98189afb4ecba0,
 9d1bb8decdb6dd4edce902ede,
-9d3d4f60c173005a293ddb65d,Court of Justice
+9d3d4f60c173005a293ddb65d,
 9d498fd46e8fca192340cd94a,
 9d4da7af759189aa287ca34bc,secularism and secular nationalism
 9d6b7a9412ab37c0a6f0cebd3,
@@ -2700,12 +2700,12 @@ Id,Predicted
 9dbe71cb19e7ea3903e2a6f8d,2012
 9dc53d7f0fd08ebcb0cecb146,immunization
 9dcdcec1d8ecd4befe77a9f9b,Momus
-9dcdf8d3cfa765d357faa0290,issues which may be of interest to a particular area
+9dcdf8d3cfa765d357faa0290,
 9ddbd3f8b58762966a5aeef8b,
 9decda7eb40c965f38acebcbe,
-9e03fe810bf451d36c0f995e1,Newton
+9e03fe810bf451d36c0f995e1,
 9e046b1c671c1dafcb53b76a8,16th and 17th centuries
-9e0cfe5bdba65acead33de801,β-defensins
+9e0cfe5bdba65acead33de801,
 9e0dd9b8e4ca7bb9bbf53bfdf,interleukin 1
 9e1c3f9fe3ffb207fd764b576,postal
 9e1c87affea525fb33b50b83f,
@@ -2716,12 +2716,12 @@ Id,Predicted
 9e928fbaeebc4aad8303e71bb,
 9ea5f2f8600d39eac11f38ca2,Portuguese
 9eab63943babffdfafd7f6d9b,Community law
-9eabd76bb53ba13d1be2edcc5,number of processors
+9eabd76bb53ba13d1be2edcc5,
 9eb47ddcfbb2b571dffed4dfb,foreign-born inhabitants
 9ec47d7eb5eab8fdc8d8d81f9,
 9ec4deee6e794aeaac7ebe3ed,
 9ec7dcb08d4db7bad8089eadf,They spread a unique Romanesque idiom
-9ec7fbd8a392db3a8ddafdedf,Killer T cells
+9ec7fbd8a392db3a8ddafdedf,
 9ece6be6aa9ffc5d0f99ae614,
 9ed1a43feb7ccbccd2bd8bd40,twice
 9edbec818e792cf1b3ae045a4,
@@ -2767,7 +2767,7 @@ a082af25bfcd3df0e1be15abc,
 a0895dd29cdfbf2bf2cd05abd,
 a094c73a64edb8cf5d8c9ed23,
 a099ff3ebcfd958f4ea1e1fee,Marquis de Vaudreuil
-a09e1927cbac2f4bd02c3acbe,March 2003
+a09e1927cbac2f4bd02c3acbe,
 a0a01f6cb5316b6fe64f84ac7,curving parabolic path
 a0a8fd634116eaa6acdc6a990,
 a0a9b49c00c3bc78b5be9d5cd,
@@ -2783,7 +2783,7 @@ a0e7bcb22f871f3ee74e34cdc,
 a0eae05054a6db29fcaffc187,100
 a0ec4ffd79f3babde68fc8c14,
 a0eeaa26aa00b1efddbcbd25d,
-a0f00327fb997a4b2dc103ef5,several hundred thousand
+a0f00327fb997a4b2dc103ef5,
 a0f78f8d2825aadbdcdcb6a4d,
 a0fa5bca157bdeac24cbb06eb,Algeria
 a11ad0183d963d554e887a16d,
@@ -2798,8 +2798,8 @@ a18a1f0401e4357a94b9b514e,
 a18c5ddcbd8b5af0cfbbadc27,
 a18f7415d6af1cdde684d9aae,Packet mode
 a194b8fbb0cf6c0b4d5a59040,
-a1a2968a82d632a2d5df6677f,Cape Town
-a1ab3d17b3beaec4ed6a6bbbc,complexity classes
+a1a2968a82d632a2d5df6677f,
+a1ab3d17b3beaec4ed6a6bbbc,
 a1abcde969f26c93cfdbeb7dc,
 a1acaabde256d47d7e9d47d97,
 a1acdaa6783102ccadbfabb39,
@@ -2809,7 +2809,7 @@ a1bfce4dee24bee05ee3ece59,
 a1c96a3be3bad22fb099b9f56,
 a1ced799dff4558a6a54abf5d,
 a1dd22bb1f43af7c9cf8aa021,Conciliation Committee
-a1de7dbbc76a45eff6f8f5aee,conservation of mechanical energy
+a1de7dbbc76a45eff6f8f5aee,
 a1def52a0b0e8db9ca3e9ad0e,
 a1f58d2bf45793810f229ecb7,humoral immunity versus cell-mediated immunity
 a1fa10be57fef6e0eec82aaef,
@@ -2820,7 +2820,7 @@ a25ccbb30cee5adaebb3bbb88,the separate condenser
 a26dcbe21c8667a8bd83027da,
 a279bda3bebd8e41d5d244c3a,Vietnam Đại Việt
 a27d557fca378cac5cfb4e76b,Germany
-a28242cd27717dcf4ce4db6de,1990s
+a28242cd27717dcf4ce4db6de,
 a2833acb3d5fc4be87f4ef41a,
 a29abbcaba5d8a28ab8eaabdd,the St. Lawrence
 a29fbbcac5d0977cc8eba67c3,
@@ -2848,10 +2848,10 @@ a3205cca392e4239a1068dcfb,1880
 a358fec205abbcacc1b52fdb8,
 a35c4c928fbf10bfe4de8deb7,Töregene Khatun
 a39031a89a56ab1adb2815795,
-a39920d34e27ba355adfbb2db,poppet valve gears
+a39920d34e27ba355adfbb2db,
 a3af45bb05dce07b0cef1bfa1,by a majority of all MEPs
 a3b897928ea6f1fce60ecaf5a,courts of member states and the Court of Justice of the European Union
-a3c5dfccee25ef1cef81e998a,"50,000"
+a3c5dfccee25ef1cef81e998a,
 a3c9cd0f863722dd8694b86ae,antigens
 a3daf461cea7f8976e8bd9ae0,
 a3dcbdbbb926b2afbecfe4adf,
@@ -2875,7 +2875,7 @@ a4c7cfa6981c9fab87be22b2e,the killer T cell and the helper T cell
 a4c7f8f1e8fa0ad0f18a0ae9d,The Scotland Act 1998
 a4ca2bddd67fcbef3ec6fabef,Denis Papin
 a4cfb0af0faeebc6c164c29fd,four
-a4d3a63c2a1961f9aff5990ae,sea and trade routes
+a4d3a63c2a1961f9aff5990ae,
 a4d8cfcdf8ef96ba32bec0b3d,producing a 4-cylinder compound
 a4d9a1e390cdfa87f09b9eecf,The Malkin Athletic Center
 a4dc44e68fa1cf7cfcdc3eebf,
@@ -2885,19 +2885,19 @@ a4ecc9975bdfedba7fa8313d9,
 a4f1d86747accddef71fd603c,
 a4f7b219cdfc634cb2edf00e1,imperialism
 a53d5823f30ec5da66f7d13ea,"to describe one's superiority, domination and influence upon a person or group of people"
-a56dbf89aee6d3ae8ef90414c,The plan that the delegates agreed to was never ratified by the colonial legislatures
+a56dbf89aee6d3ae8ef90414c,
 a58e550b7a193063dbc315ffe,1977
 a5a4abcc303864827b0c1aca0,
 a5a84b27f560199adaaf37a84,Normandy
 a5b1b8db4a167fa64c9148e9b,saved something
-a5bcd6269fa7d1e605ffa1d0c,Court of Justice
+a5bcd6269fa7d1e605ffa1d0c,
 a5c5c1068fac91addceab0bf6,Saudi-interpretation
 a5c64d1bd6dc80a1cc1b6c751,Möngke Khan
 a5cc0d8bac3ceeb4a2bda5f11,
 a5d0e1a2fcfb4db37da09893f,
 a5de32e7193d2f7da8c1a94cf,the machines operate deterministically
 a5dffebe89efc0bad9b41c111,fee per unit of information transmitted
-a5eaad4d4eaf7d3de2cc7eef8,Sharia
+a5eaad4d4eaf7d3de2cc7eef8,
 a5ed3db7a5d08b23db054725f,Northern Europe and the Mid-Atlantic
 a5f60da0cef02ad92772ae181,The integer factorization problem
 a608fa2b658eda391f4d4984e,
@@ -2925,8 +2925,8 @@ a6e52ba58125ca876ac5df26c,Ogedei
 a6e7efcb771eeaddfe5d4354d,the coast of Denmark
 a6efec71ae831c35d11cae355,mid-18th century
 a6f2b66a3dc6c645ce161ab09,Harthacnut
-a6f2c540bcd886fddad5d98d2,Cévennes mountain region
-a6faecfcfeacc67aacd2cdfee,Paul Marin de la Malgue
+a6f2c540bcd886fddad5d98d2,
+a6faecfcfeacc67aacd2cdfee,
 a6fba19d08cf20c60bee68ab5,
 a6fe2f0d341f24cc24c980cee,
 a717836dbdc8efd11cebc519b,transport
@@ -2936,7 +2936,7 @@ a73f7d0b7e97feabffdcedc85,
 a79bfae0faa16a96a6babcebf,issues in Europe
 a79e9b82bc4e9aee9ccf5e0c6,after 1850
 a79f2dff59cfd70e1832ec55a,Trinity-St. Paul's Episcopal Church
-a7ab5ecad98bc5e32d4cabe10,PTT Telecom
+a7ab5ecad98bc5e32d4cabe10,
 a7aca0a5b7cc008c94cd3f388,Tancred
 a7ad2be6f47959afec31fc6b0,qu
 a7b3daebfa6bf29e8f39c450a,decentralized network with multiple paths between any two points
@@ -2947,7 +2947,7 @@ a7bfcdfe820ddcbf290e0bc5a,
 a7cbf33ce1c7a1b1add95e11c,singing
 a7d6fad54d7204bf6d889d6d2,All actions
 a7d9537ea15a40424ec08bef0,
-a7e0c5baeaf2aaa503ffbbad6,analysis of algorithms and computability theory
+a7e0c5baeaf2aaa503ffbbad6,
 a7e7b3be2fd5cd6ebfbab94ec,Treaty of Rome 1957 and the Maastricht Treaty 1992
 a7e9d7854d0e5e181675c2aa8,
 a7f1fdb2acdab5dd5daaee9c9,to dislodge the French
@@ -2964,11 +2964,11 @@ a8a1c643ff9ff2acbb9ba6a86,blockade French ports
 a8a4d5c659bfee63e6c4cada5,Edinburgh
 a8a4eb8ce2c3f463f18ed6b79,Song dynasty
 a8ac8ab2f0cacdc1b70acbc8f,
-a8add7f55ccd16fb5174aaf44,P
+a8add7f55ccd16fb5174aaf44,
 a8bbbc0b3f8eb2659469b7b3c,Ministry of Defence
-a8bbdce55aada3e5c3417aea0,Quebec
+a8bbdce55aada3e5c3417aea0,
 a8c0dc4ffd21d1becac6af7c7,administrative law
-a8c4bfb3c43ccdcfba6312faf,"yes or no, or alternately either 1 or 0"
+a8c4bfb3c43ccdcfba6312faf,
 a8cd2b24b9b5559add22a9bb7,
 a8e2cbafdca35b21d54faccca,
 a8fbc91b4a1beb15e8bcfcfb3,
@@ -2980,12 +2980,12 @@ a91ffebcc228a7ade2bc0787d,Guy de Lusignan
 a924bf1d4e5c0fcfcbac4eab9,Palestine
 a929e24b2fd13dd0a37bbc0bf,shut down host defenses
 a92b9e0c8bcbb5aa35aaecd6c,1945
-a96ffcf7b0eecdb0ca7d4fd75,mass-market brands
+a96ffcf7b0eecdb0ca7d4fd75,
 a98dfc2c0d2bc2c77cffce5f0,
 a991ac1f96fdab788ddb88dc4,Stockton and Darlington Railway
 a993fdf02ab28a92bbafceab7,
 a9ae4dba7b17ddf58cadef80e,
-a9b4cb8d39e24d6faa6a61c06,Charlesfort
+a9b4cb8d39e24d6faa6a61c06,
 a9b97cf4ad62c206cbbe9c2a8,fern
 a9bccf8455ea6dcdb2b907262,
 a9cd84f10ba8aefda988fb7e0,Warsaw
@@ -3010,7 +3010,7 @@ aa4f38a3679756d159bdaa7d2,
 aa55cebda079140aebdedb509,Imperial Academy of Medicine
 aa672d60baedcdaeaec29bfb2,relatively little work is required to drive the pump
 aa6ada453ecffefe5ca3e2c4a,
-aa71ed75cec6efb938ee4cb11,Islamic fundamentalist or neofundamentalist
+aa71ed75cec6efb938ee4cb11,
 aa7dcbf7bbedc02ebaf3f4bf3,1702 and 1709
 aa81b087cf78f1dcebcbdd1bb,
 aa8e38e79043f7ffa923cc77f,"case law by the Court of Justice, international law and general principles of European Union law"
@@ -3020,21 +3020,21 @@ aab20ffcef728be4cedb3bb80,
 aab45b6e20c592ed9804e4de8,
 aaba2bdf8e87d1a525a78c3d6,Baiju
 aabbdad31d3a6a0ac8ff1b682,Nobel Prize
-aabcb28dc41b8047aefd0af8a,quantum mechanics
+aabcb28dc41b8047aefd0af8a,
 aabe5a82abd38f5f0e6ff4eb9,
 aabfdec18df0ffa404b2a75d9,Han Chinese
 aac12a75afca746effbda2eee,
 aac3bdcfc38faefa1cfbae0af,
 aac4b9de1736dfcca636fc3fb,
 aacafdbec0b6172d04fcf6b9e,internal combustion engines
-aad0da7faf0da201fe5c96cb8,Elector of Brandenburg and Duke of Prussia
+aad0da7faf0da201fe5c96cb8,
 aad1a920dc7c6f0276eab679d,
 aadacd0e6f1d21e8e72a385fd,liquid phase
-aadc8b8d8b777ed7e1d79f0ad,improved
+aadc8b8d8b777ed7e1d79f0ad,
 aadcdb41c08baf81d4c89cd7f,random access machines
 aae6ecd6c4feaef70aa3e8efb,
 aaec3a8ae4b34ade6f3cb4390,
-aaec474db92fbfb40171b35ec,increases or decreases
+aaec474db92fbfb40171b35ec,
 aaef4395c004effe6c9cc31cb,
 aaf28a274afcedb368eb48cdc,
 aaf3ccd98d46daba1bcd659ca,
@@ -3077,7 +3077,7 @@ aba4ea8ad9fb38eeeb07dcd11,Price controls
 abab26aaa4f308ca2ead445c0,13
 abadba3a8b86bcbabf44acf68,
 abafb7920420ffa2e399d7e1b,every four years
-abb018d9cfaf39eab50360dbb,1990s
+abb018d9cfaf39eab50360dbb,
 abb15538cd76dac26536745dc,
 abb19cb9b344d18c12f5cefc8,Piłsudski
 abb30f4329126d6d5839e0ac2,issues under their jurisdiction
@@ -3091,7 +3091,7 @@ abd2fcd1d8deeead9871d8cfd,
 abd4ff29934d8d7bdcdd99b0c,Kublai Khan
 abda89c3bfb6ad269ff7de2c1,events and festivals
 abdcaf9ed251dfac0e33fceb9,three
-abdec10aa5fdcc07ac2fa99aa,General relativity
+abdec10aa5fdcc07ac2fa99aa,
 abded84a650f5aa8bc28a6987,
 abdfecdcdab267ba38a2e8aa6,
 abe415bbfd912edadb09a79f7,
@@ -3146,7 +3146,7 @@ ad03ddaeab8b1bc6e2ecacc09,reversed
 ad173a9ee1dceeb757cde82f8,
 ad19ea54aa2b618add107a20a,Bento de Moura Portugal
 ad1dc5f8eedc6cfac8f513cc0,
-ad2704bcf0ffd61da7c6bec70,definitions
+ad2704bcf0ffd61da7c6bec70,
 ad274afcbcd22078cfd1ccb1b,300
 ad2bcce8de1e5fbf6ab76105a,
 ad37bf6b6fae739afdeb8a9ba,
@@ -3167,7 +3167,7 @@ adadd2cb367e3b11537ad0560,
 adb3cedfbe73251a72a1174e8,pollution
 adbf501c3b78f6a5e3e7b1beb,Front Islamique de Salut
 adc3b2aac43debf2c6b513da9,
-adc7f00beff9cad27da9dadcd,Germany
+adc7f00beff9cad27da9dadcd,
 adc91e20e17a243ccbf7ffe5c,"25,000"
 add3a3b7f960dbfeafbc1fa85,
 add61bb8943db5245eef4847d,
@@ -3178,7 +3178,7 @@ ade2e24637b6fa0dbe1fd635b,
 ade4f66adb3610f1ed1a7a5ca,
 adeaa1eabc0dc9a1cea45b5ca,Battle of Sainte-Foy
 adeaf7a7defce4019d5a4a04d,complicated definitions that do not fit into this framework
-adefdcd73aac7aadcacd6356d,OPEC
+adefdcd73aac7aadcacd6356d,
 adf2c8f4fb9ede5b99dfff9b2,belonging to Warsz
 adfe8eacdc80e9b64435faea2,Ogedei
 ae047e46cfcd3fe0be92ecace,the turbulent history of the city and country
@@ -3187,7 +3187,7 @@ ae1b0d139d7d071a8ccfee5cb,bunker
 ae22bdbb5d3c21bdd56d44838,
 ae2bd5f8ab5a9dda1bb62c5da,"45,000 pounds"
 ae2be2a56e2acbdabf1ebfe4d,each six months
-ae319f1f3db583ecf8d7439ce,Aristotle
+ae319f1f3db583ecf8d7439ce,
 ae39c5c2d8fc77baa7f0cb0f9,
 ae45affd7c3ed8816fbf7af5e,
 ae46e9314fdfe36adafefead6,
@@ -3197,7 +3197,7 @@ ae6a2d02fbfec55b6bdcafafd,
 ae7427e0dcafe4089ac6df910,
 ae75fde3b0addf08a3ddefd2e,Bucks Point
 ae7c0bcb5ac44c4bc416f6ada,kilopond
-ae7fca39effbaea1f56b9c06e,a situation where the object does not move
+ae7fca39effbaea1f56b9c06e,
 ae8ffffcb6ed1bbd3b8324691,
 ae999cf70c7d993bfc1edfbc7,The UK
 ae9acec7ecf63d6ebed45ea34,a virtual circuit or byte stream
@@ -3213,8 +3213,8 @@ aed89903eaa9e193e9faaadd7,the Scottish Parliament
 aee19c7ec7cb2e2d1b3fafe7a,to extend networking benefits
 aee536cebb210d8eb28fe4e61,
 aee597adcfb5a687a5f8dcbfb,the mouth of the Monongahela River
-aeec4f3f0eba5c7d16e7c6b74,survivable communications networks
-aeed9a0f756e1ba776cf7d149,Lenin
+aeec4f3f0eba5c7d16e7c6b74,
+aeed9a0f756e1ba776cf7d149,
 aeef4c9de2de7e34eb7ffe4aa,guidance and intervention
 aef76a2f59a3c9316ff0dedc6,Major General James Abercrombie
 aefba2e9db041752e582d2f9a,thymus and bone marrow
@@ -3248,7 +3248,7 @@ afacb9b64aafd8eb7d9abd9d5,
 afad5e3f7b5faec5ba0aa57a4,
 afaffb81bec9a2934ccca9e39,
 afbaf8047bfc5d1ab49c9e5a6,#P
-afbdd0261d7ad7e1d3560f807,Britain
+afbdd0261d7ad7e1d3560f807,
 afc70c4d5d3fd13ede93ecb7e,Leukocytes
 afc8dac8db4344b21d2b14e4a,Aristotelian cosmology
 afc9e20c085caba0e4fbbdcbc,
@@ -3256,7 +3256,7 @@ afcc16caeadcadd0d6b11bef5,
 afcd57d99b14ebafca17be52e,Official Report
 afcd61ed2bb2234e79aca891a,internal migration and urbanisation
 afce33a46ab1d99599b6bdfef,1776
-afcebe5d7afe7ea5160a9db19,intractable problems
+afcebe5d7afe7ea5160a9db19,
 afd28eed3f67ebb8dace0def2,diplomacy or military force
 afde2caaa2e770d9ef278fa1f,
 afde391f36f833e02edcbc9b5,"50,000"
@@ -3271,13 +3271,13 @@ b027fef46db44cda24aec12ac,Marco Polo
 b03b269dd8ceb54711f9161a1,force of gravity
 b0451abbbb03c3c2e5ca6f4bc,
 b04bc6b3cecd8cb3d017fcea9,1989
-b04ebfe886edacedcfbede448,working fluid
+b04ebfe886edacedcfbede448,
 b04eccd9ad2e6aba9cd2fa3fe,Watt
 b052503ace4e4c47e361f9ca4,in the aftermath of the Warsaw Uprising of 1944
 b05aae269faf2d2ccaeda9a9f,the Treaty on European Union (TEU) and the Treaty on the Functioning of the European Union
 b05eeedebceb98ad7dd05bdfe,mid-May
 b0651bd37135c1c3abc567fa1,
-b06e423a77734140e71ae58ef,Cultural imperialism
+b06e423a77734140e71ae58ef,
 b07c3e3a3ead327db68c4ca24,"first-in, first-out buffering"
 b09bcc84ecd47acd313398a34,Pattern recognition receptors
 b0b929ee9a2ac3c1387d2e7f2,
@@ -3286,7 +3286,7 @@ b0bcbbe07dfa42dbfc1aedea6,
 b0bea9b842f649cf7e122fad9,
 b0bf98b2ec8deeb1ada84fc24,
 b0dcb461fa3accd989dc7d92d,
-b0ebc4f79946e789e67ca8940,Western Cape province
+b0ebc4f79946e789e67ca8940,
 b0ed7c5bdb76afee64c1efe3d,
 b0f7bdc12a54fd4cca5efd51b,blockade French ports
 b0fad7eeca0bed417bacf47a7,
@@ -3299,7 +3299,7 @@ b16d4b813b9b48baccfabbe6d,complexity
 b179ae31be2fc960b3ffc7c8b,all spheres
 b180fed25feb26c24ef1c069f,>500 Da
 b195512cbb62cb519b3f24c8b,"the Pechenegs, the Bulgars, and especially the Seljuk Turks"
-b1aaddedcbdefbc3d6c56f70c,turbine type steam engines
+b1aaddedcbdefbc3d6c56f70c,
 b1adbac6dc3475f32f8ae53bb,
 b1b057f40a79fc0a4be70da8e,
 b1bac824e475ff15f06abf54f,
@@ -3314,7 +3314,7 @@ b1f94a8d1aeefee3baa40a5e3,
 b1fa4676cdf06d8908be3ddfb,1562
 b2026ed19c89c10d8ceb95efc,new converts
 b20acfdafe4cb778e3dbfd3c6,solar energy
-b218c6f5ac667acc810647aee,Duncan
+b218c6f5ac667acc810647aee,
 b21cc26521bd6bb1d7b134bcb,1562
 b21e7d1c296b50f1eae63b0c1,
 b22a062cbc08b8d21a64baffa,"50,000"
@@ -3341,23 +3341,23 @@ b31eeb24d3d44a8dea94efc85,"Dublin, Cork, Portarlington, Lisburn, Waterford and Y
 b333784ca56c803518cc6d942,Confucian
 b3433a737052f1a33de915dcf,present-day Upstate New York and the Ohio Country
 b34b278b9f5ec773142e108f4,making peace
-b34eabd4dabeebeacad070f5d,Saudi
+b34eabd4dabeebeacad070f5d,
 b36b7ea84dd50a1fa1efbfc0a,Pedro Menéndez de Avilés
-b380dad53cde0ddccb8d36a90,Song dynasty
+b380dad53cde0ddccb8d36a90,
 b38e42503b7fad10fbdd82b32,Sui and Tang dynasties
 b3963286d4acdc3eb847cd3bd,
 b3a07f1aedab2993c4d0e555c,Afrikaans
-b3a3be1cfd66f3afda062a8d0,Orientalism
+b3a3be1cfd66f3afda062a8d0,
 b3a6e2dbd4cdbbdaaeaa72e0b,Afranji
 b3a72c4edde8bfaaad21dede7,
-b3a8610d9bc9fbadb32d5672f,unidirectional force
+b3a8610d9bc9fbadb32d5672f,
 b3b192fabdbcb79a30b7af5eb,1930
 b3bbbefec53736cbdb2dd5eed,
 b3bfc3a3df02f3809bd3be13a,
 b3c16b20fa0daff05d74bedfc,
 b3c7fdbe7cd8e8f737c6c7bd5,The Warsaw Citadel
 b3d0f418b9dedfb4ee6da2bd7,27-30%
-b3dbaa0dae6ab5c6737debbd0,American attack on Iraq
+b3dbaa0dae6ab5c6737debbd0,
 b3e9a75ee2ad4f9641733dd5c,Natural killer cells
 b401a49dbe81e59fd5b0dfc9c,UNESCO's World Heritage list
 b40a58ede11cceee10434e3db,TCR
@@ -3406,14 +3406,14 @@ b58db9b6dc2baeac9d4f43dac,
 b5a541ca06c1f446dd1de3ca9,
 b5a5cb7a11cf4f7c3eb8a7b71,the children who served as messengers and frontline troops in the Warsaw Uprising
 b5a9c9caabaeccb7e5bbf77ba,one
-b5ac9da232e6bf8a51eff9fdf,"The graph isomorphism problem, the discrete logarithm problem and the integer factorization problem"
+b5ac9da232e6bf8a51eff9fdf,
 b5aeec4f43ffc7ddfd9d06bb2,Oursel
 b5b92ee924ebd1eb91ddb99aa,neutrons in atomic nuclei) and the associated radioactivity
 b5bd826d54eaccce5ab22b9da,river Seine
 b5c43de9effdfd46dbe2e4918,
-b5d2b6c1dbe8bcca9abcecbf4,phagolysosome
+b5d2b6c1dbe8bcca9abcecbf4,
 b5e6efbccbf6feb8dddbbce8d,
-b5e7dc1dd4ed45e0bdeaa6c6a,steam turbines
+b5e7dc1dd4ed45e0bdeaa6c6a,
 b5ea6cadbc4ed0efccbd9680b,
 b5eb523bccade51e2353ee30e,
 b5ecb2f5a98c8fd82ee59dae8,
@@ -3425,10 +3425,10 @@ b60be54d8eb63b39a9248afbe,President
 b6151fadc477a8ea56f9d36e1,1277–1347
 b618088025da4434aa51ba5f0,
 b61d97eceee495aec20c70f2e,prostaglandins
-b6323e0b6b7975102bbca7efc,CYP27B1
+b6323e0b6b7975102bbca7efc,
 b632bfa9e844d63a6c0e06969,18 million
 b6376ca0fafd7ba0abc6e2fda,
-b63ba47d2e7b4ba5babbbec13,Fryderyk Chopin University of Music
+b63ba47d2e7b4ba5babbbec13,
 b64bf16f7a073a8f1db3c7ac7,"MSPs, known as whips"
 b655fda88a2d36f12dfe6daa4,they could generally converse well in the language
 b670aea59e6fd62c6ebafacc4,
@@ -3442,14 +3442,14 @@ b6bfabcbc6b16fdaff88c8001,3600 revolutions per minute
 b6cdf1ddfe3c1184d153e591b,1979
 b6cf1d6e0aad65d12dca4186c,Watt
 b6d325dcd6398c103dcdeb955,La Rochelle
-b6de3eb11cccaee9ff71caac2,Louis XIII
+b6de3eb11cccaee9ff71caac2,
 b6e3318a91df8e4b3d0de95e8,"a fault-tolerant, efficient routing method for telecommunication messages"
 b6ea06695deda3e825abf5f7b,Catholicism
 b6f7189dd40cb7fc5ceccc36d,
-b6fa7ee10cd2cbdaaff5b12c9,shared physical
+b6fa7ee10cd2cbdaaff5b12c9,
 b700d39b5d5c3f586dbcbba2d,
-b70b4b5a8c1ca65bb3faa46ce,motion and force
-b70ccebabdd1ebed375ce6a03,L
+b70b4b5a8c1ca65bb3faa46ce,
+b70ccebabdd1ebed375ce6a03,
 b71cb0074e94e8cabce7a5dce,Bento de Moura Portugal
 b72dac03cddcd8d8fbcbe446f,Abilene
 b776d487d1149d8b18594c7ad,market and technology realities
@@ -3462,7 +3462,7 @@ b79b1bcc7bb5e881eb5cc83ba,send aid
 b79d362d7d08f3b8b4cdf0c6b,
 b7a578ac4dbaf2fdba7b7defc,the Song dynasty and the Ming dynasty
 b7ac34e62247fb2e817f49d33,
-b7bed6ad8eb1019e25b61e0bc,Digital Equipment Corporation
+b7bed6ad8eb1019e25b61e0bc,
 b7ca62d6798daab3dc430d4f0,
 b7d9b84b8fcd5edac10b6e7de,International Contemporary Music Festival
 b7dbfaefa6ecf5fde555946ad,physical barriers
@@ -3499,7 +3499,7 @@ b8e6a5e03fac2559a1ace0a2a,28
 b8ec34fe9f1fc4aad41ceb631,
 b8f2f7dd2ccd32eb25e9d556b,
 b8fd5bff8afbe3aa312b0289c,Mercury
-b901c0fffb2cb8cc8e6bafe42,MCI Telecommunications
+b901c0fffb2cb8cc8e6bafe42,
 b90b6a67faf9da94cec4baea4,
 b91cd9feeb7f0b687bef7b3df,
 b93ccbd84da2116edcdd4fbcb,
@@ -3529,19 +3529,19 @@ ba3b66db8b10df13d05e9cea0,European Court of Justice
 ba48cb08bb3f131da13d5ac14,"New York, another 21 miles north of New York in a town which they named New Rochelle"
 ba498a4f1d9d7d024c628b0ab,applied force resulting in no acceleration
 ba6edb34f4d2c346eb7fa9ac1,Scotland Act 1998
-ba763b4a7ccb9c08c9dddad6e,ignored the warning
+ba763b4a7ccb9c08c9dddad6e,
 ba7688e68ac4e4feecac8dceb,Scottish independence
 ba77adcf8ef9c8b41ecc3c745,60%
 ba7c0ecf4c1d90f1ce7c28ad6,2007
 ba9a91f7cdbd3167f6b41b9c5,Queen Elizabeth II
 baa0024cbfbb94df161ace3c5,Katyń Museum
-baa5ddd12e3a9b29e873df022,dedicated network bandwidth
+baa5ddd12e3a9b29e873df022,
 baa896e87f190fb9e49e6e91d,
 baac4605f9057ac90f686af0c,Conrad of Montferrat
 baad50aaebcbe839ea6c43d4e,62
 baafa76ccabbf2d6feda78f4c,Art Deco style in painting and art
 bab0d1cd7dcbcdcecdefc87e5,
-bab5a3466f0e0a3cfacad2bba,1971
+bab5a3466f0e0a3cfacad2bba,
 bab9f448343dd94cf9e2533aa,
 baba7bf8b0dde57c2cbeafe6b,Innate immune systems
 babae8ac80da8af1f8cdb9a8b,a unicameral Warsaw City Council (Rada Miasta)
@@ -3563,7 +3563,7 @@ baedc48c5b9ee85cdec3aef33,
 baefbdccaddd5e0a4dfcaeb8b,
 baf3e26d138226178c5cbfbab,1916
 baf4efff7ff8a5fa3ef6afaeb,
-bafa760d5adeecdef2bb0ea3b,New Orleans
+bafa760d5adeecdef2bb0ea3b,
 bafd47d0f9beeb683c536d0e9,not-for-profit United States computer networking consortium
 baffeb5f1fa8fc562cd89f8ae,expansion
 bb077d361fd7e8fd0ce358ea8,winter of 1973–74
@@ -3607,7 +3607,7 @@ bbd83f7abdcf34afdbd7e3d5c,60
 bbdb33dbe5eebb608add4b6bd,a proper legal basis
 bbde8e93e3e33ecd6ba7f8152,
 bbe58544fcdfbd4cbc0cbac3b,
-bbe7bff1b0a036ba1dd29a03b,"50,000"
+bbe7bff1b0a036ba1dd29a03b,
 bbe93cc3cca6ecbbaa8500149,
 bbebb1c6bebb0eb76488d7bdf,
 bbedd133230eced188bb3e58c,
@@ -3641,7 +3641,7 @@ bc6d45cba3ef2d26f5d96f1f6,B cell
 bc6dc7b2a153e01bf616be6da,complexity classes
 bc7a665e589185b26ca73e4a2,"FMCG manufacturing, metal processing, steel and electronic manufacturing and food processing"
 bc7bfc559c0aba75ddfacf3aa,computational problems and not particular problem instances
-bc7dc0b9ae6dcbdc91a927b66,60%
+bc7dc0b9ae6dcbdc91a927b66,
 bc8baeabee8e865b1d8c926ac,along the coast
 bc95ffb69e8e19d32b5b0cad8,
 bc9bace8e462e5af2fe2b4ddb,
@@ -3658,7 +3658,7 @@ bcbc5b6af64205bc39afcabba,
 bcc0df3dc70ac7fdad8f21473,district Centrum
 bcc47daadbe94dfe7a0e28ede,"common rules for coal and steel, and then atomic energy"
 bccae382e1de521acbedfbe13,harvests of their Chinese tenants eaten up by costs of equipping and dispatching men for their tours of duty
-bccbe2beaaf0bc6bd226ff7df,"The President of the Council and a Commissioner can sit in on ECB meetings, but do not have voting rights"
+bccbe2beaaf0bc6bd226ff7df,
 bcce91afd47c60dbe9e31d58c,
 bccfa78a4f06e2eee7daf789b,Glucocorticoids
 bcd5cce6de4fdac4fe16cc072,
@@ -3675,7 +3675,7 @@ bcf5efedefb7ac32ee292e23f,
 bcf879dd51875e6aa0b9c0527,MHC I
 bcfbcb0feb1fad209dd333bea,
 bcfe4c9fdffabefcc58b2ab10,
-bd1071cc5faaf92aeabadf3a4,Anti-inflammatory drugs
+bd1071cc5faaf92aeabadf3a4,
 bd19c4abdb6d73c53fa0f22e0,unnatural
 bd1dbbafd0b7294be7310cfcf,Rotterdam
 bd1f0cc2ea6de60c1daeac025,a new Scottish Parliament Building
@@ -3689,10 +3689,10 @@ bd57f3cfc1baa3cda4df6096f,since the Treaty of Rome 1957
 bd6edabfc7ebee3fb7e710f66,
 bd7ce2cecb2507da2cab344c9,Palace of Culture and Science
 bd89a6fedeadf8d7ddaafee91,
-bd8cbe45f32daec483887bdb7,the direct proportionality of acceleration to force and the inverse proportionality of acceleration to mass
+bd8cbe45f32daec483887bdb7,
 bd8ed93ef1bbb5ac9533ebf6b,two
 bd953dc2516abf4afff6ca46d,
-bd9a1e3354bd3e8de4af3689a,economy
+bd9a1e3354bd3e8de4af3689a,
 bd9a893533cb4a60efceb50d3,
 bda62af42def0789dc79b6fe6,
 bda9a9add1acc4d1a026af08d,influence
@@ -3706,7 +3706,7 @@ bdb18b112021dd6ed7157d4e8,twin-cylinder
 bdb2868cc292acf03761dffc7,Ilkhanate
 bdc30b11c5dbefce0a68121ca,
 bdc6019e9c300dd5e16a5caa9,
-bdc8dd7f33e3c8eeb43ce1408,weakened immune responses
+bdc8dd7f33e3c8eeb43ce1408,
 bdcbf824174c390d02776ceaa,The Catholic Church in France
 bdcf1238a7bfcd936a0ffcaee,
 bdd2b360a0b94afea78adad26,the lead melts and the steam escapes
@@ -3720,7 +3720,7 @@ bdeacad0ae7abdc4ebfc8cdf8,antigen presentation
 bdefadbad6fe4b69ffbf7eb35,
 bdf1ca9583eec2ce0feafd385,
 bdf8bcd7c5ba1826dcd38cdeb,
-bdfd0cbeb9ccb3a6c877e5da7,the public
+bdfd0cbeb9ccb3a6c877e5da7,
 be00c4e7bbbe7ba8099da20c8,
 be08acdcca6ba09bb076c661d,"The ""European Council"
 be0b3de81ae2bbf8a066806de,
@@ -3737,7 +3737,7 @@ be53071669ebbf7bfbc4dbffa,Medical University of Warsaw
 be55bba2bad86eefb4baeeb7e,Immunodeficiencies
 be59e3dd88604eaeaa0b3df1a,2003
 be5eabcb92bf7812680b604c0,the defeat of Napoleon
-be659f4e26b6df3990e37a1ad,Adaptive (or acquired) immunity
+be659f4e26b6df3990e37a1ad,
 be66d838cd0efaded76aafee6,
 be6c1afd5a33b6c7ad7dd702d,
 be6e67da25ddd4bc7dbaf66ed,problem instance
@@ -3749,7 +3749,7 @@ bea8fd1f74c58f2aaa01cf5ab,
 bea9d9071eea2a38a99d3aab3,Jewish
 beacbf35ae3f8116ef241a0c3,
 bead7ffd9b33a6e9eadaecc0e,k
-beb5fcedb3eba0d99d5deda78,central Europe
+beb5fcedb3eba0d99d5deda78,
 bebaee499e6bd0f7dfdc7aec2,
 bec4909deebc658ba846e9cf6,
 bec6a27ab4bbeea6ca0f1371f,Due to its central location between the Commonwealth's capitals of Kraków and Vilnius
@@ -3776,18 +3776,18 @@ bf14c1cd7bab9cd04ac875e89,packet switching
 bf1b68feebfb32fed7cc3c199,
 bf1bcaf2e1f53ee51aeeedc9a,
 bf2d3f5b8b01eaeec9c4bd5dc,"2,400"
-bf3508611c49e1388ad9f5abc,fairly stable
+bf3508611c49e1388ad9f5abc,
 bf3daa4865ededd6b45f3dd6d,since at least the mid-14th century
 bf42ff0df3bbec5e5decdd97e,the lead melts and the steam escapes
 bf47cdd51cbe172cbd2cf28ce,
 bf4dc0eaf161d0db295da5b74,
 bf5c05edccaaa6affcce4aabf,
-bf7cff76bdcfbdbfeab0d67d6,France
+bf7cff76bdcfbdbfeab0d67d6,
 bf878e7da933fb26babebf907,granulysin
 bf937e66d0d24950b31a459e5,
 bf9ab2d06405edbbb443d9b3d,rise and fall according to market demand
 bf9b066aa7cdcd8bef7c1e9e3,seven months
-bfa56e6c35dcc9f4c7a44eebd,The packets include a connection identifier rather than address information
+bfa56e6c35dcc9f4c7a44eebd,
 bfaa2f39c994e41dd5fd22bbc,degrees summa cum laude
 bfaaa58ef7efb092ad9becffc,developed
 bfabce6dd0bfb09f37215a2b4,
@@ -3803,7 +3803,7 @@ bfbcbd1ef9fb6646a0aa0f488,
 bfbccada7c77beaddce465e4f,papillomavirus
 bfbe7dd0a4c2bfcaec60daaa2,
 bfce8d820367ec8458469afaa,
-bfd15910c1bdf99245f1c04ac,discussion
+bfd15910c1bdf99245f1c04ac,
 bfd16ab8677fd5fd8b4af8e47,
 bfd24f61bb51ddd95dddfd534,"it has survived many wars, conflicts and invasions throughout its long history"
 bfd3c3b3c9b637bdbf0f6ff4d,
@@ -3812,19 +3812,19 @@ bfe42a1097ae8fa034ed9d5c1,time or space
 bfea6f56f4efdeaf80d6b765b,Blaschka
 bfeeaeafa56b3bcd59fd10aac,non-Catholics
 bfef9d68f966edaaf8edc9e96,probabilistic Turing machine
-bff0b7ce5ac74eebda29f1cb5,$12
+bff0b7ce5ac74eebda29f1cb5,
 bff28e4b8ae9a5175cbafc49c,
 bff5d33dfd5a4aa40ceb52b05,
 c0016bf110dbb7ca7cac7b6e9,
 c008aa74c5d74cc69bf3e2711,
 c013f23aefb34abb1f9a4e51f,
 c025bfbfc151cbfbca2ea3ee9,
-c03dbae010fb0b0de8e2bcbec,Paris
+c03dbae010fb0b0de8e2bcbec,
 c03eb1d75ec8ee458bb3d1e7c,between 1621 and 1629
 c03fa0a6fd5664a917bd7ecaf,phagocytes
 c084de2851d6c34adc53fabd9,April 1991
 c08998d35caacdda32dbc4aef,one MSP
-c091dedf9befaf7c808dae146,Articles 106 and 107
+c091dedf9befaf7c808dae146,
 c097ae8dbeb7e497badcdab9a,
 c0b7c3c7ffb8fb52ed2ec820f,"January 18, 1974"
 c0c5ddf0fac57ab17e96a1798,"Odo, the Bishop of Bayeux and first Earl of Kent"
@@ -3845,7 +3845,7 @@ c186cb1f42dde92bdb5657ca8,New Orleans
 c18abbf2abdfbbaee7029fdb2,
 c18cfcd9c1dfdbc78a4b5ecdf,
 c19394f2e731f13e94c716ef1,1299 to 1923
-c198b7573fdd5c84d1bdabd35,eastern Connecticut
+c198b7573fdd5c84d1bdabd35,
 c1a4f6b02fcc2c6fadbacc3d3,people to pursue their life goals in any country through free movement
 c1af654abeaa16b48afde9aec,
 c1b0ae39f2d8cab9e2dc3ce6c,
@@ -3859,10 +3859,10 @@ c1dd81b6fa62daca3898976d3,
 c1dddefbb2688fc3fb0aba974,4
 c1e28d9e9539fdfc68e9effb8,
 c1ebfcc9e8b472a7fce5a8f2b,
-c1ec27333615de5be3cac49ee,Abercrombie
+c1ec27333615de5be3cac49ee,
 c1eed6c61a737c51b6d8261ef,15 kilometres
 c1ef93e37c591f46e42f6cd7e,
-c1f37ceaeaadfbf98d8c5f776,Jeremy Lin
+c1f37ceaeaadfbf98d8c5f776,
 c209a874add99e52a1cb87fd4,Article 101(1)
 c225a9cd7171e9c984bbbca86,
 c22ac4fddce3ebb3ae0da9faa,quantum
@@ -3875,7 +3875,7 @@ c2723326feec353bc8e437c31,courts of member states
 c273643eda8658d8052810500,700
 c27d08f63cc2df91752ceadcf,
 c288e4fcf504dbbfddb93d4fa,
-c29b9b32cc9d6782adb3a546b,vote clerk
+c29b9b32cc9d6782adb3a546b,
 c2ad0baebfd3690eeee39ddde,1268 and 1273
 c2afecf0b02083e3b1cba6dc2,
 c2aff484eec08f1ebdc10cbe2,Western art from the Middle Ages to the present
@@ -3898,7 +3898,7 @@ c320a70dad2cc4f5477edff50,
 c32d46bee6c76f67ebf4fdd5b,The Vistula River
 c36a7cb2af738e86e965f58a0,shock
 c36bbd7ebd2b21bdd4f9a7a9b,global
-c381fafaaf6bdcba4ad911a92,the highest terrace
+c381fafaaf6bdcba4ad911a92,
 c38b4e1cdbfdfcda0eefa4fb1,
 c39a47a117b2cf7e8cabc03bb,
 c39fb0added859cfeeef04ee9,
@@ -3919,10 +3919,10 @@ c419fa5377fdd26c0ca29cc6d,"I do not think myself obliged to obey it."""
 c41a7b0b2d81f7f2c2e226b44,member state courts
 c427a4ebc7ddec2c55e2970ff,"October 6, 1973"
 c42a7aab2649b3dee5cb9c53a,
-c42edddd0f45b968cc4c512e5,The Normans
-c43d59beac466ffa4de6f6575,Roman Catholic
+c42edddd0f45b968cc4c512e5,
+c43d59beac466ffa4de6f6575,
 c45903fb2c0eec019f9af8c14,
-c470cf0b892d0caffbaddc70b,one of the first ever production OC-48c (2.5 Gbit/s) IP links
+c470cf0b892d0caffbaddc70b,
 c47269fa73a14dffed471faa0,triples
 c47e9de65beeaa709cecf9c2c,improved markedly
 c49ac7a2ff3fb8f1cfbe06d32,
@@ -3941,11 +3941,11 @@ c563ed60bf5eaa5aee050cb3f,Shi Tianze
 c5697dc41c48319b0ab56d05e,
 c56b94ebad3ef8fdf6aaebb10,Red Turban rebels
 c5820a1c0e5cec4ae258823c6,
-c5ac77b05b3bd3bdfd60ea388,lengthening rubbing surfaces of the valve in such a way as to overlap the port on the admission side
+c5ac77b05b3bd3bdfd60ea388,
 c5ada9b6ddddb6eddac6c9ffa,
 c5af9a547c64254dea1f38f06,
 c5b8ddb8ded4daada9774c6aa,
-c5bfb109accee60c3d130dbb4,"bans on foreign popular culture, control of the internet and unauthorised satellite dishes"
+c5bfb109accee60c3d130dbb4,
 c5c1a9fd95cc2cf0b9aede64e,
 c5ce90c4db7b988e794eedc2a,13
 c5d029dfed8f620a3b47b6cc1,Saudi Arabia and Iran
@@ -3954,22 +3954,22 @@ c5da088176e9a8cd8dd1e3dbf,
 c5da9dda3571c1045ba62f320,
 c5db08ab8111cdd71df657fe8,
 c5e60c7b0cada2cd2a5c87bd8,
-c5e9e2bef697bfe4acf3f2e4e,new ways to increase oil supplies
+c5e9e2bef697bfe4acf3f2e4e,
 c5ff1df759c8eb831b18ee06d,seal
 c61f2f22f295842c9ea43aacf,
 c62ae7cb1ad8a6f921abba5fc,"the blood–brain barrier, blood–cerebrospinal fluid barrier, and similar fluid–brain barriers"
-c64c0bfe3cdbb7acb746cea12,a chain or screw stoking mechanism
+c64c0bfe3cdbb7acb746cea12,
 c65066f4e8e34325f18b3dc8a,
 c675f4c80b10deedd0c8f63bb,
 c68ab10c62cdef688e6caceec,mouth of the Monongahela River
 c6a2f53cf78aaece46bfcc334,
-c6a90941ee5eda0f67d6fd6fa,vote
+c6a90941ee5eda0f67d6fd6fa,
 c6a959b5ba3402477b432ebdf,Transcendentalist Unitarian convictions
 c6b2a10656f777ce4fab694e3,
-c6b8ad4e0ae8d03fdfbd98afd,1919
+c6b8ad4e0ae8d03fdfbd98afd,
 c6bce12facddd5b5109ff2f9d,
 c6bdba0eceae2e476db4c9f8e,
-c6cdd2bfdd392ddefbb6cbc34,a liquid not as a gas
+c6cdd2bfdd392ddefbb6cbc34,
 c6d2dbfad2c90799d2f14effb,
 c6d6c3fcab1eecdf498d72ea7,The European Court of Justice
 c6ed68b6ae659e1a12d0a8d53,third son
@@ -3994,20 +3994,20 @@ c7add5a7be0d1e1ec58c8d7dd,Shoushi Li
 c7b0cda26d98aa63c5a0993f5,may be forwarded according to some scheduling discipline
 c7c82f389cda2ff3edbf91fb2,arbitrary graph
 c7c9cac60a40b298dfd83d37b,5
-c7cad088ff2f4ebf1a08b12ac,south Wales
+c7cad088ff2f4ebf1a08b12ac,
 c7cf06eecdc1d78df3b79ec69,foreign powers
 c7d36363dff95f96e250cacac,
 c7db8363bec4b2efcb4bdb1dd,John Smeaton
 c7e0dfa50df32facdcde0a623,
 c7ebfcecf8cba0b7ed8cf3743,
 c7ecfcd8beb9b6c2ba745aaec,host cells
-c7f98e5a48c4f1ad2b274ef43,1569
+c7f98e5a48c4f1ad2b274ef43,
 c7fc5bc399ddfa0dbf62f74ee,thermodynamic
 c7fec2e9ddfd131bd0c02c8a5,half as much coal
 c8007e5aad0decf0ffe0abe2e,
 c80ef2a5519edad37ca5439fb,
 c8112dbc3223b680d70c68c7e,
-c8210548fb8a70724ca145c34,U.S. Defense Secretary
+c8210548fb8a70724ca145c34,
 c82bfd06ba43e0f5c5ccff6de,complicated
 c82fa7f33bad07208ffe17ada,Count Ludwig von Nassau-Saarbrücken
 c86acfde0292df33dcef223cf,
@@ -4025,24 +4025,24 @@ c8cda58fde0aa9bbf6c22924c,Citizenship of the EU
 c8ce0d6cfbb98efcd76a54dc6,the dukes
 c8d733ec6ea7498ba0cbc909b,
 c8da5bf47b4fe733bcdafa781,Ali Shariati
-c8e52438babdcdb78afcd1c0d,from 1870 to 1939
+c8e52438babdcdb78afcd1c0d,
 c8eafde8f3cef8260487fa302,
 c8efdc4cb1157be1f2f0c62c5,burning combustible materials with an appropriate supply of air
 c8fdacfd8dfe72cde4dedb65b,
 c8ff621fefc7d4fb53c6f8ba7,weighted fair queuing
 c90c3e8c36f47aed9a6c22dc6,
-c90f6d713ee9ba8f42ede3cdf,James Clerk Maxwell
+c90f6d713ee9ba8f42ede3cdf,
 c90f71e4dcabcb1aafcd80f47,
 c91c64b08fdfdf84bbba7fb87,
 c94c7ec3f4556d9444cfa6ab6,Juris Hartmanis and Richard Stearns
-c94d2e2eee805bfeb0c5538ea,the same amount of domestic oil
+c94d2e2eee805bfeb0c5538ea,
 c94ff49c7c41cec7d22ddc7df,
 c95dde47a60cc0c50c9e4fdfd,
 c97aa951d2b3c5941add037cd,
 c97b18b4dcedfee45dfa22162,21 miles
 c97f0bda0eb32f758dbf7ebd1,
 c98a8eeeabacfed7e76eed7ca,analysis of the role of nineteenth-century maps
-c98fbc3b9618fbe345eeaa96a,Reciprocating piston type steam engines
+c98fbc3b9618fbe345eeaa96a,
 c99fa2fea3f9d28a92b6a0fce,16th century
 c9af6bd94f2dee68cef85ef03,"when a country's influence is felt in social and cultural circles, i.e. its soft power"
 c9b091a8bf8ebf7774a56ad31,2007
@@ -4076,31 +4076,31 @@ ca359b9ce723aca5b32c48b84,
 ca35d7db53080efb6cb673bfe,
 ca37ac28cec1603ee2efd30cc,
 ca3d8fb910ff8fc0adab22de2,
-ca4909222fedbb28461275eb8,academic institutions
+ca4909222fedbb28461275eb8,
 ca493da8669bfbbfdaecefe9e,Toyota Hilux
 ca4aa1dff2ef5a32b437b2dbd,1965
 ca4defecebfc0f0adbb64daea,musicians
-ca519e4f46d83af8baefa3ee1,armed jihad
+ca519e4f46d83af8baefa3ee1,
 ca5d0bc5977ad6edc0cbddde4,
 ca5fe34a486e6cb64edf319f3,
 ca6b56acab7ed52f66dbb03c3,Suleiman the Magnificent
 ca6d75e31328d001dcebb0cff,
-ca70cf10a2f71dfbadf0f2961,residency registration
+ca70cf10a2f71dfbadf0f2961,
 ca72bda400d9dcb2df0430a83,
 ca7ddebb9daf52fcc341e23db,protest against the occupation of Prussia by Napoleon
 ca7f6d3dbc11fa7e5fcf986bf,innate immune system
 ca7f8a5e965adb50ff94dc6db,
-ca8194a9b26feffbfffab7b8c,Sharia
+ca8194a9b26feffbfffab7b8c,
 ca83afdcdd2f4d9cbeefad639,housemates
 ca83c0afbd4cdce937fccbdaf,
 ca8f30316bf32a3f6fccbe2e6,Japan took part of Sakhalin Island
 ca927fcabff99a807ef4ecdcb,gastric acid and proteases
 ca9ecf75a5da03a9cdd132c4b,3
-ca9ff3db9fdddfe95ae1ea4bc,Lake George
-caa57cbad1dbb0d51d627fbbe,1920–1999
+ca9ff3db9fdddfe95ae1ea4bc,
+caa57cbad1dbb0d51d627fbbe,
 caa7c39b794d35aa9a941deca,an international data communications network
 caa9bbd170aaeae82b55edb07,their respective lines of application
-caaa3fcbcceadf5a0731d58aa,Decision problems
+caaa3fcbcceadf5a0731d58aa,
 caaa9a4cd3d4dfa4ae9b7b185,
 caac9ff89ce3dcf8dc7cde9ae,
 caacc3717f6f6db9e8d94aad1,defensins
@@ -4117,15 +4117,15 @@ cac4eee6bbbd27cc16918ad5e,cyclosporin
 cac8cdfeedf2fafd95f1a0cca,Shi Bingzhi
 cacce84bc3cd5ce0f41bfabc1,
 cad1d8e2aa1d8d385ab7dfeb3,at the beginning of each parliamentary session
-cad8c0c074d0ae1ddb05ce143,"30,000"
+cad8c0c074d0ae1ddb05ce143,
 cadaeae6e8c751bc99da3a6fa,
 cadbabf39ecfcc07ddbacc8f9,Greek
 cadde0345cf9cf07f7d57ebb2,external combustion engines
-cadebc7de1677878b9a984e22,oral antibiotics
+cadebc7de1677878b9a984e22,
 caee44bc2564fc9758169eca6,
 caeed9afb8e44b03efb05fd6f,
-caf0f542a5e2e5e3d4c2bb984,José María Figueres
-caf47c72e063b3557d7f801b5,by using the HDLC/LAPD/LAPB Set Asynchronous Balanced Mode (SABM)
+caf0f542a5e2e5e3d4c2bb984,
+caf47c72e063b3557d7f801b5,
 caf4acbbcca8fd355fd56a692,
 cafbd0ff2a3c6c0dca8f0b3eb,Isaac Komnenos
 cafd3eae4f795fa3cabbbe014,
@@ -4143,7 +4143,7 @@ cb51ffdecf63a52ef7f7d6f9d,courts of member states
 cb59f5a7a914b5c50e204f76a,
 cb5f92dfadcd26bb8b652db9e,who speaks in chamber debates and the amount of time for which they are allowed to speak
 cb601f20bd0cda44559da3b12,Qara-Khitay
-cb608f921ed6bafb3a6a853be,time and memory consumption
+cb608f921ed6bafb3a6a853be,
 cb61bc94146a329c93c6fbdd5,
 cb6d8fcdcebba4e3eb62dd426,
 cb6dadee22f001dcabcdfbdf8,time and space complexity
@@ -4160,7 +4160,7 @@ cba9dcbaf0e5f32b2e348a21e,
 cbaaa8f7bee4df8a351ecb969,
 cbacc90e6febde5030c0aaeec,
 cbad844deebcabbfcc4a52e47,
-cbadb9d0c60b5beee3b03d0ea,"freedom to continue worshiping in their Roman Catholic tradition, continued ownership of their property, and the right to remain undisturbed in their homes"
+cbadb9d0c60b5beee3b03d0ea,
 cbb43c81b08268d2bf2df95eb,eastern coast of the continent
 cbb48eaacbbbfcccefb7aab7f,
 cbba71ebc0d6dbd9dc422defd,seven months
@@ -4168,7 +4168,7 @@ cbbee3ef125980eda3eaaffed,
 cbc340b6befab9fa6f770cc3c,
 cbc3b4689a07919745f5a31ae,
 cbc93613e2ba045e102bebf12,William E. Simon
-cbcdf0cfec53decdfeaf37199,conservation of momentum
+cbcdf0cfec53decdfeaf37199,
 cbcf8ebdabf4c83dee6fdae8c,1989
 cbd6eeb3f7e1f592a358ae1bd,northern China
 cbd8cbcd9f352abaa51ad6d95,
@@ -4179,7 +4179,7 @@ cbeee29daa5cbddd34fceebe5,DTIME(f(n))
 cbef0d43e942a5cadfa5cbe6f,electrical generator
 cbef1ebf51b92d8dcf11fa67d,Newton
 cbf2803dad2ce4f4ba2ddc522,
-cbf8bdb7cccc19fc1f7ec3ae1,by store and forward switching
+cbf8bdb7cccc19fc1f7ec3ae1,
 cbf8ef1d56e15dbcaae6d1fbe,
 cbfc5efbd48fd65ecb169efaf,Cape of Good Hope
 cbfc7cda7acb5c005778baba8,
@@ -4188,7 +4188,7 @@ cc0bdf8c609317fe71ab0366b,
 cc0c1dbcabdd0a2a74e8cb25e,AUSTPAC was Australia's first public packet-switched data network
 cc1bbee96e8cbae48ddf60f31,
 cc1bea703cbcbfdc1245eb352,
-cc22a0e25b5dd60fefaf8fd1c,"BPP, ZPP and RP"
+cc22a0e25b5dd60fefaf8fd1c,
 cc259ced75a36cc9db4e02a87,1268 and 1273
 cc2afa53457bafbbb5aaffeed,
 cc3289ad9062d844eaa142076,
@@ -4231,11 +4231,11 @@ cce65f0ca59702eeda6167ef6,Maria Skłodowska-Curie
 cce70f35e34343fda360ececd,Frontex
 cceb466d9add7fdfdfcc1adbc,
 ccedcd2bc401cb86c0bd34ba3,
-ccedcecddbf5bd94d41cecfdb,John Smeaton
+ccedcecddbf5bd94d41cecfdb,
 ccf104ee040fd016e0f5aedfd,symbols
 ccf11ba31e663347da0a0facc,Han Chinese
 ccfef38b09e2d57c7870b8de6,bark of mulberry trees
-cd0dafdbdc9edae58cfc7bbfa,electrical generator
+cd0dafdbdc9edae58cfc7bbfa,
 cd0f7b66cf9bfcbd8dbcf6bbd,Fort Caroline
 cd1aab6f04ac0bcdbae746bfc,Maria Skłodowska-Curie Institute of Oncology
 cd1c734c992c0cb81ecee80aa,
@@ -4249,9 +4249,9 @@ cd5d578ecf45ca7a51f29a0fa,
 cd641afceea8c9ff8d34d9f35,intracellular vesicle called a phagosome
 cd70136c0dededa92f2bc6e1a,
 cd786cd7d0b1f3e99aa0cdd1c,Kabaty Forest
-cd792bde3aa09f6525b6f91fb,complicated definitions
+cd792bde3aa09f6525b6f91fb,
 cd79efabf7a399be3f9e9d349,
-cd864838bb3eaec1c1feab7f6,weightlessness
+cd864838bb3eaec1c1feab7f6,
 cd864a81af9ee92f11c5aee1e,bacteriophage
 cd8eeb6ab7faad10aa196fcba,Distributed Adaptive Message Block Switching
 cd93b0adfdcfef0d9b40eff3a,
@@ -4261,7 +4261,7 @@ cda1bd13e21efcb9435fb6a58,
 cdabe957969bdd20bdba4adcc,
 cdabff3bafc5a82e4d4c78acf,locations where water is costly
 cdac010f240a7bf66dc07e1e2,
-cdacef95bfeb5ada4ed3c2beb,The Taliban
+cdacef95bfeb5ada4ed3c2beb,
 cdb231b0f82e7af1f47cae0b1,
 cdb41ed0b3bd571dceda43e00,coining the modern name packet switching
 cdb582e442d4aa8afbf97ccda,
@@ -4286,14 +4286,14 @@ ce068dbfbfde998bd9942ceae,
 ce0704ca74cb54263f80a8a0b,
 ce0eb9dd310ca7abd77eda7e1,input size
 ce10c6b934f6d708a1fb447b9,
-ce1ecc2e1f67dd7a1da605dce,military action to forcibly seize Middle Eastern oilfields
+ce1ecc2e1f67dd7a1da605dce,
 ce25c9debaaadc1ba6d1c55b6,"a general architecture for a large-scale, distributed, survivable communications network"
 ce2f45aed5a3e3cebb7dc7ac1,
 ce3ae7c92f5c8c34d83ae6a70,
 ce496dd5aa2d446daeacec9d2,
 ce4edd5eb65a5ae8d9d4213db,
 ce59c5f4ab41c409b96a9d424,
-ce70cefacd2a7ad7cef6ca7a7,30%
+ce70cefacd2a7ad7cef6ca7a7,
 ce7d1ce5cdb2d9daa6d0c25f5,
 ce7f6a3d01abfb3bdca3d901d,prison sentences
 ce821a3d8d514f4b63c2992ca,1992
@@ -4301,7 +4301,7 @@ ce840e4ee6d8abf329b6cdcde,
 ce85e82d41ac87fdaf7db02fd,
 ce879debfaa7ddbc37bb5a3e2,
 ce8deab35aaea01cc8dda5452,
-ce8eb0ebc91eb4bea3bdb400c,demolished
+ce8eb0ebc91eb4bea3bdb400c,
 ce92eaefb9eeb7aafb83cd608,five
 ce972d8fbafa8eea5dccdae5e,1815
 ce9fcbd5ca5d0abdee61d78ad,
@@ -4312,7 +4312,7 @@ cea1be970e0a90c96bddedaed,−F
 cea5b6bfb814c9d993c2fd0fa,
 cea70dda05d0ecbfbbfa37edc,
 cea8659efd5f52ce9fffdc80d,
-ceacb4ffc9dc7a2ebddac1436,a lack of net force
+ceacb4ffc9dc7a2ebddac1436,
 ceae882adcd3c42bfff2062cf,
 ceaebf512beebc3c7b0a3a10d,Newton's First Law
 ceb3f4eab645cb84ee19f0d96,Battle of Sainte-Foy
@@ -4335,9 +4335,9 @@ cee2f92229e88ce75b4a00858,Bukhara
 cee3f7f21a0ad6e9006ae2df4,
 ceeaabd896d9bfdcb1e7eae7a,
 ceef4dba41955cfcfe105f2eb,
-cef085733eea49663b6f3848a,bitstrings
+cef085733eea49663b6f3848a,
 cef183cefae675db7971917bb,Huguenot rebellions
-cef49affcef1afdcc4ebe3b4c,"200,000 to 1,000,000"
+cef49affcef1afdcc4ebe3b4c,
 cef5f93b7a12bdf173baf49ef,
 cef8b9f29f3f6a94ebfa869aa,1858
 cefacd5bbaac12c3fde4faa0f,
@@ -4371,18 +4371,18 @@ cfbb775b2c8ef1b33ee238e50,
 cfbc09e3eb66dec7950ad0612,
 cfbcdfda1a2c89df2df8fc4f7,Frederick William
 cfbdfce18a398b25ddf4b5fa6,engulfment of pathogens as a defense mechanism
-cfbec7acc3ffdd2ae82ed3048,"November 7, 1973"
+cfbec7acc3ffdd2ae82ed3048,
 cfbeff7a8e9c46baa9bc35bad,
 cfcad3ed5146ce327cff6fbda,
 cfd0ebadcfdeed8ff3db623da,Presburger arithmetic
-cfd181cccdc42aeb88513cad1,three hundred years
+cfd181cccdc42aeb88513cad1,
 cfd9ddbb19efef1cd4777ff4a,
 cfda1ea8bb1438fe4bb5cbf75,the data link layer
 cfddcdf2e8c772ab92fee99df,Queen Elizabeth II
 cfdefd2a53c85f877e09ef125,four
 cfeaba5e174f2ef7ebd9679bc,"Wisdom, Compassion, Justice and Integrity"
 cfeabafae759e0f83abb0bcf0,
-cfeb8dfda77c3caa70fcef961,2007
+cfeb8dfda77c3caa70fcef961,
 cfed186d210ee9204c8ce4333,
 cff5d2d1da21d4342fb5e0b9d,
 cff7338bd1acbe1faebcef322,the West Lothian question
@@ -4398,7 +4398,7 @@ d030f21d4d0dbef7b596fbded,
 d03fc6a0e9c88b9edcc7e3c0b,Sunni pan-Islamism
 d0556fec2d45aa3d2bbadfb78,
 d055daeba0f1edaa85fc25fc7,lymphocytes
-d05f9056b66da7fcade67e0aa,Byzantine Greece
+d05f9056b66da7fcade67e0aa,
 d065df6aae7283d6c46cabf4b,
 d07c312dd51bb1cf75ea36f6e,William III of Orange
 d08e45e0cf9fcc2ef7ffc7780,Kosher butchering
@@ -4414,7 +4414,7 @@ d10ed3c81ebb40342be9dfaf3,Yo Yo Ma
 d11fb6b3cfefda7826a0f190d,
 d149c9b5cfd01f9ff28ddfc25,
 d14bbbefc949eba57e2b5fe45,
-d1553e4e878fbdfdcaaff8dbb,member states
+d1553e4e878fbdfdcaaff8dbb,
 d15edd4af2ebfadae2d0e88ba,
 d19c4ced0ee2fd8e8db222ee4,calcitriol
 d19f5bb972c7ed6a08d1e02c1,
@@ -4435,9 +4435,9 @@ d21dd82fe2a3edfeddf530a94,Sybilla of Normandy
 d21efe0fdee45ee807c141ae4,
 d235ce21f8a31df2ffff4252c,Vistula River
 d23abcf628cde65312a867a13,
-d25f48b6c83c92de4fbdbb5d2,the revenues from the oil were not benefitting Scotland as much as they should
-d276f9e3eda5ece9ec86c0c56,use of a decentralized network with multiple paths between any two points
-d2876cbb05eee79ebea32b02d,illiberal Islamic regimes
+d25f48b6c83c92de4fbdbb5d2,
+d276f9e3eda5ece9ec86c0c56,
+d2876cbb05eee79ebea32b02d,
 d2965e1ef6d9f5a095a032ef2,malnutrition
 d2a4aff904ea3489cdba68347,Masovian gothic style
 d2a93b76d5f4e72fa9c9cebbf,silver and inlaid with gold panned from Scottish rivers
@@ -4457,7 +4457,7 @@ d2fb9d8c3c1e9b58ddb4f9e4e,
 d2fd30d584cfe450d11218ec1,the original force
 d301ae304102fb17b87f14ae2,steamboats
 d31b21fbb9db426cc8fa5fa7e,
-d33146673cee2e48fba3d8aaa,Dai Ön
+d33146673cee2e48fba3d8aaa,
 d341daa89acea1bf907345cda,"Ba'athism, Arab socialism, and Arab nationalism suffered, and different democratic and anti-democratic Islamist movements"
 d350e18fecbacbbc15cc61cfe,King Ethelred II of England
 d35cd3afb793df9bcc24bdbac,
@@ -4502,15 +4502,15 @@ d4b5003829c2a9ebda5548b7c,counterflow
 d4b5b5be2fdef1f8cf251b839,
 d4bbed199aa941dfc66eaa2cc,Londonistan
 d4c33eeeda3cae5d220b943a8,
-d4cf261aafaaea5cefddd5bcb,the Presiding Officer submits it to the Monarch
+d4cf261aafaaea5cefddd5bcb,
 d4d625ecadba0b0c4c03cebff,"flying, driving and boating"
-d4dabdd931baad7b7325c8d27,Keck and Mithouard
+d4dabdd931baad7b7325c8d27,
 d4dc1a722b178fdf448f57bdf,
 d4de2eaaaacb39eccc1b0164b,
 d4eefa9cee06f71c1c8d51cdc,Santer Commission
 d4f0b2d4f1fd4dbe02a0ebfbf,to maintain their legitimacy
 d4ff2af33f22f7f0877cdcda0,
-d509a7d4408fc6ef292a34cb9,Egypt
+d509a7d4408fc6ef292a34cb9,
 d5174aba425755ac2feaf9912,lower-pressure boiler feed water
 d51e0f5e0a3fcdefe96c8339c,City of Edinburgh Council
 d51fc72ca7dfcfde7d3daf0d4,law and philosophy
@@ -4520,20 +4520,20 @@ d550c2d8e7f82b91d55878ce5,ten times more
 d557ebaefcd20264b4faeea89,emerging market
 d55afaf570a9122cbafeca30b,late 1960s
 d563a1fc4d75dbc22eafffcd7,the solution
-d5643fc60a72e3d1f1af67f5e,Sunni Arabs
-d5655daeabaee6fac8f3fe30e,Boulton
+d5643fc60a72e3d1f1af67f5e,
+d5655daeabaee6fac8f3fe30e,
 d58103baaa7afff69ecaeebfc,
 d583847c96cbbbfaaa99dfcad,
 d5848967cf6530fcd5f27d4b8,the steam escapes
 d5851aed4e890ed51f2f1a055,
 d58c91930a2f99ce6b191020a,
 d590d0a40839cb1af5ad69e3b,straight line path
-d593e5ad6afaa823fedf58c8a,Tricia Marwick
+d593e5ad6afaa823fedf58c8a,
 d594dbb3238fddf8b9ca8d523,
 d59fd9a16a0abd9b1cf3abf6e,space consumption
 d5a8cefbab5894c13e6a9fb8f,dreadnought battleships
 d5aec116a66b6a47bd8a16f94,Yale University
-d5b232fd6e39aabeebaf0ffb8,NP is not equal
+d5b232fd6e39aabeebaf0ffb8,
 d5b6f48f6a924a5ad20dd697e,make it more transparent
 d5b97b16e3fbda6caa9976fc6,Abercrombie
 d5bd092234c3b2ca3de7dae3e,
@@ -4541,7 +4541,7 @@ d5c4bf41dff6e94e2cbafde23,
 d5caab30135a0ebbaec43dd47,
 d5cb50e5bb9b9e3ab1f669d3b,an additional port
 d5dfd7425fb8a4f4bbaedcbe0,60
-d5e1d9dbbb3cf1d644e924c8e,inertia
+d5e1d9dbbb3cf1d644e924c8e,
 d5e9fee93ec73a7a28882bae1,
 d5f516ceddc7b9ed10e7b4714,"virtually all ""full-size"" American cars had shrunk"
 d609c8df127fbebde5bbf44fe,"embargo, a cut in production by five percent from September's output"
@@ -4571,11 +4571,11 @@ d74f627daaa097dfa5b752bb5,
 d76bdd8d16e3737bcc2bd3b8c,
 d787ebfd9ada1fcdd5c8408bd,
 d78e70d3f94ddd6fa67d05ed7,
-d79dabebf1bedfaaedc0ecead,severe immunodeficiency and a high susceptibility to infection
+d79dabebf1bedfaaedc0ecead,
 d7aacce329e0eeb75dce2bcb6,
 d7ad2d9c26c91b65b6f86c192,
 d7adeaa62eedaca8ef6fea9ee,the time taken
-d7ae8d611adeaccddcd4bbad2,Israel to pull back from the Sinai Peninsula and the Golan Heights
+d7ae8d611adeaccddcd4bbad2,
 d7aeb599a62d10582199bfc9f,political figures
 d7aff09b14fdcd0adae6fad14,The Taliban
 d7b4ac7e03faebc345bb156ef,Art Deco style in painting and art
@@ -4583,9 +4583,9 @@ d7bfe8effae0bcb59f3ed5b3a,
 d7c025c5aa2e5c3cc2ba699b3,Bohemond of Taranto
 d7c05a72d3aaa226de161b5e3,
 d7caa2bab6dc25acdaa2810cf,
-d7cd69fc3ea7cbd06d7bda4a1,to link researchers to the nation's NSF-funded supercomputing centers
+d7cd69fc3ea7cbd06d7bda4a1,
 d7cdc282edfb6df5e8cd8dadc,
-d7ce709545a1581de9fd4fefb,the Soviet Union
+d7ce709545a1581de9fd4fefb,
 d7d57fe85aa695d52dd3edfbe,a customs union
 d7d6fafc02b9c14b0caeb18cc,Ilkhanate
 d7dac0c94bfb5888fc4e8b7ff,Warsaw
@@ -4593,15 +4593,15 @@ d7dbcfe1f07addd5b06d37c3f,cocoa butter
 d7e86ed1deca3cfbf7dd0e12e,Knowing that Stalin was hostile to the idea of an independent Poland
 d7ed3605ecff8915edfbda368,$40 per barrel
 d7efb6a317e711806607bf728,
-d7f107950d560768acb7ceaf3,Benjamin Netanyahu
+d7f107950d560768acb7ceaf3,
 d7f6b2d67f1b1d921f14cd74f,several hundred horsepower
 d7fdf6bbeeee9fc59fc8f3fca,
-d805afbccbeaefbeb429fbfa7,3 pence in the pound
+d805afbccbeaefbeb429fbfa7,
 d80f210a6d2cfd6a2ee36dc6f,political organising
 d821b3eeca55dfad95d0a14d9,
 d83815f1f3b0243fd65b5b5e3,journalism
 d83a8c42e7b7030b1b8a6df93,Piłsudski
-d83bcec3c2b8d287d8ae48e75,16
+d83bcec3c2b8d287d8ae48e75,
 d83f602e0fbaeebabedabdeec,
 d84c7d34a94bc91b4440e3d50,menarche
 d84edf5ef0ff77fea5b2d714b,Pauli repulsion
@@ -4611,14 +4611,14 @@ d85ad50c08134e8290abe53ab,Lorentz's Law
 d860a4aaa5ee95d09899e0edd,Norman-Arab architecture
 d8a39efcd593dcf2e1988fbb5,Renaissance architecture
 d8a5274b2d5d766fbdeddb2e6,30 °C
-d8a9d6ccba8d4e96d8ca47b0d,Tension
+d8a9d6ccba8d4e96d8ca47b0d,
 d8b3d9c57e71cac1ab6ffb13a,mercantilism
 d8bcc8decbfe6ba6c4a71a1d4,
-d8cae4c90d5dcabdc0d2a6d7a,development of telecommunications in the Bell System
+d8cae4c90d5dcabdc0d2a6d7a,
 d8cce70bbcf89e3b814afcc92,
-d8cdbb25cecfe2d8e01ddaede,1724
+d8cdbb25cecfe2d8e01ddaede,
 d8ceb94f0fe5e2f39618fab60,1303
-d8d4286d6bbe5d5bee1ddc19d,coordinate the response to the embargo
+d8d4286d6bbe5d5bee1ddc19d,
 d8e0daf36dcd1b91e1621e5dd,
 d8ebfbdf12f84fbe3e4cff6dc,
 d8efe7aeedd8eefbdea339b10,European Parliament and the Council of the European Union
@@ -4658,7 +4658,7 @@ d9df86cc4c5abedf4fd4a6ce8,
 d9df97fefb0150e8ce6bd5ba5,
 d9e1beccc000ccecba6e24af8,
 d9ecf19bcb413dff8f1e2007d,constant factors and smaller terms
-d9ecfbaddcbc586fedc06ade4,Margaret
+d9ecfbaddcbc586fedc06ade4,
 d9ed6d2ebc49dd800fd9f2ba5,MSPs
 d9ef0aa1bb4b7b7acb9eb81dd,Dutch Cape Colony
 d9efe05f7d10500b327b9df54,
@@ -4666,7 +4666,7 @@ da05ef3c2faeeecdcf1545e94,art posters
 da09dacc7b8eccbf2f2a9fcd0,1700
 da127a02fb9a15f42c8c8d34a,1 August 1944
 da13c423a7ebd1c3a95bf411a,
-da14bbf8eef0d14addeeeae3e,single-tape
+da14bbf8eef0d14addeeeae3e,
 da158e662cb6dcb9822d399cb,
 da15989f4b2a8cbf7748ff854,saved something
 da163c59d300e6efe4de159e8,
@@ -4675,7 +4675,7 @@ da28db6644e16168587f3caef,Buddhism
 da2a4e3fb7e6bfbd49c3c1a0c,
 da2ae65fad6a7eccf7d84dea1,Sweden
 da3143a1522511ffb7cafed00,second
-da3a39adfdcc156f5bbc5e49f,a number of qualifications
+da3a39adfdcc156f5bbc5e49f,
 da3c1373b7bb94cd96045f246,Mongol peace
 da53eb7debdb8ac8cea262fab,petrochemicals
 da54a673cb5763d45e5e1f9ab,evacuate the cylinder
@@ -4722,7 +4722,7 @@ dafd27d357bde5b3bb02688b7,Cobham–Edmonds thesis
 db04e820771fa64f1cbd1e5c0,
 db09c93fcdab90bdade46bce4,
 db0d255937979afb5a76081c7,
-db16bf9dba04fcae5eb1eade4,Jean-Marc Bosman
+db16bf9dba04fcae5eb1eade4,
 db1abb7eff69efec6bb5b923d,six thousand one hundred acres
 db1b44c92d4dab056226e5f6f,
 db1bfcf2bba91efaee8adcf02,legal certainty and good faith
@@ -4736,9 +4736,9 @@ db3ffc30eaee7de7e3ddbc420,March 1974
 db455d89b167f56ecb10d1dd4,the depths of the oceans and seas
 db4f4f83d8acdacac8c942dfb,Lisbon Treaty
 db4f80ca25f48dd5dcf7bf9cb,turbo-electric transmission
-db5426c39e2bc442d9c45b1ea,leftists
+db5426c39e2bc442d9c45b1ea,
 db5adaf1bfa4adda6952b090d,
-db5adfc2ab1e0bbadf0cbe2d7,pathogen
+db5adfc2ab1e0bbadf0cbe2d7,
 db63b01cd07bcb0c84c99fc91,
 db6913c2fb8fd72aa5aa4adf2,
 db85e98efa1a230c3c2fd72f0,
@@ -4752,21 +4752,21 @@ dba8822cc135ddb3ebde0bf79,
 dbaab7b9dddbcb5f5725ddbee,logistical difficulties
 dbaabb1cc90eaf2293fc1bc95,
 dbabf73f4d3af6a1c2977fb3a,"3,600"
-dbacdc8b6a855b230ddb815a5,assembly plants
+dbacdc8b6a855b230ddb815a5,
 dbbd2aa6f63b12fab431fd33c,St. Lawrence
 dbbff42efedbfedd00da4cd3c,
 dbc1ae6cffdfec076a4b69862,
-dbc1dbd26b6c97d3daa685bfd,"painting, poetry, and calligraphy"
+dbc1dbd26b6c97d3daa685bfd,
 dbc42ec1ee0eedf23be9ed2a0,
-dbca7e67167e138eb6ea7bdd3,55 mph (89 km/h) speed limit
+dbca7e67167e138eb6ea7bdd3,
 dbccddce4951cae91acd99698,
 dbd2bee4fbf70f96b277adb7a,"UK, Germany, Italy, Switzerland and Norway"
 dbd42fb9884354df639cfdaff,
 dbde7f277f5a5e97adf3d65d6,complexity class P
 dbe7ddcf7630df3fbab67ffea,
-dbe97ac198933e0c9a3bacdab,Third Law
+dbe97ac198933e0c9a3bacdab,
 dbedeac89696dcce5541b04eb,
-dbedfb8d3fe4fc5290950aaac,Mongols and Semuren
+dbedfb8d3fe4fc5290950aaac,
 dbf8f8ecbfe69ffb9771fff3e,Congregationalist and Unitarian clergy
 dbf9b6a7f656b0a387af5b1a3,
 dbfb8c8f7dfacf8220893f0f4,
@@ -4775,8 +4775,8 @@ dc18fdc262bcfce2c50ec9c6d,the members of the Organization of Arab Petroleum Expo
 dc1d80dd237fe270c1033eaa9,
 dc2462dcf42c02baa256dca4f,international recognition
 dc29d9cfbf6d1f9bec34dce6f,
-dc2c2fdccbaef4fc2edf49aed,they are distinct or equal classes
-dc3c76715cde9de5939353ebf,1946
+dc2c2fdccbaef4fc2edf49aed,
+dc3c76715cde9de5939353ebf,
 dc3cde85feb9acc1e4e1c896a,a dimensional constant
 dc3ceb6afccca5cb8daa8ea9a,"to ""ensure that in the interpretation and application of the Treaties the law is observed"""
 dc4867e4350dfa392a3584a7e,1368–1644
@@ -4827,8 +4827,8 @@ dcfd55b1e0c4a2ecfbede6d0d,
 dd0dee7dcb1ddcfc5ecbdd23a,the network and the connected users via leased lines
 dd1ebb40eeec5da06e747cdfe,
 dd2594c9e89dfbcd9e9ea34be,
-dd33ed115daaaf25734bb15d7,4-week
-dd431b8c7cbbc07eb90d5cdff,the difference in potential energy
+dd33ed115daaaf25734bb15d7,
+dd431b8c7cbbc07eb90d5cdff,
 dd6c4aa935cab820a9b88aedd,
 dd6e3eff136fde6b6cbc58682,
 dd72d2cdc87f1aad6f6deffd5,
@@ -4845,7 +4845,7 @@ ddbe1ccd5aabf96ea2d87d10c,
 ddc0dc3c87da4ba9bb43bfcb2,
 ddca141d048e5af6eb411ec5c,T cells
 ddca8bfc021c1edca215fd411,complexity measures used in complexity theory
-ddcdeae14a8c2787fdeeaa06e,matrices
+ddcdeae14a8c2787fdeeaa06e,
 ddcece40ee66ae77dee408186,Charles W. Eliot
 ddcf1f74546630b9a1a18a1d4,
 ddd24a9dd99cfdfecac5a934c,
@@ -4856,7 +4856,7 @@ dde7bde549af3af6dbdde12ba,
 dde7ccbd5a4de9a92156ac565,Vietnam
 ddfa8c9a2cfb1807bbd18f956,Superintendent for Indian Affairs
 ddfb9c1fd592271a3dea274ad,Libya
-ddfee52ddb1bcbdae7aea0a08,discussion
+ddfee52ddb1bcbdae7aea0a08,
 ddff00bae8f4fb2cf94e8ae2d,
 ddff6a3a92de9e6f9edbf721b,1041
 ddffbe7b2b0cf5f8ac8d6ebaf,Warraghiggey
@@ -4866,23 +4866,23 @@ de1aadd9a1fa28ec97a27e8ac,
 de20880fbd70e8d95b8acf0e0,binary alphabet
 de23dbbaabede6c27c4ed1c20,"45,000 pounds"
 de27af08ba2c50dabd287d38d,
-de2eac90c5d9f12a1036a1b9c,resources (such as time or space) are bounded
+de2eac90c5d9f12a1036a1b9c,
 de3ca4eab74699c09f6e0dad6,
 de3db73ad68ecd6b4ecef07e9,
 de48ff7870ac4cdebcaa953a8,
 de4c7ddbfcdc474eff5aed0f2,
 de4fb61389c6c04b9f5b8c067,four
-de50c90ff7ae789bdfebfecb3,two
+de50c90ff7ae789bdfebfecb3,
 de6b53ba986ca7d062bbf6f07,
 de6bbfafbbba4e5eb2cf72b68,£1
 de6dbd3ebb9a1ab358ebca779,
 de6dbe4eae6839fb3e47bdfea,90°
 de7ed6dd063abbfdfba23ab4a,close US ally
 de81932af1bb4faa7487eebea,in a number of stages
-de8bff956562bd9bb73f3ef72,the Israelis
+de8bff956562bd9bb73f3ef72,
 de8dafdbacf76a4ab9fbdddb1,
 de94082ce10d7a61a0d3feedf,
-de9d0cfdce8ca6f85fbc47fb0,gravity
+de9d0cfdce8ca6f85fbc47fb0,
 de9e0eec614b68274f49029a0,
 dea5bb54eb98f4416c5f51fdd,immunomodulators
 deacb6972e31b9a2c1bbf3d99,
@@ -4907,10 +4907,10 @@ df010bdced5dbcdbdcbbef782,
 df0735e7ce330fb5098008e7c,The Huguenots furnished two new regiments
 df1e43c456fd422ac024af7e4,phagocytic
 df2c6a7e3ac0ae8c8bfedd3df,Maria Skłodowska-Curie
-df2d5adaff6a4cf3e114a3a9f,poor harvest
+df2d5adaff6a4cf3e114a3a9f,
 df34cff404620de16871521b7,The European Court of Justice
 df38fc00cc1aa0f865bc8fcbc,
-df3b53c762fdeecfc0c4ba2af,principle of equivalence
+df3b53c762fdeecfc0c4ba2af,
 df48bfacec13c21a5f3d79ae6,fern
 df4edaf2dfec3d527392fd1f4,testosterone
 df4f26e6ae99389affe9f0ec0,
@@ -4932,16 +4932,16 @@ dfac2268ed848e20d86d160d8,"Liao, Jin, and Song dynasties"
 dfb15c31239a6ea76404d66f6,"between 150,000 and 200,000"
 dfba3b6fb40db697f52f9ecab,brought several hundred thousand US and allied non-Muslim military personnel to Saudi Arabian soil to put an end to Saddam Hussein's occupation of Kuwait
 dfc5349e1bb9bbabd8fdedbcd,
-dfcaeaea59ed4ffd5a0b1b32f,Arabs and much of the rest of the Third World
+dfcaeaea59ed4ffd5a0b1b32f,
 dfcbcaf0d24fdf8e096e81d0d,progressive decline in hormone levels with age
 dfcc61e9123cf0eccfb2ba478,
 dfd30cf07ca6bbc81f4dfa1b4,
-dfda5ad6ef6a975ecb9abe5d8,no data
+dfda5ad6ef6a975ecb9abe5d8,
 dfdbf4428dddec943ba1f71ae,
 dfdc63c2d50cfdd09a5bcd7b7,Enric Miralles
 dfdcb3cfcabc45763acedb6e3,
 dfdd8db6b4b5feb9eabe04a16,2006
-dfe3496c0ddb62babadf0f6df,Iranian Revolution
+dfe3496c0ddb62babadf0f6df,
 dfe91bdf52b809da0b06f10df,the original message/data is reassembled in the correct order
 dfebfb80486bdaea5c7644fb9,Immunoproteomics
 dfee4ca1da1dada2edd975c9b,
@@ -4962,7 +4962,7 @@ e0b7fc2d83404faa29dbe4eb7,Yangzi River basin
 e0ba45c3f1b47314eeebfc5f7,
 e0cad43b43698fd16acdefab4,
 e0cc6f2dea46d87294c92bf88,209
-e0d05d0d3df74a21eba30183b,Northern Chinese
+e0d05d0d3df74a21eba30183b,
 e0db1af3ee8cd5a8afa37f2ba,
 e0e3c7fbcc514fcf5d7d8b60c,
 e0f1955d44fe887e27fbd58ab,2005
@@ -4970,7 +4970,7 @@ e0f4c18f69d51e534da09ff39,adaptive
 e0f5aeca0fca7ee6c63aabedf,Article 5
 e0fa4104cb71de5caf378c3eb,link researchers to the nation's NSF-funded supercomputing centers
 e0faf3f1381f2d16edeb795bb,
-e0fe51eb8101d7de07edd48fd,immunosuppressive
+e0fe51eb8101d7de07edd48fd,
 e0fefbc85ede6fe76d2fc3c2d,British
 e10fee5edfdbefd9d15fafa30,
 e111173340af2ebc05d40b237,
@@ -5017,9 +5017,9 @@ e2b0456ee5929122e93737d5e,The Computer Science Network
 e2b14cbd0acd28e0b0a2f30ea,
 e2bbb27dc49abb2c970aa0db4,"commercial, scientific, and cultural"
 e2bbbc61dba1371b1163ac34e,Decision problems
-e2c5dbee37e9a343f224cf4ca,solve any problem in C
-e2c6dfebae5b65a64c033e752,the depths of the oceans and seas
-e2e167be1ccc5be758dac44c9,individually
+e2c5dbee37e9a343f224cf4ca,
+e2c6dfebae5b65a64c033e752,
+e2e167be1ccc5be758dac44c9,
 e2e292598fccaa1acb9add3a5,
 e2e66b377a7e4f1d16fba9e4f,Ohio Company
 e2e84ed250b7cfdac7c7e7b7e,Wilson's geographer
@@ -5027,7 +5027,7 @@ e2eda41ffe0edfdfe27e6a511,Pons
 e2eee5bded1410ef1a8dabb7e,
 e2f1ecf885dbcdadbb5a4d1bc,
 e2f2ba85e59a3e33abd2b6eb8,
-e2f822ce7dafa6a8b72987f60,powerful
+e2f822ce7dafa6a8b72987f60,
 e30da446c40816b0b25b109a3,Hugues hypothesis
 e31bbf24ec3b8aa11e9eeae8d,turbine casing
 e34193c9edcd075e979f7cab3,polynomial-time reduction
@@ -5035,14 +5035,14 @@ e34abcae0e97f0ab7ceda6e29,
 e3857c415dbfb2b8f09255058,disagreed about the disposition of prisoners' personal effects
 e38af0b0ae1af4b3fd53e9f9e,
 e392044fd8b9ccad1bd0cfdb6,a commune (gmina)
-e39bf9cc92c2fe59d3ce3ad9c,the deportation of the French-speaking Acadian population from the area
+e39bf9cc92c2fe59d3ce3ad9c,
 e3a37fcb9f563ce7902ae5bdd,
 e3a7d6288aa7ee779d9daa435,Donald Tusk
 e3aa90f5ab0ac542f6cc7ed5f,Each packet is dispatched
 e3b0fccaeaed3ade8193a6cfe,multi-cultural
 e3bcfab99df0fac6c75aef4f9,
 e3dc6f7df9b81e7dac16ccb15,3600
-e3dffb6dd7c4d8a9e4ffd0cb1,French
+e3dffb6dd7c4d8a9e4ffd0cb1,
 e3e1296fcbdcdafdc67be110b,
 e3e30e8dadf6b5fb82e82c9a3,
 e3e5be5d3554925dbdc21ee71,plundering of the local economy
@@ -5060,23 +5060,23 @@ e45cded6f5bd7a2cbcc8c1b11,131
 e4695d7f5afdd20bebdb7bdec,Rumford medal
 e4787b9dedfae81df420f156a,
 e488822fbb2b2ebc19af3aeec,"3,600"
-e48baee37cf5c1bff2e59ec80,Louis XIV
+e48baee37cf5c1bff2e59ec80,
 e49be3bfeddb7ef012b9c2dd7,isothermal
 e4a641d0eceb44a10eaeac06f,
 e4a69aa2addbde8720a514dc7,
-e4aabb6949b5681c551122c3b,Malcolm III of Scotland
+e4aabb6949b5681c551122c3b,
 e4ab680a8b330c1b6286a75c4,
 e4bbcc5c8ac6509cb93ad6c2a,It was the first network to make the hosts responsible for reliable delivery of data
 e4c5cd733604e47c5427811d7,
 e4d4131a19c2bddbeacf1e89d,Khanbaliq
-e4dbda3f10abfe0bd4fe0ba9b,Pitt
+e4dbda3f10abfe0bd4fe0ba9b,
 e4ddbdb2ebaaee2d833eebe29,Associating forces with vectors
-e4e194027eec90dfdd337f34a,the center of mass
+e4e194027eec90dfdd337f34a,
 e4f48f2a3a5bb5711cb2852fc,
 e4f64a20cb38ddd1eba7ffe8f,1.740 million
 e4f9fd8dd1bdd4dfda5e537b2,1271
 e4fa04e5b2eb89db3e6ab149e,
-e4fcc541c30f8ae48c5dfc734,1271
+e4fcc541c30f8ae48c5dfc734,
 e50b0ce1a8e50180eada878e9,
 e50eeeafaf1bc8b4cc0eda32a,Civil Service Tribunal
 e50f17be7a9ca27ffcf21b4dd,
@@ -5093,11 +5093,11 @@ e597e07fc7cb9c0bfa9fcbe6e,
 e59cdf7fcafd0ab4febe9eaf8,365.2425 days of the year
 e5a13b6dba6f2fc84aaaa4f77,algorithms
 e5a64dedcfd0faafebca95351,1329
-e5ac6a05ddeb2fcdbe7286629,1880
+e5ac6a05ddeb2fcdbe7286629,
 e5ae3bc62cfb8cefe5f2bc3cc,
 e5b64cca0e004a42d7c950fb9,$4.093 million
 e5bc21bae086fa27baed4bb46,
-e5bc2c1af92efedcd77df55fa,Sunni pan-Islamism
+e5bc2c1af92efedcd77df55fa,
 e5cd87b2f2bb9df8ac33ee67b,1932
 e5cffadaedb9be1df6a8ba8a2,shortening the cutoff
 e5d8a9c5acb4fb19a5cf359e5,cylinders
@@ -5150,7 +5150,7 @@ e7f50e695dddb3eaad3afdf9e,1916
 e7fe2e6867a0ce9dd4cedfe22,
 e808ef76ca17ff35c7cfa3768,
 e81f6a1ae5f078bbca1c3abce,Puritan
-e82e67536ddbd3e4ecd7b4b0c,390
+e82e67536ddbd3e4ecd7b4b0c,
 e83521a1add703acc58eb5bbe,AppleTalk
 e83bffa9be8fb0b2b222127d9,Islamist
 e849b1cd9f4a5cfe7df88aada,1294
@@ -5165,7 +5165,7 @@ e8c97861fbcd7fa239ccd8afa,
 e8cd29cadc41c1e15b5d4af53,
 e8cf56c5dfa06ad6aeba16b0a,New Rochelle
 e8dec27e9d95b679864b14f19,
-e8e5b9fafeec7637b6af85948,time or space
+e8e5b9fafeec7637b6af85948,
 e8e9ca3eba72facf4dd1cbf04,
 e8f4ea4f2adae427db4adca2f,Maria Skłodowska-Curie
 e8f8bfba168b76efc6bcc2fc2,pollution
@@ -5174,7 +5174,7 @@ e8fc8b2cc23daa3b6d78cff2e,
 e90dfaccfa362f68cd636c13e,internal combustion engines
 e92a32b2e9cdfd29fc8edf154,central cultural establishment among Boston elites
 e92bc834eed3cdde0b0cba4ab,
-e92d30dab1b4dfbe00d59c75d,"BPP, ZPP and RP"
+e92d30dab1b4dfbe00d59c75d,
 e92da6ee8ae4c3ec2a01d3ff4,
 e92fe4c4fbbf777c7e6dc1ece,complexity classes
 e93a7e0dc4311cd7bbe9e9787,
@@ -5198,7 +5198,7 @@ e9ff98accb3c1abeed4bcc4bf,TEU articles 4 and 5
 ea07bfdc0d9ecfd306d7c1ccc,
 ea0ea7ab7bfd282edcda09bcd,CD40
 ea0fab75d7a4ed5eda33ffc9d,The issues of conflicting territorial claims between British and French colonies in North America were turned over to a commission to resolve
-ea17df40f74d82d3a3cb3aefc,"""The Bill for this Act of the Scottish Parliament was passed by the Parliament on [Date] and received royal assent on [Date]"""
+ea17df40f74d82d3a3cb3aefc,
 ea1ca1ef58991c0fde9dad15e,1949
 ea256f811a56d9b3a3bc1522c,
 ea2af42faad2f29dbe060fa20,Warszowa
@@ -5233,15 +5233,15 @@ eaeaf6e9ae97042ceba9958aa,September
 eaf0a060e0fd3fbd69c6ce68d,
 eaf53e24baa340addcaf3e6dd,
 eaf8abcf33e566caeac724dad,Neutrophils and macrophages
-eaf9fe88404d3b414bf7acdfa,Anglo-Saxons
+eaf9fe88404d3b414bf7acdfa,
 eafa3d62aa2f5ff4b4bbd7ae3,
-eafa583cae6ba83b30aab8e6a,two
+eafa583cae6ba83b30aab8e6a,
 eafae453f1062c13f85ebcba9,single
 eafe9db8d1ff09fbdda43aae7,Academy of the Pavilion of the Star of Literature
 eafef5748cadbd6bdc0431eae,1321 to 1323
 eaffbd84ed3a3dbefb23eac9e,
 eb047c0ee02ffecbcf0bbf3f2,Ottoman
-eb0cafb5cc1cd0ef7ee285e1a,"obesity, alcoholism, and drug use"
+eb0cafb5cc1cd0ef7ee285e1a,
 eb0dbf6ced34959deeabf60d1,lower
 eb0debcfe21c2f31f3cb043ab,over 100 billion dollars
 eb1336e27a4e33480bcc3bcd9,
@@ -5258,7 +5258,7 @@ eb5edd6e23a1ff7d219e0ecab,
 eb6b6d3fd8b7fcd9bebac175c,1930
 eb6bbe200a8eaf87fcf8e262b,
 eb6fe31da9dde7a70eefb7b9f,
-eb7eabd29c3a7dd2ec28d10fc,Natural killer cells
+eb7eabd29c3a7dd2ec28d10fc,
 eb7fc2fa24cf4c3ded5face6e,"helper T cells, cytotoxic T cells and NK cells"
 eb8a5fc78126c9439f9d5c91c,
 eb910fab426a921ec03f73a97,melanomas
@@ -5266,14 +5266,14 @@ eb9be8a40bd4bda222b68dac3,"a historical fluke of the ""short-lived era of the he
 eb9c2d9d03d1bbe7d8d7efcbf,
 eb9c9615ad6f735c9da7f0acd,
 eba02da4dd64936d8bfabfcc8,A Turing machine
-eba3f4d4ae97ed8ba0acbbefa,Users
+eba3f4d4ae97ed8ba0acbbefa,
 ebaba2d4fbc065c3aea65eb6b,Roman Catholic
 ebaeaebc2bc7d83ce098e3bd4,stonework or metalwork
 ebbb225c92cfad7dbecf271ed,
 ebbf9d75c3a54201ca01fffae,
 ebca00808faacb35fbcd64fde,Court of Justice
 ebd0ba6af9951ddbdaac527f6,
-ebd24ddf608baf02acfde3dee,MCI Telecommunications
+ebd24ddf608baf02acfde3dee,
 ebd781e2f7dd9d29a6dfa04d0,the Great Yuan
 ebd7cbead2c2d61d2076c3e21,The Warsaw Stock Exchange
 ebdefbab89dc4926d2abe48df,
@@ -5282,11 +5282,11 @@ ebe6eb2e8a97c43dcac0fca02,
 ebe7e5e65ffffaafe7aed612d,
 ebeebeed60f9b93ce1cfb6bb1,
 ebef72fc1db1ee5eaf2374aee,
-ebf15f7f4e1f630ddc3d3d17c,325
+ebf15f7f4e1f630ddc3d3d17c,
 ebf1ba27bff2fc7ca1ac0743f,
 ebf80466b9e0dbebad8c685ba,
-ebf9afbeeacdc9c1aa1fbe4ae,"Chevrolet Bel Air, and Ford Galaxie 500"
-ebfc558bbededc85f34233bef,Commission v Italy
+ebf9afbeeacdc9c1aa1fbe4ae,
+ebfc558bbededc85f34233bef,
 ebffcc47e11500bde9c89dac4,
 ec0a00f05abada8d17aeadae0,
 ec3677fe53d7cb6e46fce66c6,"Social Darwinism"" and a theory of races"
@@ -5295,7 +5295,7 @@ ec3e55b9e4a792e80ef5fe51f,1624
 ec3eccbdeb4bdaddefa5d4dca,complexity measures
 ec422e97cbc962c78c8b4cbea,
 ec495e63b8caf84fd5fdc248f,
-ec4ad1ccb202c30cdb63c96ea,Bell Canada (a common carrier) and Northern Telecom
+ec4ad1ccb202c30cdb63c96ea,
 ec51ba0c6bc338cdfa1789b80,
 ec5b8ae90ddd599516f8c85be,
 ec5c7a0c818e911abb3ae3cfd,9th
@@ -5308,9 +5308,9 @@ ec7dbae8bbcfb0fa3b0d56b4a,
 ec8ff2295f3c5b559df4c4c4e,Shoreditch
 ec9cfecbfbbdf67a575dbc6d9,After liberation
 ec9f12ca7bba9b5d880b6ccc0,
-eca5a4acfb040badcfe342db6,V8 and six cylinder
+eca5a4acfb040badcfe342db6,
 eca78d3a4c2afaa40d9de14bf,Eastern Bloc city
-ecadfef9ade5b10b3ad1feeca,unequal
+ecadfef9ade5b10b3ad1feeca,
 ecafccf203ab0d3f9f8bd42ee,Saudi
 ecaff3eff3a1d8dfe7bdbdcb9,socialism in one country'
 ecb034ffdf8fce4b22cdcfdc9,
@@ -5384,26 +5384,26 @@ edb7dca28ba7fd84442e27d0d,
 edb9b42ad0cfc3fcfb2fecefd,non-deterministic Turing machine
 edbee43646f85cf22ed30bf9f,late 1980s
 edcc6c6a7815dccd6c216d04e,
-edcdadb41b0a2bdbd7909fca6,Schrödinger equation
+edcdadb41b0a2bdbd7909fca6,
 edcedbd13010ecbc6afc42aff,13
 edd17eb4d0cce3d8e56c4fcfc,
 edd380adde8b1d9fec6a1bab1,U.S.
 edd8dddccdbc8eca10bc1cf57,
 edddcfc6aac4f7fe560e07014,
-edddd3201c4c820ec4c2cdca1,"I do not think myself obliged to obey it."""
+edddd3201c4c820ec4c2cdca1,
 ede2ea1c7771f5aec7c11fa8c,
 edef185f0df793ad5ca165c1f,"between nodes on a link, not end-to-end"
 edef3c84c45b41dbaaeb4a4ee,
 edfbdac4eccab9fb9f53288d0,mermaid
-edfcd6eb471ecdfbbcefcaca4,Santer Commission
+edfcd6eb471ecdfbbcefcaca4,
 edfdd0cff6a4acada79925574,
 ee0bdc35a5cc67ebbcdc9df34,field candidates
 ee18afdf7eeaa88aebd1969de,
 ee3cc5e25fbe76cf6faebc1ca,
 ee3eb5abb13aea386a1d8df3b,
 ee4d1d324bd5faa6faf797ac7,88%
-ee4edac0eeccfb72bfadbdef0,1715
-ee516f90cfd2eeff07a6d3d3d,proportionally to the number of votes received in the second vote of the ballot using the d'Hondt method
+ee4edac0eeccfb72bfadbdef0,
+ee516f90cfd2eeff07a6d3d3d,
 ee56f384eea31bceffdf51bff,1977
 ee5afd318fbbd30bd98123d14,
 ee63cf2affc7dba6aeb355ce2,
@@ -5433,7 +5433,7 @@ eee6b03e0a7feae1aeadcaa8e,Jazdów
 eeebdb6cfaaedfa5ea0d83c72,
 eef27ee42caf32e8bbf63f2aa,
 eefa91d1c1eed1bb0419b8bca,1413
-eefaec5540e6f089aeb54ee58,an Italo-Norman
+eefaec5540e6f089aeb54ee58,
 eefb42bd2a501848b73898acf,
 eefc17cbc9fefbabbe0dcc3e3,
 eefea45ce14aced99cb06d05c,Supreme Court of the United Kingdom
@@ -5451,7 +5451,7 @@ ef62940cffc2e7fa906a96d0e,
 ef6fcffc7cacf6abf16e0a38b,
 ef80623d8ded92ade0a8dc2ce,
 ef85ab38f9a376dc8f4cb8e91,
-ef8c1a69fcebdecabedd086cc,free quarks
+ef8c1a69fcebdecabedd086cc,
 ef96891aaccec6b8a648f66e4,geographic scholars under colonizing empires
 efa5e3ad4b43e34c3b548b7ed,Portuguese
 efa69d1d1a4376e6ddc11cda9,1994–1999
@@ -5464,7 +5464,7 @@ efbbe1e76cef5c14dddb7be9a,Möngke Khan
 efbbee2a08b5ca624dac0480d,Łazienki Park
 efbd32c619335ae99b6600143,granaries
 efbf584fab5ff6626e059fcee,1960
-efc3b525a1fcdd088a46d0bda,bitstrings
+efc3b525a1fcdd088a46d0bda,
 efca6c3afbbd8c940c7621c2e,"Ford, Chrysler, and GM"
 efcaebdd22c4a6eadbcaae39e,Louis XIII
 efcbc7dc104c0deca8c98aeba,
@@ -5476,7 +5476,7 @@ efdb26ed7ea5c7bf52bf32ada,
 efde9dfcae8de7f1fb186df01,asking for a round trip through all sites in Milan
 efdfdaee7f819daedadc2b31a,
 efead5b6edf0aadefd2c0e141,from 4 August 1915 until November 1918
-efeb9b7133aca0eccec72f7f0,plug valve
+efeb9b7133aca0eccec72f7f0,
 efedfe4da5053b806ac027b9b,
 eff4c93980dbe32ea0ae7e82b,
 effbbab44dadbf945a945bc2b,
@@ -5503,18 +5503,18 @@ f0aba1c3fb92f4cefc9ec639c,
 f0bfe5256e524c5dd19ca1f22,
 f0c9be36de6cb7b67bc0cefcb,
 f0cdec8b0f754cc9bdfbdfd8f,British
-f0d1d6dbc6be953a5aabdab28,Channel Islands
+f0d1d6dbc6be953a5aabdab28,
 f0dfe65afd11583ca2dd8d28a,pound-force
 f0e392023717221aad3fec70a,Turing machines
 f0e60ab1bd22ceaf5a37d3cb2,
 f0e689c8184c9971bcce6f187,
-f0e70cf9acee607ff587febb7,1970s
+f0e70cf9acee607ff587febb7,
 f0e9fdc14341ee601be6b40cb,
 f0edb0ddb04fbc4a1cb490a47,
 f0eed5fada5faccd9eb97fb23,"via a dial-up terminal to a PAD, or, by linking a permanent X.25 node to the network"
 f0ef6dabd2e23de7c086bd2d8,1830
 f0fbb3e677eac8f957aa8eca2,
-f1036b3a0a6a35b67beb0bafa,handshake
+f1036b3a0a6a35b67beb0bafa,
 f1070a2ee871da62af84b245a,with poison
 f107f5fe68f6eb1d6dc998dbf,
 f1128b674ce04d67bb80df1ce,21
@@ -5532,13 +5532,13 @@ f162e92e75708ae9cbc4a81c6,
 f16d7895dc8fdde32ca1bbf8d,
 f172b8798df1f4cfffbcb7e87,Zachęta National Gallery of Art
 f177c2f2719ad438e3f00acda,Ann Arbor and Wayne State University in Detroit
-f17c8e72ced07cb3f84185e6e,democratic process
+f17c8e72ced07cb3f84185e6e,
 f18cb651a4d110ff5a9eac5dc,the type of reduction being used
 f196d02529514ed1cfea38e70,42
 f1b750ba5f8105cba4a4fece3,
 f1b895ae39f9dfec06c4b998b,Ögedei Khan
 f1b9830efdbe5f2bbd64ddbc9,US Department of Defense
-f1bf1b4c0cd4ecc4c5c0f8ae8,"NP is not equal to co-NP; however, it has not yet been proven"
+f1bf1b4c0cd4ecc4c5c0f8ae8,
 f1c5afedffe6b1ba21faeaead,technologies and ideas
 f1caf6f5535edb3bd450ef1c2,British failures in North America
 f1dd6ce0ca4e29b49cb90c8ca,1973–1974
@@ -5547,7 +5547,7 @@ f201ae75cdc92c09a9f0c0bbc,1906
 f20ebf2174e03a97d27e1eff6,
 f20faff13df85defb5a4dee08,
 f2133bff91da12cdc0caadec8,socialist realism style
-f22b0be6b9d6e6f8de378df9c,nationalist differences
+f22b0be6b9d6e6f8de378df9c,
 f235682df6f8eb7b2ecaec1bf,
 f23909a0f5520d96603dfed69,
 f242d15ddeeaf5b7fa453c203,Han Chinese and Khitans
@@ -5556,12 +5556,12 @@ f25224f0cca9a6d932be87ad3,constant
 f283eadef6bc27ee8fcea602f,Breast milk or colostrum
 f286f3918f973e1b8af266b2c,Huguenot
 f28dabfa9df1cf6efa29da1cc,campaigns
-f28f743a212effe40bcafdd38,"thousands of large companies, educational institutions, and government agencies"
+f28f743a212effe40bcafdd38,
 f2b1327f6f2ed8a78fbb23849,
 f2b30abe404c44fe7f6c44cad,Richard Trevithick
 f2bd7e6ddeb8bafd4afde8f9b,
 f2cedddad91c03cb0aeea92bd,TEU articles 4 and 5
-f2cf2a9a2e67ef4b105f2dfeb,various allied groups from Central Asia and the western end of the empire
+f2cf2a9a2e67ef4b105f2dfeb,
 f2d017bd463afb443afcf7fdb,
 f2d113c4bb658a312f8f0fa9a,applied mathematics
 f2d5b105f7ca5bfca5121fcbd,
@@ -5569,7 +5569,7 @@ f2d7b8b28d6e7e05abbec1954,statistical mechanics
 f2d7bedb2f2ac391baf4c9def,1290
 f2ddc20de1ad4347364ee371e,"May 18, 1756"
 f2de10a1dfdde3bfbcdbbaf4f,
-f2df1763b85ae49bcbb825cb3,input encoding
+f2df1763b85ae49bcbb825cb3,
 f2e06a5e71abe76f15e386cdd,
 f2eab87f09bfd95b53b5d6a8a,political parties
 f2edb93f7acd0130ae9edcbaf,late antiquity
@@ -5581,7 +5581,7 @@ f3027fc2ea679a83ccfd6d61d,
 f30c641121cc298edb9478ea1,
 f317ae40cc1236443378864d1,a military coup d'état
 f332270aee1a1dd081ec534ec,1908
-f33ceb0eaedc2efe68297073c,Federica Mogherini
+f33ceb0eaedc2efe68297073c,
 f366a1b92adbaff4f88b9b782,Private Bill Committees
 f376cc5c9b3afdfeb469f9a85,suggested it for use in the ARPANET
 f39a86b6b0e739f98afcdbddb,successfully cut off the French frontier forts further to the west and south
@@ -5595,7 +5595,7 @@ f3bb3839e1225c0bdb4bfe2db,
 f3bffcad32ebc6b42acafbad3,1279
 f3c8eacdc95acf52cfc5a20bb,
 f3cd8dde08d2d6de3dec2ed70,political unity of China and much of central Asia
-f3d6cb29e55c9fbe1ff7f851d,Larry Roberts
+f3d6cb29e55c9fbe1ff7f851d,
 f3ddd32da22fc512c00f74d2c,the Scottish Government
 f3deab2ffadc5fba8fd92e24e,
 f3df5d0c40102d6c9c3d99aed,
@@ -5619,10 +5619,10 @@ f45e1f7d0bb525ad912fe7b4f,
 f47cafb1a0dbe8fdd98dd9b30,$159 million
 f47edfc52fec19d338bbcaeaf,mannerist architecture
 f4a00daa0c0b9343bbf209bbc,Algeria
-f4aaa69a30d2b14934096002f,Anglo-Saxon
+f4aaa69a30d2b14934096002f,
 f4abcbb9a50c99a58141a0b94,July 1977
 f4af15a3ae19eb5b7dc223b3a,2.4%
-f4b4faee93fcd8ed9fe32e908,the elected MSPs
+f4b4faee93fcd8ed9fe32e908,
 f4bbc6e3bc4346c6a5e2d7af2,Spanish
 f4c307e12ce0e7a335978deea,lower energy quantum mechanical states
 f4cabf7beffecb10b5f4ce4ec,Kissinger's dominance
@@ -5654,7 +5654,7 @@ f5bccf0232ef6aac2cda3c0dd,Mi'kmaq and the Abenaki
 f5bdceb2c7ca1d3be4f458bbc,automobile radiator
 f5c0cbf1dd709d41e9b547512,"191.766 billion PLN, 111696 PLN per capita"
 f5d77dbed8344a01f4b13a94f,IgG
-f5d98cac35f2a82ae0e17fe4e,151 votes
+f5d98cac35f2a82ae0e17fe4e,
 f5e4db899bf459053bfddd3ee,Konsumentombudsmannen v De Agostini
 f5e7464de0f421dfaf2b72bba,
 f5e96ea445cccbac7469f82e3,methotrexate or azathioprine
@@ -5665,13 +5665,13 @@ f5ef509a09ba661f78062d0da,Red Army
 f5fead9187d56af2bdbfcb921,10th and 11th centuries
 f60dcadc1dfe9da496ab78dbc,45 minutes
 f61cd27d1f56d748df16a53e6,Bethencourt
-f61ec2b32b45189fef2c3e68b,Japan
+f61ec2b32b45189fef2c3e68b,
 f624cb10dbfa93bac10bbced4,Thomas Savery
 f62df27f1cf5bb84ec1db49b8,
 f62e0ccb03bd9e460c2ebb3f1,
 f649c0af7d94c0fbbd895aa34,
 f64aeadb69c1c8aa4fa955fc4,
-f64deece5ef51eca8d7b341dc,time and space
+f64deece5ef51eca8d7b341dc,
 f668da1a5a0dd92cc964f3f1e,Spanish
 f691b19a0ddefe1a084eba848,
 f69c0ade98f02120cccce80bc,
@@ -5714,7 +5714,7 @@ f83cd50a0191fcac3a28b08a9,
 f84243f979cbd3ddfac1e5c0a,the environment in which they lived
 f84ef7a9f4b4ccabbbe9cc791,
 f874cfd2cffd9e7fba2a92d8a,
-f87aee7be4adad465f139dbee,1606
+f87aee7be4adad465f139dbee,
 f88710dff6e2ea8da4dbfa9fa,
 f88c5b1ac4cbee87c4ac59f3f,
 f88eaa65ca0ddef2a5251e79e,
@@ -5730,9 +5730,9 @@ f8d61ea3b3dec51ddf169fa6d,
 f8d77353d3c5a81d9ee182ac0,
 f8d8021dfaa9e0a7f45cd6e68,lengthening rubbing surfaces of the valve
 f8dd7ae90efb5fe6a5efa123d,
-f8e8fe2eae23b099afbbe4eeb,laws of physics
+f8e8fe2eae23b099afbbe4eeb,
 f8e9b213dc94ab16f422b607f,interventionism in Central America
-f8eed44bbaadedefc643dbce6,a high-level marketing manager
+f8eed44bbaadedefc643dbce6,
 f8f0028bc04ea6b79c0e25d70,fee per unit of connection time
 f8f1e7fc1e14feb6b4a643841,
 f8f9ad40ddebf5da0d8e40d0b,
@@ -5770,7 +5770,7 @@ fa2e39d8c57d38d1b74dfdeee,
 fa36a5efab0bc4db63181d7d9,
 fa3f03115ac7ff6e8bd0c55fb,
 fa3fdc361e02f9550d556ab4d,
-fa56fff30fa7faee5fdae9aed,computer networking
+fa56fff30fa7faee5fdae9aed,
 fa5751caa1cf79efbb1938964,Li Meng
 fa57cae1abf8c2a68adbefc25,
 fa6c22980722acad747cc82aa,because Dutch law said only people established in the Netherlands could give legal advice
@@ -5801,7 +5801,7 @@ fadbd86cceed0abf85eba7aa7,Islamism
 fae25f41be5f37ca5cdeafa9e,Besançon Hugues
 fae2dfe5dc555f29935dac050,
 fae4c046694ff0fb2fb7bf1ec,the Gold Exchange Standard
-faeb2cf828cfa527bc4fe6a4f,1560
+faeb2cf828cfa527bc4fe6a4f,
 faeeb99c5a6aa7ca946c54de0,UNESCO World Heritage Site
 faf36c0fd66ab2ca961abbe50,nobleman
 faf67818ee17102d8c16cc9e5,Richard I
@@ -5810,7 +5810,7 @@ fafaa9278ac8857ffcd6b2ccc,2007
 fafd1acfcec2af17f988c8a4c,Catholics
 faffa9e8843e43dab38bfebdc,
 fb06cb1ba5eb8febdff1bcbac,St. Lawrence and Mississippi watersheds
-fb07abffdcbc9ee79596dde9b,French Louisiana
+fb07abffdcbc9ee79596dde9b,
 fb0b691f5f80f9dd4fec3dba8,a village located at the modern-day site of Mariensztat neighbourhood
 fb0d5e11ce3635b6a0e116582,
 fb0ecd7ba592fc5e0bc82baa4,
@@ -5837,18 +5837,18 @@ fba0e4422dafe3551cecfff0f,small fragments of the pathogen
 fba5013ed568a793f10b8dfdd,southern China
 fba6832eaf44ade67efad2cfa,Beijing
 fba7f10f78b9c1dcc5bfcdeae,"carrots, turnips, new varieties of lemons, eggplants, and melons, high-quality granulated sugar, and cotton"
-fbaa04c2bb0e504d7fd99d051,French
+fbaa04c2bb0e504d7fd99d051,
 fbacc456c7a5aba7dc90ea2da,eicosanoids and cytokines
 fbaf3f343dd7db9bde92bc27d,steam engine indicator
 fbb8aecfc3bcdf475fcdf17ad,
 fbb990405f7ac6baa42ec0f4e,1936
-fbc59badcda3a0ef990fa8bd2,strong and weak forces
+fbc59badcda3a0ef990fa8bd2,
 fbc67df6e223660cc9f27b3c8,
 fbcad2e11e3eb1a13c6ed6a4f,the Adriatic
-fbcafcfab40af78fbdd9b96b4,Southern Chinese
+fbcafcfab40af78fbdd9b96b4,
 fbcdbf1f9c23ef20b0af8c5ff,March 2011
 fbd6b1c8ba22f8bcbae7bf83c,a body of treaties and legislation
-fbdaf999db06e748fb06bf4ea,The complexity of an algorithm
+fbdaf999db06e748fb06bf4ea,
 fbdd83e8b5de0f2fa917ec45a,
 fbde3f2a1dffbf5eda1c4cefa,
 fbeaed623afe376c689722cb4,12%
@@ -5902,12 +5902,12 @@ fcd6869b5df7be793fa3ed495,Turing machine
 fcdbae537a806f3c2c62ad9a0,captured
 fce456963d8dfafc5cecc7faa,southwestern France
 fceaedc0dfdfe9deadc17d1a0,Louis XIV
-fceec9cb6230f7ab2fdbe35af,a surprise attack on Israel
+fceec9cb6230f7ab2fdbe35af,
 fcf767cbf2bdb6f77d4ce8de5,quickly
 fcf9be3763c57f0e3ee6aeb25,Royal Ujazdów Castle
 fcfbbbeb6eafda0e27f22c8c4,
 fcfcf43eeadaacf8dc0cc94c6,
-fcfeab75ccc0fc42f0cfa2e86,"Boolean satisfiability problem, the Hamiltonian path problem and the vertex cover problem"
+fcfeab75ccc0fc42f0cfa2e86,
 fd03f620cf538e51fdefbd18e,
 fd0fbf85e77fa4efdcda66eab,
 fd14dbf2e5fedaedcfdbc157f,microorganisms
@@ -5921,7 +5921,7 @@ fd40e8cbd3fd4aebddfbe0053,
 fd4619c4ba43dcc17afe7bb0d,surprised the Canadians
 fd4afe90a79ebba93d047dc9e,
 fd5828c841fa892beaafb6d8f,
-fd5b21b4bc11fae5ba616ddbe,Jack Jouett
+fd5b21b4bc11fae5ba616ddbe,
 fd5c387cb99008f4a2bafcef9,
 fd603ce285e24d73ecd437efb,Corliss steam engine
 fd65aca3922be84b0a41a4c38,
@@ -5949,7 +5949,7 @@ fdb6dfe6e08cdea9ed6b6baba,"declared Japan a ""nonfriendly"" country to encourage
 fdb713c1a6c9869eb2dadebde,two
 fdb9317b20758e398d80c7b45,
 fdba5ef65008eac1bfafaee7c,"open loop"" system"
-fdbc08c6e2bf5bd0aec4f3996,seconds
+fdbc08c6e2bf5bd0aec4f3996,
 fdbcb294af123b25e0f9afab3,Ilkhanate
 fdbd6045b4d4bffddfae6a0be,constitutional traditions common to the member states
 fdbd77976049ad6fd5ee33ebe,Wojciech Bogusławski Theatre
@@ -5960,7 +5960,7 @@ fdcb4e0f3afe47e98403047b1,expansions
 fdcea2eea5f5a9ae51fb0a1bc,thermodynamic
 fdcef8ecaf9be541dba6831be,Jacob Leisler
 fdd0037dcc21d55a6ec1d2ae3,
-fdd0b5234e0cc97be1d71fac7,Newtonian mechanics
+fdd0b5234e0cc97be1d71fac7,
 fddefebcad7cc7139e8ad0bf4,a liquid not as a gas
 fddf60dcc78dd4635bda70b83,latent heat
 fde3f5e584b13100399c7bdd9,The embargo
@@ -5979,12 +5979,12 @@ fe2a92ca0fb33a0a976eefb9a,Galileo
 fe2bf76ffcc6e07acbfbc7b02,
 fe2edba4f4ada9ce47ba503cf,
 fe3c0f1a481ba8fddd1e5e174,
-fe4933a8f0b9dc56db5966e2e,ministers or party leaders
+fe4933a8f0b9dc56db5966e2e,
 fe4fcdbaf195ab2dde71fc5b7,1957
 fe57cf8ed42d68aa58abf3f8a,1864
 fe57dcd8fc7cb001d0b0db2c6,British
 fe6ea91230d9fa10fbedc8efb,
-fe7bb13eee45fda2fd490bebe,the Internet2 Network
+fe7bb13eee45fda2fd490bebe,
 fe7decebee016e80dabf5a578,
 fe7f2e1b2a82ce2105c6f2b35,
 fe80ace2817e73034881e078f,
@@ -6018,7 +6018,7 @@ ff04a5bcc6cccd90ccaf1cfb8,The Museum of Independence
 ff0ccee6a78b0cbceee67f058,Washington and Thomas Gage
 ff1eac245633904bdad950ee5,
 ff1edbba4c8ad1e66dbf3519d,
-ff1f0da7dcafde4400a4beacc,The USSR
+ff1f0da7dcafde4400a4beacc,
 ff298cfe18fffe06dc6ce3faa,about 1300
 ff2aebe85dedd440e7afaa3aa,
 ff2c7d3c9b67bec6b8cc388d8,
@@ -6051,29 +6051,29 @@ ffb1f5a7e732cc1d4ecaef740,Buddhism
 ffbab55f808c731ee54a71e3d,Guyard de Moulin
 ffbdeda3cccd5eff6eb79af97,
 ffbfbc1cd4dcf866f804afedf,
-ffc11dba56fa55cbc75c987c1,Shoushi Li
+ffc11dba56fa55cbc75c987c1,
 ffc51b5dfe5abeaaafca2cef1,Van Gend en Loos v Nederlandse Administratie der Belastingen
 ffc5e905dc71abbfbfc0df11f,
 ffcb1cad16fa19f9a2348da05,Ted Heath
 ffcbf2eb312a9abbaf723ffee,complicated
 ffcead3b2a1574faa88a2dacc,Imperial Academy of Medicine
 ffdaa5b41e8da542a2ff0d336,the theretofore established principles of pre-allocation of network bandwidth
-ffdb356b0b7270986b12489d7,Level 3 Communications
+ffdb356b0b7270986b12489d7,
 ffdfd3c0d4bbffaedcb6cde43,Isaac Newton
 ffdff9818b3596aad49eb6be1,
-ffe442affcaa1eac8ac771d53,"drop in blood levels of cortisol, epinephrine, and norepinephrine"
-ffe86bab0bd49018aeda834c3,$230 million
+ffe442affcaa1eac8ac771d53,
+ffe86bab0bd49018aeda834c3,
 ffea7a196badf62bbf6feb44f,
 ffeaa6813f5bc71453cc0a48f,
 ffeb86e21ab9c7b903ba7e1f5,
 ffec3a94092bf962da5ad33a1,
 ffec6dacff4d6decaea1b76af,1313
-ffedce85edd6aeed5fb7dd8bc,problem instance
+ffedce85edd6aeed5fb7dd8bc,
 fff0822e91b2280d1e1da2c6d,Colonel Monckton
 fff1c0d59a60a0fd2451fb667,
 fff1c4b6a5e0d067bddd7ddc3,John Harvard
 fff205501f9f5db1b4cfe5ed2,
-fff9df90cac8e9aae7bccbdde,wrecking amendments
+fff9df90cac8e9aae7bccbdde,
 fffa3d5a2fb1cd900c8fedc37,Zhu Yuanzhang
 fffaef71fd6cbbecfcecfff8a,Association of American Universities
 fffcaebf1e674a54ecb3c39df,

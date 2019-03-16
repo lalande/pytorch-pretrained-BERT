@@ -39,7 +39,7 @@ from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm, trange
 
 from pytorch_pretrained_bert.file_utils import PYTORCH_PRETRAINED_BERT_CACHE
-from pytorch_pretrained_bert.modeling import BertForQuestionAnswering_v4, BertConfig, WEIGHTS_NAME, CONFIG_NAME
+from pytorch_pretrained_bert.modeling import BertForQuestionAnswering, BertConfig, WEIGHTS_NAME, CONFIG_NAME
 from pytorch_pretrained_bert.optimization import BertAdam, warmup_linear
 from pytorch_pretrained_bert.tokenization import (BasicTokenizer,
                                                   BertTokenizer,
@@ -52,7 +52,7 @@ if sys.version_info[0] == 2:
 else:
     import pickle
 
-TINY_DATA_SIZE = 240  # number of examples for debug
+TINY_DATA_SIZE = 24  # number of examples for debug
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
@@ -792,10 +792,19 @@ RawResult = collections.namedtuple("RawResult",
 def write_predictions(all_examples, all_features, all_results, n_best_size,
                       max_answer_length, do_lower_case, output_prediction_file,
                       output_nbest_file, output_null_log_odds_file, verbose_logging,
-                      version_2_with_negative, null_score_diff_threshold):
+                      version_2_with_negative, null_score_diff_threshold, args=None):
     """Write final predictions to the json file and log-odds of null if needed."""
     logger.info("Writing predictions to: %s" % (output_prediction_file))
     logger.info("Writing nbest to: %s" % (output_nbest_file))
+    
+    # load is_impossible predictions output from run_classifier.py; if qas id is in dict, then predicted is_impossible=True
+    if args.ensemble:
+        try:        
+            with open('eval_predictions-pickle', "rb") as reader:
+                predict_is_impossible = pickle.load(reader)
+        except:
+            predict_is_impossible = {}
+    
 
     example_index_to_features = collections.defaultdict(list)
     for feature in all_features:
@@ -967,8 +976,11 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
             if score_diff > null_score_diff_threshold:
                 all_predictions[example.qas_id] = ""
             else:
-                all_predictions[example.qas_id] = best_non_null_entry.text
-                all_nbest_json[example.qas_id] = nbest_json
+                if args.ensemble and example.qas_id in predict_is_impossible.keys():  # classifier overrides QA for is_impossible
+                    all_predictions[example.qas_id] = ""
+                else:
+                    all_predictions[example.qas_id] = best_non_null_entry.text
+                    all_nbest_json[example.qas_id] = nbest_json
 
     with open(output_prediction_file, "w") as writer:
         writer.write(json.dumps(all_predictions, indent=4) + "\n")
@@ -977,7 +989,7 @@ def write_predictions(all_examples, all_features, all_results, n_best_size,
     # fix output_prediction_file
     output_submission_file = output_prediction_file.split('.json')[0] + '_submission.csv' 
     logger.info("Writing predictions submission in DFP Leaderboard compliant format to: %s" % (output_submission_file))
-    with open(output_submission_file, 'w') as csv_fh:
+    with open(output_submission_file, 'w', encoding='utf-8') as csv_fh:
         csv_writer = csv.writer(csv_fh, delimiter=',')
         csv_writer.writerow(['Id', 'Predicted'])
         for uuid in sorted(all_predictions):
@@ -1170,7 +1182,8 @@ def main():
     parser.add_argument("--val_steps", default=100, type=int, help="Number of training steps to take between validation measurements")  # KML
     parser.add_argument("--tiny_data", action='store_true', help="Whether to use just 100 train/dev examples to debug code")  # KML
     parser.add_argument("--add_triviaqa_train", action='store_true', help="Whether to add TriviaQA examples to train. Postpend -triviaqa.json to --train_file")  # KML
-    parser.add_argument("--ensemble", action='store_true', help="Whether to ensemble Classifier and QA models.")  # KML    
+    parser.add_argument("--ensemble", action='store_true', help="Whether to ensemble Classifier and QA models.")  # KML
+    parser.add_argument("--load_eval_results_pickle", action='store_true', help="Whether to load previous eval predictions.")  # KML
     parser.add_argument("--train_file", default=None, type=str, help="SQuAD json for training. E.g., train-v1.1.json")
     parser.add_argument("--predict_file", default=None, type=str,
                         help="SQuAD json for predictions. E.g., dev-v1.1.json or test-v1.1.json")
@@ -1318,7 +1331,7 @@ def main():
 
     # Prepare model
     print(PYTORCH_PRETRAINED_BERT_CACHE)
-    model = BertForQuestionAnswering_v4.from_pretrained(args.bert_model,
+    model = BertForQuestionAnswering.from_pretrained(args.bert_model,
                 cache_dir=os.path.join(str(PYTORCH_PRETRAINED_BERT_CACHE), 'distributed_{}'.format(args.local_rank)))
 
     if args.fp16:
@@ -1482,7 +1495,7 @@ def main():
 
         # Load a trained model and config that you have fine-tuned
         config = BertConfig(output_config_file)
-        model = BertForQuestionAnswering_v4(config)
+        model = BertForQuestionAnswering(config)
         model.load_state_dict(torch.load(output_model_file))
     else:
         try:
@@ -1491,90 +1504,102 @@ def main():
             output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
             output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
             config = BertConfig(output_config_file)
-            model = BertForQuestionAnswering_v4(config)
+            model = BertForQuestionAnswering(config)
             model.load_state_dict(torch.load(output_model_file, map_location=device))  # KML this should map GPU to CPU models
         except:
-            model = BertForQuestionAnswering_v4.from_pretrained(args.bert_model)
+            model = BertForQuestionAnswering.from_pretrained(args.bert_model)
 
     model.to(device)
 
     if args.do_predict and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
-        eval_examples = read_squad_examples(
-            input_file=args.predict_file, is_training=False, version_2_with_negative=args.version_2_with_negative, 
-            tiny_data=args.tiny_data)
-        eval_features = convert_examples_to_features(
-            examples=eval_examples,
-            tokenizer=tokenizer,
-            max_seq_length=args.max_seq_length,
-            doc_stride=args.doc_stride,
-            max_query_length=args.max_query_length,
-            is_training=False)
+        if not args.load_eval_results_pickle:
+                
+            eval_examples = read_squad_examples(
+                input_file=args.predict_file, is_training=False, version_2_with_negative=args.version_2_with_negative, 
+                tiny_data=args.tiny_data)
+            eval_features = convert_examples_to_features(
+                examples=eval_examples,
+                tokenizer=tokenizer,
+                max_seq_length=args.max_seq_length,
+                doc_stride=args.doc_stride,
+                max_query_length=args.max_query_length,
+                is_training=False)
+    
+            # dump a copy of eval_features for run_classifier.py
+            cached_eval_features_file = args.predict_file+'_{0}_{1}_{2}_{3}_{4}_{5}'.format(
+                list(filter(None, args.bert_model.split('/'))).pop(), str(False), str(args.tiny_data), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length)) 
+            logger.info("  Saving eval features into cached file %s", cached_eval_features_file)
+            with open(cached_eval_features_file, "wb") as writer:
+                pickle.dump(eval_features, writer)
+    
+            logger.info("***** Running predictions *****")
+            logger.info("  Num orig examples = %d", len(eval_examples))
+            logger.info("  Num split examples = %d", len(eval_features))
+            logger.info("  Batch size = %d", args.predict_batch_size)
+    
+            all_input_ids = torch.tensor([f.input_ids for f in eval_features], dtype=torch.long)
+            all_input_mask = torch.tensor([f.input_mask for f in eval_features], dtype=torch.long)
+            all_segment_ids = torch.tensor([f.segment_ids for f in eval_features], dtype=torch.long)
+            all_example_index = torch.arange(all_input_ids.size(0), dtype=torch.long)
+            eval_data = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_example_index)
+            # Run prediction for full data
+            eval_sampler = SequentialSampler(eval_data)
+            eval_dataloader = DataLoader(eval_data, sampler=eval_sampler, batch_size=args.predict_batch_size)
+    
+            model.eval()
+            all_results = []
+            logger.info("Start evaluating")
+            for input_ids, input_mask, segment_ids, example_indices in tqdm(eval_dataloader, desc="Evaluating"):
+                if len(all_results) % 1000 == 0:
+                    logger.info("Processing example: %d" % (len(all_results)))
+                input_ids = input_ids.to(device)
+                input_mask = input_mask.to(device)
+                segment_ids = segment_ids.to(device)
+                with torch.no_grad():
+                    batch_start_logits, batch_end_logits = model(input_ids, segment_ids, input_mask)
+                for i, example_index in enumerate(example_indices):
+                    start_logits = batch_start_logits[i].detach().cpu().tolist()
+                    end_logits = batch_end_logits[i].detach().cpu().tolist()
+                    eval_feature = eval_features[example_index.item()]
+                    unique_id = int(eval_feature.unique_id)
+                    all_results.append(RawResult(unique_id=unique_id,
+                                                 start_logits=start_logits,
+                                                 end_logits=end_logits))
+            
+            # debug flag -- set to False 
+            if True:
+                logger.info("  Saving pickle dump of eval_examples, eval_features, all_results for debug analysis")
+                #cached_eval_results_file = args.predict_file+'_{0}_{1}'.format(
+                #list(filter(None, args.bert_model.split('/'))).pop(), 'pickle_eval_results' )
+                cached_eval_results_file = 'all_results-pickle'
+                with open(cached_eval_results_file, "wb") as writer:
+                    pickle.dump([eval_examples, eval_features, all_results], writer)
+        
+        else:
+            cached_eval_results_file = 'all_results-pickle'
+            with open(cached_eval_results_file, "rb") as reader:
+                [eval_examples, eval_features, all_results] = pickle.load(reader)
 
-        # dump a copy of eval_features for run_classifier.py
-        cached_eval_features_file = args.predict_file+'_{0}_{1}_{2}_{3}_{4}_{5}'.format(
-            list(filter(None, args.bert_model.split('/'))).pop(), str(False), str(args.tiny_data), str(args.max_seq_length), str(args.doc_stride), str(args.max_query_length)) 
-        logger.info("  Saving eval features into cached file %s", cached_eval_features_file)
-        with open(cached_eval_features_file, "wb") as writer:
-            pickle.dump(eval_features, writer)
-
-        logger.info("***** Running predictions *****")
-        logger.info("  Num orig examples = %d", len(eval_examples))
-        logger.info("  Num split examples = %d", len(eval_features))
-        logger.info("  Batch size = %d", args.predict_batch_size)
-
-        all_input_ids = torch.tensor([f.input_ids for f in eval_features], dtype=torch.long)
-        all_input_mask = torch.tensor([f.input_mask for f in eval_features], dtype=torch.long)
-        all_segment_ids = torch.tensor([f.segment_ids for f in eval_features], dtype=torch.long)
-        all_example_index = torch.arange(all_input_ids.size(0), dtype=torch.long)
-        eval_data = TensorDataset(all_input_ids, all_input_mask, all_segment_ids, all_example_index)
-        # Run prediction for full data
-        eval_sampler = SequentialSampler(eval_data)
-        eval_dataloader = DataLoader(eval_data, sampler=eval_sampler, batch_size=args.predict_batch_size)
-
-        model.eval()
-        all_results = []
-        logger.info("Start evaluating")
-        for input_ids, input_mask, segment_ids, example_indices in tqdm(eval_dataloader, desc="Evaluating"):
-            if len(all_results) % 1000 == 0:
-                logger.info("Processing example: %d" % (len(all_results)))
-            input_ids = input_ids.to(device)
-            input_mask = input_mask.to(device)
-            segment_ids = segment_ids.to(device)
-            with torch.no_grad():
-                batch_start_logits, batch_end_logits = model(input_ids, segment_ids, input_mask)
-            for i, example_index in enumerate(example_indices):
-                start_logits = batch_start_logits[i].detach().cpu().tolist()
-                end_logits = batch_end_logits[i].detach().cpu().tolist()
-                eval_feature = eval_features[example_index.item()]
-                unique_id = int(eval_feature.unique_id)
-                all_results.append(RawResult(unique_id=unique_id,
-                                             start_logits=start_logits,
-                                             end_logits=end_logits))
         output_prediction_file = os.path.join(args.output_dir, args.time_stamp + "predictions.json")
         output_nbest_file = os.path.join(args.output_dir, args.time_stamp + "nbest_predictions.json")
         output_null_log_odds_file = os.path.join(args.output_dir, args.time_stamp + "null_odds.json")
-        
-        # debug flag -- set to False 
-        if True:
-            logger.info("  Saving pickle dump of eval_examples, eval_features, all_results for debug analysis")
-            #cached_eval_results_file = args.predict_file+'_{0}_{1}'.format(
-            #list(filter(None, args.bert_model.split('/'))).pop(), 'pickle_eval_results' )
-            cached_eval_results_file = 'all_results-pickle'
-            with open(cached_eval_results_file, "wb") as writer:
-                pickle.dump([eval_examples, eval_features, all_results], writer)
             
-        
         write_predictions(eval_examples, eval_features, all_results,
                           args.n_best_size, args.max_answer_length,
                           args.do_lower_case, output_prediction_file,
                           output_nbest_file, output_null_log_odds_file, args.verbose_logging,
-                          args.version_2_with_negative, args.null_score_diff_threshold)
+                          args.version_2_with_negative, args.null_score_diff_threshold, args)
 
 
         if args.do_error_analysis:
             write_error_analysis(args)
         
-        tensorboard.close()
+        try:
+            tensorboard
+        except:
+            pass
+        else:
+            tensorboard.close()
         
 if __name__ == "__main__":
     main()
