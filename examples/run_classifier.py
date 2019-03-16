@@ -559,7 +559,7 @@ def main():
     if args.do_train:
         train_examples = processor.get_train_examples(args.data_dir)
         # DEBUG:
-        train_examples = train_examples[0:1000]
+        #train_examples = train_examples[0:1000]
         # Adjust if necessary for Train/Dev sub-split for loss tracking
         if args.log_traindev_loss:
             split_multiplier = 0.9
@@ -689,9 +689,9 @@ def main():
                             input_ids, input_mask, segment_ids, label_ids = batch
                             batch_loss = model(input_ids, segment_ids, input_mask, label_ids)
                             if n_gpu > 1:
-                                batch_loss = val_loss.mean() # mean() to average on multi-gpu.
+                                batch_loss = batch_loss.mean() # mean() to average on multi-gpu.
                             if args.gradient_accumulation_steps > 1:
-                                batch_loss = val_loss / args.gradient_accumulation_steps
+                                batch_loss = batch_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
                     tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), all_steps)  # len(train_dataloader)
                     tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), all_steps)

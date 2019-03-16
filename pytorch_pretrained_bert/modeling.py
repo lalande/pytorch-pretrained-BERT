@@ -972,7 +972,9 @@ class BertForSequenceClassification(BertPreTrainedModel):
         logits = self.classifier(pooled_output)
 
         if labels is not None:
-            loss_fct = CrossEntropyLoss()
+            weights = [0.6, 1.0]
+            class_weights = torch.FloatTensor(weights).cuda()
+            loss_fct = CrossEntropyLoss(weight=class_weights)
             loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1))
             return loss
         else:
