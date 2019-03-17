@@ -1179,7 +1179,7 @@ def main():
     ## Other parameters
     parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")  # KML
     parser.add_argument("--log_traindev_loss", action='store_true', help="Whether to use 10% of train data as dev set and log train/dev loss")  # KML
-    parser.add_argument("--val_steps", default=100, type=int, help="Number of training steps to take between validation measurements")  # KML
+    parser.add_argument("--val_steps", default=500, type=int, help="Number of training steps to take between validation measurements")  # KML
     parser.add_argument("--tiny_data", action='store_true', help="Whether to use just 100 train/dev examples to debug code")  # KML
     parser.add_argument("--add_triviaqa_train", action='store_true', help="Whether to add TriviaQA examples to train. Postpend -triviaqa.json to --train_file")  # KML
     parser.add_argument("--ensemble", action='store_true', help="Whether to ensemble Classifier and QA models.")  # KML
@@ -1476,7 +1476,7 @@ def main():
                             if args.gradient_accumulation_steps > 1:
                                 batch_loss = batch_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
-                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), all_steps)  # len(train_dataloader)
+                    tensorboard.log_scalar('train loss', running_loss / 1, all_steps)  # len(train_dataloader)
                     tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), all_steps)
                     running_loss = 0
                     model.train()
