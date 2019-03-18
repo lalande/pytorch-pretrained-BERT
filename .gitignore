@@ -1,5 +1,8 @@
 # Initially taken from Github's Python gitignore file
 
+# Big binary files
+best_val*
+
 # Wing IDE
 *.wp*
 

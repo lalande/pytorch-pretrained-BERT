@@ -649,9 +649,11 @@ def main():
         patience = args.patience
         loss_history = []        
         for _ in trange(int(args.num_train_epochs), desc="Epoch"):
+            if patience == 0: break
             tr_loss = 0
             nb_tr_examples, nb_tr_steps = 0, 0
             for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
+                if patience == 0: break
                 batch = tuple(t.to(device) for t in batch)
                 input_ids, input_mask, segment_ids, label_ids = batch
                 loss = model(input_ids, segment_ids, input_mask, label_ids)
@@ -737,7 +739,13 @@ def main():
         model = BertForSequenceClassification(config, num_labels=num_labels)
         model.load_state_dict(torch.load(output_model_file))
     else:
-        model = BertForSequenceClassification.from_pretrained(args.bert_model, num_labels=num_labels)
+        try: #KML TODO temp hack to reload val model on BigVM
+            model = torch.load('best_val_model')
+            logger.info("*** Loading best validation model")
+        except:
+            logger.info("*** WARNING: could not load best saved validation model")
+
+        #model = BertForSequenceClassification.from_pretrained(args.bert_model, num_labels=num_labels)
     model.to(device)
 
     if args.do_eval and (args.local_rank == -1 or torch.distributed.get_rank() == 0):
