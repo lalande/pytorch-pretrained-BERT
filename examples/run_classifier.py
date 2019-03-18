@@ -707,7 +707,7 @@ def main():
                             best_step = all_steps
                             logger.info("*** Saving best validation model at step {} with loss of {}".format(best_step, val_loss))
                             model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-                            torch.save('best_val_model')
+                            torch.save(model, 'best_val_model')
                         else:
                             patience -= 1
                     
