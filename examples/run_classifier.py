@@ -417,8 +417,8 @@ def main():
 
     ## Other parameters
     parser.add_argument("--log_traindev_loss", action='store_true', help="Whether to use 10% of train data as dev set and log train/dev loss")  # KML
-    parser.add_argument("--val_steps", default=1000, type=int, help="Number of training steps to take between validation measurements")  # KML
-    
+    parser.add_argument("--val_steps", default= 500, type=int, help="Number of training steps to take between validation measurements")  # KML
+    parser.add_argument("--patience", default=5, type=int, help="Number of validations to wait without new best loss before aborting training")  # KML
     parser.add_argument("--cache_dir",
                         default="",
                         type=str,
@@ -645,6 +645,9 @@ def main():
         model.train()
         running_loss = 0
         all_steps = -1
+        best_val, best_step = 10000, 0
+        patience = args.patience
+        loss_history = []        
         for _ in trange(int(args.num_train_epochs), desc="Epoch"):
             tr_loss = 0
             nb_tr_examples, nb_tr_steps = 0, 0
@@ -693,10 +696,31 @@ def main():
                             if args.gradient_accumulation_steps > 1:
                                 batch_loss = batch_loss / args.gradient_accumulation_steps
                             val_loss += batch_loss.item()
-                    tensorboard.log_scalar('train loss', running_loss / len(train_dataloader), all_steps)  # len(train_dataloader)
+                    tensorboard.log_scalar('train loss', running_loss / 1, all_steps)  # len(train_dataloader)
                     tensorboard.log_scalar('val loss', val_loss / len(val_dataloader), all_steps)
+                    loss_history.append((all_steps, running_loss, val_loss))
+                    
+                    if all_steps >= args.val_steps * 1:
+                        if (val_loss / len(val_dataloader)) < best_val:
+                            patience = args.patience
+                            best_val = (val_loss / len(val_dataloader))
+                            best_step = all_steps
+                            logger.info("*** Saving best validation model at step {} with loss of {}".format(best_step, val_loss))
+                            model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+                            torch.save('best_val_model')
+                        else:
+                            patience -= 1
+                    
                     running_loss = 0
                     model.train()
+
+        # Load the best saved validation checkpoint model, if it exists            
+        if args.log_traindev_loss:
+            try:
+                model = torch.load('best_val_model')
+                logger.info("*** Loading best validation model")
+            except:
+                logger.info("*** WARNING: could not load best saved validation model")
                 
 
     if args.do_train:
