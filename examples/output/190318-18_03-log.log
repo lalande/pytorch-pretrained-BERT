@@ -1,0 +1,4 @@
+device: cuda n_gpu: 4, distributed training: False, 16-bits training: False
+Writing predictions to: output/190318-18_03-predictions.json
+Writing nbest to: output/190318-18_03-nbest_predictions.json
+Writing predictions submission in DFP Leaderboard compliant format to: output/190318-18_03-predictions_submission.csv
