@@ -1179,7 +1179,7 @@ def main():
     ## Other parameters
     parser.add_argument("--time_stamp", default=None, type=str, help="YYDDMM-HH_MM- to load a specific model file in output directory")  # KML
     parser.add_argument("--log_traindev_loss", action='store_true', help="Whether to use 10% of train data as dev set and log train/dev loss")  # KML
-    parser.add_argument("--val_steps", default= 500, type=int, help="Number of training steps to take between validation measurements")  # KML
+    parser.add_argument("--val_steps", default= 10, type=int, help="Number of training steps to take between validation measurements")  # KML
     parser.add_argument("--patience", default=5, type=int, help="Number of validations to wait without new best loss before aborting training")  # KML
     parser.add_argument("--tiny_data", action='store_true', help="Whether to use just 100 train/dev examples to debug code")  # KML
     parser.add_argument("--add_triviaqa_train", action='store_true', help="Whether to add TriviaQA examples to train. Postpend -triviaqa.json to --train_file")  # KML
@@ -1492,8 +1492,9 @@ def main():
                             best_val = (val_loss / len(val_dataloader))
                             best_step = all_steps
                             logger.info("*** Saving best validation model at step {} with loss of {}".format(best_step, val_loss))
-                            model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-                            torch.save(model_to_save.state_dict(), 'best_val_model')
+                            #model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+                            #torch.save(model_to_save.state_dict(), 'best_val_model')
+                            torch.save(model, 'best_val_model')
                         else:
                             patience -= 1
                             
@@ -1503,7 +1504,8 @@ def main():
         # Load the best saved validation checkpoint model, if it exists            
         if args.log_traindev_loss:
             try:
-                model.load_state_dict(torch.load('best_val_model'))
+                #model.load_state_dict(torch.load('best_val_model'))
+                model = torch.load('best_val_model')
                 logger.info("*** Loading best validation model")
             except:
                 logger.info("*** WARNING: could not load best saved validation model")
