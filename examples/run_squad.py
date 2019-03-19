@@ -1524,16 +1524,20 @@ def main():
         model = BertForQuestionAnswering(config)
         model.load_state_dict(torch.load(output_model_file))
     else:
-        try:
+        #try:
             # Load a previously saved tuned model specified by --time_stamp
             # note: cannot reload a model .bin file on local CPU machine that was trained on remote GPU machine
-            output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
-            output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
-            config = BertConfig(output_config_file)
-            model = BertForQuestionAnswering(config)
-            model.load_state_dict(torch.load(output_model_file, map_location=device))  # KML this should map GPU to CPU models
-        except:
-            model = BertForQuestionAnswering.from_pretrained(args.bert_model)
+        output_model_file = os.path.join(args.output_dir, args.time_stamp + WEIGHTS_NAME)
+        output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
+        config = BertConfig(output_config_file)
+        logger.info("**Success: loaded {}".format(output_config_file))
+        #model = BertForQuestionAnswering(config)
+        #logger.info("**Success: initialized empty BertQA model")
+        #model.load_state_dict(torch.load(output_model_file, map_location=device))  # KML this should map GPU to CPU models
+        model = torch.load("190317-20_37-best_val_model")
+        logger.info("**Success: loaded {}".format(output_model_file))
+        #except:
+            #model = BertForQuestionAnswering.from_pretrained(args.bert_model)
 
     model.to(device)
 
