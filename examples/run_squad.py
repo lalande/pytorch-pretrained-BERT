@@ -1531,10 +1531,10 @@ def main():
         output_config_file = os.path.join(args.output_dir, args.time_stamp + CONFIG_NAME)            
         config = BertConfig(output_config_file)
         logger.info("**Success: loaded {}".format(output_config_file))
-        #model = BertForQuestionAnswering(config)
-        #logger.info("**Success: initialized empty BertQA model")
-        #model.load_state_dict(torch.load(output_model_file, map_location=device))  # KML this should map GPU to CPU models
-        model = torch.load("190317-20_37-best_val_model")
+        model = BertForQuestionAnswering(config)
+        logger.info("**Success: initialized empty BertQA model")
+        model.load_state_dict(torch.load(output_model_file, map_location=device))  # KML this should map GPU to CPU models
+        # model = torch.load("190317-20_37-best_val_model")
         logger.info("**Success: loaded {}".format(output_model_file))
         #except:
             #model = BertForQuestionAnswering.from_pretrained(args.bert_model)
