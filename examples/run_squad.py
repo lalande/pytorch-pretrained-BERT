@@ -1437,8 +1437,24 @@ def main():
         best_val, best_step = 10000, 0
         patience = args.patience
         loss_history = []
-        for _ in trange(int(args.num_train_epochs), desc="Epoch"):
-            if patience == 0: break                
+        for e in trange(int(args.num_train_epochs), desc="Epoch"):
+            if e == 0:
+                # Freeze all pretrained layers but not the QA layers for the first epoch for better performance
+                logger.info("  *** Freezing Pretrained BERT Layers")
+                no_freeze = [qa_intermediate1.weight, qa_intermediate1.bias, qa_intermediate2.weight, \
+                             qa_intermediate2.bias, qa_outputs.weight, qa_outputs.bias]
+                for name, param in model.named_parameters():
+                    if name not in no_freeze:
+                        param.requires_grad = False
+            else:        
+                if patience == 0: break
+                # Unfreeze all layers for subsequent epochs
+                logger.info("  *** Unfreezing Pretrained BERT Layers")
+                no_freeze = [qa_intermediate1.weight, qa_intermediate1.bias, qa_intermediate2.weight, \
+                             qa_intermediate2.bias, qa_outputs.weight, qa_outputs.bias]
+                for name, param in model.named_parameters():
+                    param.requires_grad = True
+                
             for step, batch in enumerate(tqdm(train_dataloader, desc="Iteration")):
                 if patience == 0: break
                 if n_gpu == 1:
