@@ -1209,6 +1209,10 @@ class BertForQuestionAnswering(BertPreTrainedModel):
             start_loss = loss_fct(start_logits, start_positions)
             end_loss = loss_fct(end_logits, end_positions)
             total_loss = (start_loss + end_loss) / 2
+            # KML try to fix RunTime error when freezing pre-trained bert layers
+            #     RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
+            #total_loss = torch.Tensor(total_loss, requires_grad=True)
+            # KML did not work
             return total_loss
         else:
             return start_logits, end_logits

@@ -1441,17 +1441,20 @@ def main():
             if e == 0:
                 # Freeze all pretrained layers but not the QA layers for the first epoch for better performance
                 logger.info("  *** Freezing Pretrained BERT Layers")
-                no_freeze = [qa_intermediate1.weight, qa_intermediate1.bias, qa_intermediate2.weight, \
-                             qa_intermediate2.bias, qa_outputs.weight, qa_outputs.bias]
+                no_freeze = ['module.qa_intermediate1.weight', 'module.qa_intermediate1.bias', 'module.qa_intermediate2.weight', \
+                             'module.qa_intermediate2.bias', 'module.qa_outputs.weight', 'module.qa_outputs.bias']
                 for name, param in model.named_parameters():
+                    if param.requires_grad == False:
+                        logger.info("  --> requires_grad already equal to False for: {}".format(name))
                     if name not in no_freeze:
-                        param.requires_grad = False
+                        param.requires_grad == False
+                        logger.info("  --> set requires_grad equal to False for: {}".format(name))
             else:        
                 if patience == 0: break
                 # Unfreeze all layers for subsequent epochs
                 logger.info("  *** Unfreezing Pretrained BERT Layers")
-                no_freeze = [qa_intermediate1.weight, qa_intermediate1.bias, qa_intermediate2.weight, \
-                             qa_intermediate2.bias, qa_outputs.weight, qa_outputs.bias]
+                #no_freeze = ['qa_intermediate1.weight', 'qa_intermediate1.bias', 'qa_intermediate2.weight', \
+                #             'qa_intermediate2.bias', 'qa_outputs.weight', 'qa_outputs.bias']
                 for name, param in model.named_parameters():
                     param.requires_grad = True
                 
